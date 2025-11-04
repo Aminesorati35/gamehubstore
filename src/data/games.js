@@ -33,9 +33,9 @@ export const games = [
     ]
   },
   {
-    id: "call-of-duty-mobile",
-    title: "Call of Duty Mobile",
-    shortName: "COD Mobile",
+    id: "pubg-mobile",
+    title: "PUBG Mobile",
+    shortName: "PUBG Mobile",
     developer: "Activision",
     rating: 4.7,
     downloads: "5.2M",
@@ -45,7 +45,7 @@ export const games = [
     downloadUrl:"https://redirectapps.org/cl/i/6ndjjm",
     lockerId:"d2vjkk",
     category: "First Person Shooter",
-    heroImage: "https://static.actugaming.net/media/2021/01/Call-of-Duty-Mobile.jpg",
+    heroImage: "https://cdn-www.bluestacks.com/bs-images/featured_com.tencent.ig.jpg",
     images: [
       "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
       "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop",

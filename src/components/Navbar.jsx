@@ -38,12 +38,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <button 
-              className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 transition-all duration-300"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <span className="text-2xl">{menuOpen ? '✕' : '☰'}</span>
-            </button>
+           
           </div>
         </div>
 
