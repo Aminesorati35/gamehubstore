@@ -1,4 +1,4 @@
-import { faCar, faGlobe, faShield } from "@fortawesome/free-solid-svg-icons";
+import { faCar, faGlobe, faGun, faMap, faShield, faTrophy } from "@fortawesome/free-solid-svg-icons";
 
 export const games = [
   {
@@ -47,17 +47,17 @@ export const games = [
     category: "First Person Shooter",
     heroImage: "https://cdn-www.bluestacks.com/bs-images/featured_com.tencent.ig.jpg",
     images: [
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=600&h=400&fit=crop"
+      "https://www.gamespot.com/a/uploads/original/3/37852/3936747-pubgmobile2.jpg",
+      "https://i.redd.it/qnqu6su5gq691.png",
+      "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202106/Battlegrounds_Mobile_India.jpeg?size=690:388"
     ],
     description: "Experience the thrill of tactical combat in fast-paced multiplayer battles.",
     downloadButtonAction: "show fake modal then call og_load()",
     features: [
-      { icon: "🎯", title: "Multiplayer", desc: "Competitive modes" },
-      { icon: "🏆", title: "Ranked", desc: "Climb the ladder" },
-      { icon: "🔫", title: "Weapons", desc: "100+ arsenal" },
-      { icon: "🗺️", title: "Maps", desc: "20+ battlegrounds" }
+      { icon: faGlobe, title: "Multiplayer", desc: "Competitive modes" },
+      { icon: faTrophy, title: "Ranked", desc: "Climb the ladder" },
+      { icon: faGun, title: "Weapons", desc: "100+ arsenal" },
+      { icon: faMap, title: "Maps", desc: "20+ battlegrounds" }
     ],
     reviews: [
       { name: "Mike Johnson", initials: "MJ", rating: 5, text: "Best FPS on mobile. Great optimization and gameplay.", gradient: "from-red-500 to-orange-500" },
