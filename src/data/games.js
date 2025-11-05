@@ -31,66 +31,66 @@ export const games = [
       { name: "John Doe", initials: "JD", rating: 5, text: "Amazing game! Runs smoothly on my phone. The graphics are incredible for a mobile game.", gradient: "from-purple-500 to-blue-500" },
       { name: "Alex Smith", initials: "AS", rating: 4.5, text: "Best mobile gaming experience ever! The controls are well adapted for touch screens.", gradient: "from-green-500 to-teal-500" }
     ]
-  },
-  {
-    id: "pubg-mobile",
-    title: "PUBG Mobile",
-    shortName: "PUBG Mobile",
-    developer: "Activision",
-    rating: 4.7,
-    downloads: "5.2M",
-    size: "1.8 GB",
-    version: "2.1.0",
-    age: "17+",
-    downloadUrl:"https://redirectapps.org/cl/i/6ndjjm",
-    lockerId:"d2vjkk",
-    category: "First Person Shooter",
-    heroImage: "https://cdn-www.bluestacks.com/bs-images/featured_com.tencent.ig.jpg",
-    images: [
-      "https://www.gamespot.com/a/uploads/original/3/37852/3936747-pubgmobile2.jpg",
-      "https://i.redd.it/qnqu6su5gq691.png",
-      "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202106/Battlegrounds_Mobile_India.jpeg?size=690:388"
-    ],
-    description: "Experience the thrill of tactical combat in fast-paced multiplayer battles.",
-    downloadButtonAction: "show fake modal then call og_load()",
-    features: [
-      { icon: faGlobe, title: "Multiplayer", desc: "Competitive modes" },
-      { icon: faTrophy, title: "Ranked", desc: "Climb the ladder" },
-      { icon: faGun, title: "Weapons", desc: "100+ arsenal" },
-      { icon: faMap, title: "Maps", desc: "20+ battlegrounds" }
-    ],
-    reviews: [
-      { name: "Mike Johnson", initials: "MJ", rating: 5, text: "Best FPS on mobile. Great optimization and gameplay.", gradient: "from-red-500 to-orange-500" },
-      { name: "Sarah Lee", initials: "SL", rating: 4, text: "Fun game but needs better matchmaking.", gradient: "from-pink-500 to-purple-500" }
-    ]
-  },
-  {
-    id: "minecraft",
-    title: "Minecraft",
-    shortName: "Minecraft",
-    developer: "Mojang Studios",
-    rating: 4.9,
-    downloads: "10M",
-    size: "500 MB",
-    version: "1.20.5",
-    age: "7+",
-    category: "Sandbox Adventure",
-    heroImage: "https://app-enfant.fr/wp-content/uploads/minecraft-pocket-edition-android.jpg",
-    images: [
-      "https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&h=400&fit=crop",
-    ],
-    description: "Build, explore and survive in this creative sandbox world with endless possibilities.",
-    downloadButtonAction: "show fake modal then call og_load()",
-    features: [
-      { icon: "🏗️", title: "Creative", desc: "Build anything" },
-      { icon: "⚔️", title: "Survival", desc: "Test your skills" },
-      { icon: "🌍", title: "Infinite", desc: "Endless worlds" },
-      { icon: "🔌", title: "Mods", desc: "Customize gameplay" }
-    ],
-    reviews: [
-      { name: "Tom Builder", initials: "TB", rating: 5, text: "Perfect port! Works great on mobile with touch controls.", gradient: "from-green-600 to-emerald-600" },
-      { name: "Emma Stone", initials: "ES", rating: 5, text: "My kids love it! Great for creativity.", gradient: "from-blue-400 to-cyan-400" }
-    ]
-  },
+  // },
+  // {
+  //   id: "pubg-mobile",
+  //   title: "PUBG Mobile",
+  //   shortName: "PUBG Mobile",
+  //   developer: "Activision",
+  //   rating: 4.7,
+  //   downloads: "5.2M",
+  //   size: "1.8 GB",
+  //   version: "2.1.0",
+  //   age: "17+",
+  //   downloadUrl:"https://redirectapps.org/cl/i/6ndjjm",
+  //   lockerId:"d2vjkk",
+  //   category: "First Person Shooter",
+  //   heroImage: "https://cdn-www.bluestacks.com/bs-images/featured_com.tencent.ig.jpg",
+  //   images: [
+  //     "https://www.gamespot.com/a/uploads/original/3/37852/3936747-pubgmobile2.jpg",
+  //     "https://i.redd.it/qnqu6su5gq691.png",
+  //     "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202106/Battlegrounds_Mobile_India.jpeg?size=690:388"
+  //   ],
+  //   description: "Experience the thrill of tactical combat in fast-paced multiplayer battles.",
+  //   downloadButtonAction: "show fake modal then call og_load()",
+  //   features: [
+  //     { icon: faGlobe, title: "Multiplayer", desc: "Competitive modes" },
+  //     { icon: faTrophy, title: "Ranked", desc: "Climb the ladder" },
+  //     { icon: faGun, title: "Weapons", desc: "100+ arsenal" },
+  //     { icon: faMap, title: "Maps", desc: "20+ battlegrounds" }
+  //   ],
+  //   reviews: [
+  //     { name: "Mike Johnson", initials: "MJ", rating: 5, text: "Best FPS on mobile. Great optimization and gameplay.", gradient: "from-red-500 to-orange-500" },
+  //     { name: "Sarah Lee", initials: "SL", rating: 4, text: "Fun game but needs better matchmaking.", gradient: "from-pink-500 to-purple-500" }
+  //   ]
+  // },
+  // {
+  //   id: "minecraft",
+  //   title: "Minecraft",
+  //   shortName: "Minecraft",
+  //   developer: "Mojang Studios",
+  //   rating: 4.9,
+  //   downloads: "10M",
+  //   size: "500 MB",
+  //   version: "1.20.5",
+  //   age: "7+",
+  //   category: "Sandbox Adventure",
+  //   heroImage: "https://app-enfant.fr/wp-content/uploads/minecraft-pocket-edition-android.jpg",
+  //   images: [
+  //     "https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=600&h=400&fit=crop",
+  //     "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&h=400&fit=crop",
+  //   ],
+  //   description: "Build, explore and survive in this creative sandbox world with endless possibilities.",
+  //   downloadButtonAction: "show fake modal then call og_load()",
+  //   features: [
+  //     { icon: "🏗️", title: "Creative", desc: "Build anything" },
+  //     { icon: "⚔️", title: "Survival", desc: "Test your skills" },
+  //     { icon: "🌍", title: "Infinite", desc: "Endless worlds" },
+  //     { icon: "🔌", title: "Mods", desc: "Customize gameplay" }
+  //   ],
+  //   reviews: [
+  //     { name: "Tom Builder", initials: "TB", rating: 5, text: "Perfect port! Works great on mobile with touch controls.", gradient: "from-green-600 to-emerald-600" },
+  //     { name: "Emma Stone", initials: "ES", rating: 5, text: "My kids love it! Great for creativity.", gradient: "from-blue-400 to-cyan-400" }
+  //   ]
+  // },
 ];
