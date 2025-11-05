@@ -4,7 +4,7 @@ export const games = [
   {
     id: "gta-v",
     title: "Grand Theft Auto V",
-    shortName: "GTA V",
+    shortName: "GTA V MOBILE",
     developer: "Rockstar Games",
     rating: 4.8,
     downloads: "2.4M",
@@ -92,5 +92,5 @@ export const games = [
   //     { name: "Tom Builder", initials: "TB", rating: 5, text: "Perfect port! Works great on mobile with touch controls.", gradient: "from-green-600 to-emerald-600" },
   //     { name: "Emma Stone", initials: "ES", rating: 5, text: "My kids love it! Great for creativity.", gradient: "from-blue-400 to-cyan-400" }
   //   ]
-  // },
+  },
 ];
