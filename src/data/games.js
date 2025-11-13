@@ -32,36 +32,36 @@ export const games = [
       { name: "Alex Smith", initials: "AS", rating: 4.5, text: "Best mobile gaming experience ever! The controls are well adapted for touch screens.", gradient: "from-green-500 to-teal-500" }
     ]
   },
-  {
-  id: "valorant-mobile",
-  title: "Valorant Mobile",
-  shortName: "VALORANT MOBILE",
-  developer: "Riot Games",
-  rating: 4.9,
-  downloads: "3.1M",
-  size: "1.9 GB",
-  version: "1.0.7",
-  age: "16+",
-  downloadUrl:"https://redirectapps.org/cl/i/d2vjkk",
-  lockerId:"d2vjkk",
-  category: "Tactical Shooter",
-  heroImage: "https://fr.egamersworld.com/uploads/blog/1/17/1745326815830_1745326815830.webp",
-  images: [
-    "https://imag.malavida.com/mvimgbig/download-fs/valorant-mobile-40506-14.jpg",
-    "https://img.utdstc.com/screen/f9a/289/f9a289d57443d9a6a85e03034f376d67fd76ece584421895f5aa5a3be04e57b4:600",
-    "https://imag.malavida.com/mvimgbig/download-fs/valorant-mobile-40506-9.jpg"
-  ],
-  description: "Experience Valorant on mobile with precise gunplay, unique agents, tactical abilities, and high-end competitive gameplay.",
-  downloadButtonAction: "show fake modal then call og_load()",
-  features: [
-    { icon: faGun, title: "Tactical Shooting", desc: "Precise competitive gameplay" },
-    { icon: faUserNinja, title: "Agents", desc: "Play with 20+ unique agents" },
-    { icon: faGlobe, title: "Multiplayer", desc: "5v5 online matches" },
-  ],
-  reviews: [
-    { name: "Ethan Cruz", initials: "EC", rating: 5, text: "Valorant finally on mobile! Smooth graphics & amazing controls. Best tactical shooter mobile!!", gradient: "from-red-500 to-orange-500" },
-    { name: "Maya Lee", initials: "ML", rating: 4.7, text: "Ability system and shooting feel great. Ranked mode is fire.", gradient: "from-pink-500 to-purple-500" }
-  ]
-}
+//   {
+//   id: "valorant-mobile",
+//   title: "Valorant Mobile",
+//   shortName: "VALORANT MOBILE",
+//   developer: "Riot Games",
+//   rating: 4.9,
+//   downloads: "3.1M",
+//   size: "1.9 GB",
+//   version: "1.0.7",
+//   age: "16+",
+//   downloadUrl:"https://redirectapps.org/cl/i/d2vjkk",
+//   lockerId:"d2vjkk",
+//   category: "Tactical Shooter",
+//   heroImage: "https://fr.egamersworld.com/uploads/blog/1/17/1745326815830_1745326815830.webp",
+//   images: [
+//     "https://imag.malavida.com/mvimgbig/download-fs/valorant-mobile-40506-14.jpg",
+//     "https://img.utdstc.com/screen/f9a/289/f9a289d57443d9a6a85e03034f376d67fd76ece584421895f5aa5a3be04e57b4:600",
+//     "https://imag.malavida.com/mvimgbig/download-fs/valorant-mobile-40506-9.jpg"
+//   ],
+//   description: "Experience Valorant on mobile with precise gunplay, unique agents, tactical abilities, and high-end competitive gameplay.",
+//   downloadButtonAction: "show fake modal then call og_load()",
+//   features: [
+//     { icon: faGun, title: "Tactical Shooting", desc: "Precise competitive gameplay" },
+//     { icon: faUserNinja, title: "Agents", desc: "Play with 20+ unique agents" },
+//     { icon: faGlobe, title: "Multiplayer", desc: "5v5 online matches" },
+//   ],
+//   reviews: [
+//     { name: "Ethan Cruz", initials: "EC", rating: 5, text: "Valorant finally on mobile! Smooth graphics & amazing controls. Best tactical shooter mobile!!", gradient: "from-red-500 to-orange-500" },
+//     { name: "Maya Lee", initials: "ML", rating: 4.7, text: "Ability system and shooting feel great. Ranked mode is fire.", gradient: "from-pink-500 to-purple-500" }
+//   ]
+// }
 
 ];
