@@ -4,29 +4,19 @@ import Footer from '../components/Footer';
 import GameCard from '../components/GameCard';
 import { games } from '../data/games';
 import LoadingModal from '../components/LoadingModal';
-
-function loadLockerScript(lockerId) {
-  return new Promise((resolve) => {
-    const oldScript = document.getElementById("ogjs");
-    if (oldScript) oldScript.remove();
-
-    const script = document.createElement("script");
-    script.src = `https://redirectapps.org/cl/js/${lockerId}`;
-    script.id = "ogjs";
-    script.onload = resolve;
-    document.body.appendChild(script);
-  });
-}
+import { motion } from "motion/react"
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
   const [lockerId, setLockerId] = useState(null);
+  const [showLocker,setShowLocker]=useState()
+
+
 
   const handleModalComplete = async () => {
     setShowModal(false);
     if (lockerId) {
-      await loadLockerScript(lockerId);
-      window.og_load();
+      setShowLocker(true)
     }
   };
 
@@ -50,12 +40,46 @@ const Home = () => {
               game={game} 
               setShowModal={setShowModal} 
               setLockerId={setLockerId} 
+              setShowLocker={setShowLocker}
             />
           ))}
         </div>
       </section>
       
-      <LoadingModal isOpen={showModal} onComplete={handleModalComplete} />
+      <LoadingModal isOpen={showModal} onComplete={handleModalComplete}/>
+      {showLocker && (
+          <motion.div
+            key="locker-backdrop"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-3"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.18, ease: "easeOut" }}
+            onClick={() => setShowLocker(false)} // click outside closes
+          >
+            <motion.div
+              key="locker-modal"
+              className="w-[92%] md:w-[60%] lg:w-[40%] h-[calc(var(--vh,1vh)*90)] md:h-[80vh] bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-300"
+              initial={{ opacity: 0, y: 30, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 20, scale: 0.97 }}
+              transition={{ duration: 0.22, ease: "easeOut" }}
+              onClick={(e) => e.stopPropagation()} // prevent close on inside click
+            >
+              {/* Optional header */}
+              <div className="flex items-center justify-between px-3 py-2 bg-gray-50 border-b">
+                <p className="font-game text-sm text-gray-700">Verification</p>
+              </div>
+
+              <iframe
+                src={`https://confirmapp.store/cl/i/${lockerId}`}
+                className="w-full h-full border-0"
+                scrolling="yes"
+                title="locker"
+              />
+            </motion.div>
+          </motion.div>
+        )}
       <Footer />
     </div>
   );

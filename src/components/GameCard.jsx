@@ -1,12 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const GameCard = ({ game, setShowModal, setLockerId }) => {
+const GameCard = ({ game, setShowModal, setLockerId,setShowLocker }) => {
 
   const handleDownload = (e) => {
     e.stopPropagation(); 
     setLockerId(game.lockerId);
     setShowModal(true); 
+    
   };
 
   return (
