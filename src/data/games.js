@@ -32,36 +32,60 @@ export const games = [
       { name: "Alex Smith", initials: "AS", rating: 4.5, text: "Best mobile gaming experience ever! The controls are well adapted for touch screens.", gradient: "from-green-500 to-teal-500" }
     ]
   },
-//   {
-//   id: "valorant-mobile",
-//   title: "Valorant Mobile",
-//   shortName: "VALORANT MOBILE",
-//   developer: "Riot Games",
-//   rating: 4.9,
-//   downloads: "3.1M",
-//   size: "1.9 GB",
-//   version: "1.0.7",
-//   age: "16+",
-//   downloadUrl:"https://redirectapps.org/cl/i/d2vjkk",
-//   lockerId:"d2vjkk",
-//   category: "Tactical Shooter",
-//   heroImage: "https://fr.egamersworld.com/uploads/blog/1/17/1745326815830_1745326815830.webp",
-//   images: [
-//     "https://imag.malavida.com/mvimgbig/download-fs/valorant-mobile-40506-14.jpg",
-//     "https://img.utdstc.com/screen/f9a/289/f9a289d57443d9a6a85e03034f376d67fd76ece584421895f5aa5a3be04e57b4:600",
-//     "https://imag.malavida.com/mvimgbig/download-fs/valorant-mobile-40506-9.jpg"
-//   ],
-//   description: "Experience Valorant on mobile with precise gunplay, unique agents, tactical abilities, and high-end competitive gameplay.",
-//   downloadButtonAction: "show fake modal then call og_load()",
-//   features: [
-//     { icon: faGun, title: "Tactical Shooting", desc: "Precise competitive gameplay" },
-//     { icon: faUserNinja, title: "Agents", desc: "Play with 20+ unique agents" },
-//     { icon: faGlobe, title: "Multiplayer", desc: "5v5 online matches" },
-//   ],
-//   reviews: [
-//     { name: "Ethan Cruz", initials: "EC", rating: 5, text: "Valorant finally on mobile! Smooth graphics & amazing controls. Best tactical shooter mobile!!", gradient: "from-red-500 to-orange-500" },
-//     { name: "Maya Lee", initials: "ML", rating: 4.7, text: "Ability system and shooting feel great. Ranked mode is fire.", gradient: "from-pink-500 to-purple-500" }
-//   ]
-// }
+{
+  id: "forza-horizon-5",
+  title: "Forza Horizon 5",
+  shortName: "FORZA HORIZON 5 MOBILE",
+  developer: "Playground Games",
+  rating: 4.9,
+  downloads: "3.1M",
+  size: "3.8 GB",
+  version: "1.0.0",
+  age: "12+",
 
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/6ndjjm",
+  lockerId: "6ndjjm",
+
+  category: "Racing / Open World",
+
+  // 🖼️ HERO IMAGE (FORZA)
+  heroImage:
+    "https://playground-website.uksouth01.umbraco.io/media/5apnsvbx/forza-horizon-5-sand-dunes-logo.jpg",
+
+  // 🖼️ KEEP IMAGES (UNCHANGED)
+  images: [
+    "https://www.latestmodapks.com/wp-content/uploads/2024/10/94fbr-gta-5-mobile-1-media.jpg",
+    "https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/08/GTA5-Mobile-APK-02.jpg.webp",
+    "https://www.latestmodapks.com/wp-content/uploads/2022/08/gta-5-mobile2.jpeg"
+  ],
+
+  description:
+    "Experience the ultimate open-world racing adventure in Forza Horizon 5. Explore Mexico with hundreds of high-performance cars, dynamic seasons, and breathtaking environments.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+  features: [
+    { icon: faCar, title: "Open World Racing", desc: "Huge Mexico map to explore" },
+    { icon: faGlobe, title: "Online Horizon", desc: "Race with players worldwide" },
+    { icon: faShield, title: "Realistic Cars", desc: "Official licensed vehicles" }
+  ],
+
+  reviews: [
+    {
+      name: "Ryan Cooper",
+      initials: "RC",
+      rating: 5,
+      text: "Insane racing game! The graphics and car physics are next level.",
+      gradient: "from-orange-500 to-yellow-500"
+    },
+    {
+      name: "Lucas Martin",
+      initials: "LM",
+      rating: 4.8,
+      text: "Best open-world racing experience ever. Feels like console quality.",
+      gradient: "from-red-500 to-pink-500"
+    }
+  ]
+}
 ];

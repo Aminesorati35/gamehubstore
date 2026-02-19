@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const GameCard = ({ game, setShowModal, setLockerId }) => {
-  const navigate = useNavigate();
 
   const handleDownload = (e) => {
     e.stopPropagation(); 
@@ -12,7 +11,7 @@ const GameCard = ({ game, setShowModal, setLockerId }) => {
 
   return (
     <div 
-      onClick={() => navigate(`/game/${game.id}`)}
+
       className="bg-white/5 backdrop-blur-xl rounded-2xl overflow-hidden border border-white/10 shadow-xl hover:shadow-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer hover:-translate-y-2 group"
     >
       <div className="relative h-40 sm:h-48 overflow-hidden">
