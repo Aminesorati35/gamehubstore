@@ -78,6 +78,71 @@ export const games = [
     ],
   },
   {
+  id: "bloody-knuckles-street-boxing",
+  title: "Bloody Knuckles Street Boxing",
+  shortName: "BLOODY KNUCKLES MOBILE",
+  //developer: "Dolphin Barn",
+  rating: 4.6,
+  downloads: "1.2M",
+  size: "180 MB",
+  version: "2.1.3",
+  age: "16+",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/6ndjjm",
+  lockerId: "6ndjjm",
+
+  category: "Fighting / Boxing",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2613950/capsule_616x353.jpg?t=1771392413",
+
+  images: [
+    "https://play-lh.googleusercontent.com/z1gkGQ7Q8jK0tY6yYF0xYwZK0p7XzYQ8g9u1yKx5w=s0",
+    "https://play-lh.googleusercontent.com/Rn0fZk6YJ9zRZqH6xvZ4y6zZQk9m0u8u=s0",
+    "https://play-lh.googleusercontent.com/4YF5zZpP7k2Qx7Y8XKQxZkY=s0",
+  ],
+
+  description:
+    "Step into brutal underground street fights in Bloody Knuckles Street Boxing. Deliver powerful punches, master combos, and dominate illegal boxing arenas with raw strength and skill.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "Street Boxing",
+      desc: "Raw underground fist fights",
+    },
+    {
+      title: "Power Combos",
+      desc: "Unleash devastating punch combos",
+    },
+    {
+      title: "Brutal Arenas",
+      desc: "Fight in dark illegal locations",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Jason Reed",
+      initials: "JR",
+      rating: 5,
+      text: "Super brutal and addictive! The punches feel heavy and satisfying.",
+      gradient: "from-red-600 to-orange-600",
+    },
+    {
+      name: "Mark Sullivan",
+      initials: "MS",
+      rating: 4.5,
+      text: "Great street boxing game. Simple controls but very intense fights.",
+      gradient: "from-gray-700 to-gray-900",
+    },
+  ],
+},
+  {
     id: "gta-v",
     title: "Grand Theft Auto V",
     shortName: "GTA V MOBILE",
