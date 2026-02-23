@@ -90,7 +90,7 @@ export const games = [
 
   // 🔒 KEEP LOCKER (UNCHANGED)
   downloadUrl: "https://redirectapps.org/cl/i/6ndjjm",
-  lockerId: "6ndjjm",
+  lockerId: "o443d2",
 
   category: "Fighting / Boxing",
 
