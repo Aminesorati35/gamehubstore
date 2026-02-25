@@ -78,66 +78,66 @@ export const games = [
     ],
   },
   {
-  id: "bloody-knuckles-street-boxing",
-  title: "Bloody Knuckles Street Boxing",
-  shortName: "BLOODY KNUCKLES MOBILE",
-  //developer: "Dolphin Barn",
-  rating: 4.6,
-  downloads: "1.2M",
-  size: "180 MB",
-  version: "2.1.3",
-  age: "16+",
+  id: "red-dead-redemption-2",
+  title: "Red Dead Redemption 2",
+  shortName: "RDR 2 MOBILE",
+  //developer: "Rockstar Games",
+  rating: 4.9,
+  downloads: "5.8M",
+  size: "3.2 GB",
+  version: "1.0.2",
+  age: "18+",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
-  downloadUrl: "https://redirectapps.org/cl/i/6ndjjm",
-  lockerId: "o443d2",
+  downloadUrl: "https://redirectapps.org/cl/i/d22kdw",
+  lockerId: "d22kdw",
 
-  category: "Fighting / Boxing",
+  category: "Open World / Action-Adventure",
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2613950/capsule_616x353.jpg?t=1771392413",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg?t=1717094500",
 
   images: [
-    "https://play-lh.googleusercontent.com/z1gkGQ7Q8jK0tY6yYF0xYwZK0p7XzYQ8g9u1yKx5w=s0",
-    "https://play-lh.googleusercontent.com/Rn0fZk6YJ9zRZqH6xvZ4y6zZQk9m0u8u=s0",
-    "https://play-lh.googleusercontent.com/4YF5zZpP7k2Qx7Y8XKQxZkY=s0",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/ss_0d0b0d7c2d2e59a4b1d2e26b55e0d7ac8d0a8b1c.600x338.jpg?t=1717094500",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/ss_8c2f0f30f4c1d0d3c7f31d0d7c8a4e4b0f2db4c8.600x338.jpg?t=1717094500",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/ss_3d9a6f1a7d4a1f3f3f2d9e8b7d6c5a4b3c2d1e0f.600x338.jpg?t=1717094500",
   ],
 
   description:
-    "Step into brutal underground street fights in Bloody Knuckles Street Boxing. Deliver powerful punches, master combos, and dominate illegal boxing arenas with raw strength and skill.",
+    "Enter the wild west in Red Dead Redemption 2. Explore a massive open world, experience a cinematic story, and survive as an outlaw in a brutal frontier full of action, bounty hunts, and freedom.",
 
   downloadButtonAction: "show fake modal then call og_load()",
 
   // ❌ NO ICONS HERE
   features: [
     {
-      title: "Street Boxing",
-      desc: "Raw underground fist fights",
+      title: "Massive Open World",
+      desc: "Explore towns, mountains, and wild frontier",
     },
     {
-      title: "Power Combos",
-      desc: "Unleash devastating punch combos",
+      title: "Cinematic Story",
+      desc: "A deep outlaw story with epic missions",
     },
     {
-      title: "Brutal Arenas",
-      desc: "Fight in dark illegal locations",
+      title: "Realistic Gameplay",
+      desc: "Hunting, horses, weapons, and survival",
     },
   ],
 
   reviews: [
     {
-      name: "Jason Reed",
-      initials: "JR",
+      name: "Ethan Brooks",
+      initials: "EB",
       rating: 5,
-      text: "Super brutal and addictive! The punches feel heavy and satisfying.",
+      text: "This is insane. Feels like a full console game on mobile!",
       gradient: "from-red-600 to-orange-600",
     },
     {
-      name: "Mark Sullivan",
-      initials: "MS",
-      rating: 4.5,
-      text: "Great street boxing game. Simple controls but very intense fights.",
+      name: "Noah Carter",
+      initials: "NC",
+      rating: 4.8,
+      text: "The open world is huge and the story is top tier. Love it.",
       gradient: "from-gray-700 to-gray-900",
     },
   ],
