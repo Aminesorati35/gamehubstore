@@ -46,6 +46,7 @@ const Home = () => {
         </div>
       </section>
       
+      
       <LoadingModal isOpen={showModal} onComplete={handleModalComplete}/>
       {showLocker && (
           <motion.div

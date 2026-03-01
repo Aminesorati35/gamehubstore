@@ -208,6 +208,71 @@ export const games = [
   ],
 },
 {
+  id: "the-spike-volleyball-cross-mod-2026",
+  title: "The Spike Volleyball Cross MOD",
+  shortName: "THE SPIKE MOD 2026",
+  // developer: "DAERISOFT",
+  rating: 4.7,
+  downloads: "6.3M",
+  size: "650 MB",
+  version: "6.1.2",
+  age: "12+",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/3448k7",
+  lockerId: "3448k7",
+
+  category: "Sports / Volleyball",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://imgcdn.latestmodapks.com/api/resize?url=https://www.latestmodapks.com/wp-content/uploads/2022/09/thespikerm1.webp&height=250",
+
+  images: [
+    "https://play-lh.googleusercontent.com/3zY5ZcQk7mYp9y0JXQ=s0",
+    "https://play-lh.googleusercontent.com/7QkYp0JX9mZc3y5=s0",
+    "https://play-lh.googleusercontent.com/9y0JXQk7mZc3Y5=s0",
+  ],
+
+  description:
+    "Jump into fast-paced volleyball action in The Spike Volleyball Cross MOD 2026. Perform powerful spikes, quick receives, and competitive matches with enhanced gameplay and smooth controls.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "Intense Volleyball Matches",
+      desc: "Fast and competitive volleyball gameplay",
+    },
+    {
+      title: "Powerful Spikes",
+      desc: "Time your jumps and dominate the court",
+    },
+    {
+      title: "MOD Gameplay",
+      desc: "Enhanced experience with unlocked content",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Leo Martinez",
+      initials: "LM",
+      rating: 5,
+      text: "Best volleyball game on mobile. Super smooth and addictive!",
+      gradient: "from-orange-500 to-red-500",
+    },
+    {
+      name: "Daniel Kim",
+      initials: "DK",
+      rating: 4.6,
+      text: "The spike mechanics feel amazing. MOD makes it even better.",
+      gradient: "from-blue-600 to-indigo-600",
+    },
+  ],
+},
+{
   id: "fortnite-og-mobile",
   title: "Fortnite OG",
   shortName: "FORTNITE OG MOBILE",
