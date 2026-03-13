@@ -10,13 +10,13 @@ import {
 
 export const games = [
   {
-  id: "poppy-playtime-chapter-4",
-  title: "Poppy Playtime Chapter 4",
-  shortName: "POPPY PLAYTIME 4 MOBILE",
+  id: "poppy-playtime-chapter-5",
+  title: "Poppy Playtime Chapter 5",
+  shortName: "POPPY PLAYTIME 5 MOBILE",
   // developer: "Mob Entertainment",
   rating: 4.7,
   downloads: "4.9M",
-  size: "1.1 GB",
+  size: "2.2 GB",
   version: "1.0.0",
   age: "16+",
 
@@ -28,7 +28,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://fr.egw.news/_next/image?url=https%3A%2F%2Fegw.news%2Fuploads%2Fnews%2F1%2F17%2F1752851644647_1752851644648.webp&w=1920&q=75",
+    "https://imgeucdn.gamespress.com/cdn/files/Games%20Press/2026/02/172328-8060da7b/Ch5_main-keyart_(1).png?w=524&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=eb3318313f4f2d8d7c30c62b955012edd01a0c7fa1303c8d2e3fbac762644776",
 
   images: [
     "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2889390/ss_1.jpg",
