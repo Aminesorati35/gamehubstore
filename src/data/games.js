@@ -75,6 +75,72 @@ export const games = [
     },
   ],
 },
+{
+  id: "my-singing-monsters-mod",
+  title: "My Singing Monsters MOD",
+  shortName: "MSM MOD MOBILE",
+  // developer: "Big Blue Bubble",
+  rating: 4.8,
+  downloads: "8.7M",
+  size: "320 MB",
+  version: "4.3.1",
+  age: "7+",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/pqq9dn",
+  lockerId: "pqq9dn",
+
+  category: "Music / Simulation",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://cdn.aptoide.com/imgs/c/7/c/c7c68311d39f977fc374a6b41b247556_fgraphic.jpg",
+
+  images: [
+    "https://play-lh.googleusercontent.com/7QkYp0JX9mZc3y5=s0",
+    "https://play-lh.googleusercontent.com/3zY5ZcQk7mYp9y0JXQ=s0",
+    "https://play-lh.googleusercontent.com/9y0JXQk7mZc3Y5=s0",
+  ],
+
+  description:
+    "Create your own musical island in My Singing Monsters MOD. Collect unique monsters, combine their sounds, and build catchy songs with an enhanced gameplay experience.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "Create Music",
+      desc: "Combine monsters to build unique songs",
+    },
+    {
+      title: "Collect Monsters",
+      desc: "Unlock and discover rare creatures",
+    },
+    {
+      title: "MOD Experience",
+      desc: "Enhanced gameplay with unlocked features",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Emily Carter",
+      initials: "EC",
+      rating: 5,
+      text: "Super fun and relaxing. The music creation is amazing!",
+      gradient: "from-green-500 to-lime-500",
+    },
+    {
+      name: "Noah Bennett",
+      initials: "NB",
+      rating: 4.7,
+      text: "Addictive and creative game. MOD makes it even better.",
+      gradient: "from-blue-600 to-cyan-600",
+    },
+  ],
+},
   {
   id: "red-dead-redemption-2",
   title: "Red Dead Redemption 2",
