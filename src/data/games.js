@@ -141,6 +141,72 @@ export const games = [
     },
   ],
 },
+{
+  id: "hytale-mobile",
+  title: "Hytale Mobile",
+  shortName: "HYTALE MOBILE",
+  // developer: "Hypixel Studios",
+  rating: 4.9,
+  downloads: "7.6M",
+  size: "2.4 GB",
+  version: "1.0.0",
+  age: "12+",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/j77vkj",
+  lockerId: "j77vkj",
+
+  category: "Adventure / Sandbox",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://img.youtube.com/vi/o77MzDQT1cg/maxresdefault.jpg",
+
+  images: [
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711820/ss_1.jpg",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711820/ss_2.jpg",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1711820/ss_3.jpg",
+  ],
+
+  description:
+    "Explore a vast sandbox world in Hytale Mobile. Build, fight, and create your own adventures with endless possibilities, unique biomes, and immersive gameplay.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "Open Sandbox World",
+      desc: "Explore diverse biomes and environments",
+    },
+    {
+      title: "Build & Create",
+      desc: "Design structures and create your own worlds",
+    },
+    {
+      title: "Adventure Mode",
+      desc: "Fight enemies and discover hidden secrets",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Liam Foster",
+      initials: "LF",
+      rating: 5,
+      text: "Feels like a mix of Minecraft and RPG. Super exciting!",
+      gradient: "from-green-600 to-emerald-600",
+    },
+    {
+      name: "Ethan Cole",
+      initials: "EC",
+      rating: 4.8,
+      text: "Huge potential. The world and gameplay look amazing.",
+      gradient: "from-blue-600 to-indigo-600",
+    },
+  ],
+},
   {
   id: "red-dead-redemption-2",
   title: "Red Dead Redemption 2",
