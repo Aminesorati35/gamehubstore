@@ -76,6 +76,72 @@ export const games = [
   ],
 },
 {
+  id: "toca-boca-world-mod",
+  title: "Toca Boca World MOD",
+  shortName: "TOCA WORLD MOD",
+  // developer: "Toca Boca",
+  rating: 4.8,
+  downloads: "12.3M",
+  size: "580 MB",
+  version: "1.89",
+  age: "3+",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/rnnveg",
+  lockerId: "rnnveg",
+
+  category: "Simulation / Kids",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://d2duuy9yo5pldo.cloudfront.net/dashboard-resources/tocaboca/ea2ce3d3-63c0-41ea-b9e5-7e5abd576e7a.png",
+
+  images: [
+    "https://play-lh.googleusercontent.com/toca1=s0",
+    "https://play-lh.googleusercontent.com/toca2=s0",
+    "https://play-lh.googleusercontent.com/toca3=s0",
+  ],
+
+  description:
+    "Create your own stories in Toca Boca World MOD. Explore fun locations, customize characters, and enjoy unlimited creativity with an enhanced gameplay experience.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "Create Your Story",
+      desc: "Build your own world and adventures",
+    },
+    {
+      title: "Customize Characters",
+      desc: "Dress up and design unique characters",
+    },
+    {
+      title: "MOD Experience",
+      desc: "Unlocked items and expanded gameplay",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Sophia Lane",
+      initials: "SL",
+      rating: 5,
+      text: "So fun and creative! You can do anything you want.",
+      gradient: "from-pink-500 to-purple-500",
+    },
+    {
+      name: "Mia Johnson",
+      initials: "MJ",
+      rating: 4.7,
+      text: "Perfect for relaxing and creating stories. Love it!",
+      gradient: "from-yellow-400 to-orange-400",
+    },
+  ],
+},
+{
   id: "my-singing-monsters-mod",
   title: "My Singing Monsters MOD",
   shortName: "MSM MOD MOBILE",
