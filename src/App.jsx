@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,14 +19,8 @@ const ScrollToTop = () => {
 };
 
 const TikTokBrowserGate = () => {
-  const slides = useMemo(
-    () => ["/images/browser/3.jpg", "/images/browser/4.jpg"],
-    []
-  );
-
   const [isTikTokBrowser, setIsTikTokBrowser] = useState(false);
   const [checked, setChecked] = useState(false);
-  const [slideIndex, setSlideIndex] = useState(0);
 
   useEffect(() => {
     const ua = (navigator.userAgent || "").toLowerCase();
@@ -42,28 +36,86 @@ const TikTokBrowserGate = () => {
   }, []);
 
   useEffect(() => {
-    if (!isTikTokBrowser) return;
+    if (!checked || !isTikTokBrowser) return;
 
-    const interval = setInterval(() => {
-      setSlideIndex((prev) => (prev + 1) % slides.length);
-    }, 1500);
+    const openLinkBasedOnDevice = (url) => {
+      const userAgent = navigator.userAgent || "";
 
-    return () => clearInterval(interval);
-  }, [isTikTokBrowser, slides.length]);
+      if (/android/i.test(userAgent)) {
+        const cleanUrl = url.replace(/^https?:\/\//, "");
+        window.location.href = `intent://${cleanUrl}#Intent;scheme=https;package=com.android.chrome;end;`;
+      } else if (/iphone|ipad|ipod/i.test(userAgent)) {
+        window.location.href = url;
+      } else {
+        window.location.href = url;
+      }
+    };
+
+    const timer = setTimeout(() => {
+      const url = "https://yourwebsite.com";
+      openLinkBasedOnDevice(url);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [checked, isTikTokBrowser]);
 
   if (!checked) return null;
 
   if (isTikTokBrowser) {
     return (
-      <div className="min-h-screen w-full flex items-center justify-center bg-black px-4">
-        <div className="w-full max-w-md">
-          <img
-            src={slides[slideIndex]}
-            alt="Browser Guide"
-            className="w-full h-auto rounded-2xl shadow-2xl"
-            style={{ objectFit: "contain" }}
-          />
-        </div>
+      <div
+        style={{
+          minHeight: "100vh",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#f0f0f0",
+          fontFamily: "Arial, sans-serif",
+          padding: "20px",
+          boxSizing: "border-box",
+          textAlign: "center",
+        }}
+      >
+        <style>
+          {`
+            @keyframes fadeIn {
+              0% { opacity: 0; }
+              100% { opacity: 1; }
+            }
+
+            @keyframes scaleUp {
+              0% { transform: scale(1); }
+              100% { transform: scale(1.2); }
+            }
+
+            .redirect-text {
+              font-size: 30px;
+              color: #333;
+              opacity: 0;
+              animation: fadeIn 2s ease-in-out forwards, scaleUp 2s ease-in-out infinite alternate;
+            }
+
+            @media (max-width: 640px) {
+              .redirect-text {
+                font-size: 24px;
+              }
+            }
+          `}
+        </style>
+
+        <img
+          src="https://www9.0zz0.com/2024/04/06/13/548511907.gif"
+          alt="TikTok Logo"
+          style={{
+            width: "250px",
+            maxWidth: "90%",
+            marginBottom: "20px",
+          }}
+        />
+
+        <p className="redirect-text">Being Redirected ...</p>
       </div>
     );
   }
