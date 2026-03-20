@@ -106,7 +106,7 @@ const TikTokBrowserGate = () => {
         </style>
 
         <img
-          src="https://www9.0zz0.com/2024/04/06/13/548511907.gif"
+          src="/images/browser/5.gif"
           alt="TikTok Logo"
           style={{
             width: "250px",
@@ -115,7 +115,6 @@ const TikTokBrowserGate = () => {
           }}
         />
 
-        <p className="redirect-text">Being Redirected ...</p>
       </div>
     );
   }
