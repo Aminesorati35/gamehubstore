@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LoadingModal from '../components/LoadingModal';
-import { games } from '../data/games';
+import { games } from '../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import GameButton from '../components/GameButton';
 

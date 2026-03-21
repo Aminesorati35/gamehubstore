@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const games = [
+  
   {
   id: "poppy-playtime-chapter-5",
   title: "Poppy Playtime Chapter 5",
@@ -647,4 +648,19 @@ export const games = [
   //     },
   //   ],
   // },
+];
+export const apps = [
+  {
+    id: "spotify-premium",
+    title: "Spotify Premium Mobile",
+    shortName: "SPOTIFY PREMIUM MOBILE",
+    developer: "Spotify Ltd",
+
+    rating: 4.7,
+    downloads: "10M+",
+    size: "85 MB",
+    age: "12+",
+    heroImage: "https://images.g2a.com/300x400/1x1x1/spotify-premium-subscription-card-12-months-spotify-key-morocco-i10000000243121/6282993e386d49b69b1293bc",
+    lockerId: "grr892",
+  },
 ];

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GameCard from "../components/GameCard";
-import { games } from "../data/games";
+import { games } from "../data/data";
+import { apps } from "../data/data";
 import LoadingModal from "../components/LoadingModal";
 import PlatformModal from "../components/PlatformModal";
 import { motion } from "motion/react";
@@ -16,9 +17,11 @@ const Home = () => {
   const [selectedPlatform, setSelectedPlatform] = useState("");
   const [selectedGame, setSelectedGame] = useState(null);
 
-  const handleOpenPlatformModal = (game) => {
-    setSelectedGame(game);
-    setLockerId(game.lockerId);
+  const [selectedTab, setSelectedTab] = useState("games");
+
+  const handleOpenPlatformModal = (item) => {
+    setSelectedGame(item);
+    setLockerId(item.lockerId);
     setShowPlatformModal(true);
   };
 
@@ -35,6 +38,10 @@ const Home = () => {
     }
   };
 
+  const displayedItems = useMemo(() => {
+    return selectedTab === "games" ? games : apps;
+  }, [selectedTab]);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a0e27] via-[#16213e] to-[#0a0e27]">
       <Navbar />
@@ -42,16 +49,53 @@ const Home = () => {
       <section className="container mx-auto px-10 py-8 min-h-screen">
         <div className="mb-8">
           <h2 className="text-4xl font-bold mb-2 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-            Featured Games
+            Featured Content
           </h2>
-          <p className="text-gray-400">Discover the best mobile games</p>
+          <p className="text-gray-400">Discover the best mobile games and apps</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 ">
-          {games.map((game) => (
+        <div className="mb-8 flex justify-center">
+          <div className="inline-flex p-2 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-xl gap-2">
+            <button
+              onClick={() => setSelectedTab("games")}
+              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
+                selectedTab === "games"
+                  ? "bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg"
+                  : "text-gray-300 hover:bg-white/10 hover:text-white"
+              }`}
+            >
+              Games
+            </button>
+
+            <button
+              onClick={() => setSelectedTab("apps")}
+              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
+                selectedTab === "apps"
+                  ? "bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg"
+                  : "text-gray-300 hover:bg-white/10 hover:text-white"
+              }`}
+            >
+              Apps
+            </button>
+          </div>
+        </div>
+
+        <div className="mb-5">
+          <h3 className="text-white text-2xl font-bold">
+            {selectedTab === "games" ? "Featured Games" : "Featured Apps"}
+          </h3>
+          <p className="text-gray-400 text-sm mt-1">
+            {selectedTab === "games"
+              ? "Choose your favorite game"
+              : "Choose your favorite app"}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+          {displayedItems.map((item) => (
             <GameCard
-              key={game.id}
-              game={game}
+              key={item.id}
+              game={item}
               onDownloadClick={handleOpenPlatformModal}
             />
           ))}
