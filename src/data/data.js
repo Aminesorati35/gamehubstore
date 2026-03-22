@@ -77,6 +77,72 @@ export const games = [
   ],
 },
 {
+  id: "avatar-world-mod",
+  title: "Avatar World MOD",
+  shortName: "AVATAR WORLD MOD",
+  // developer: "Pazu Games",
+  rating: 4.7,
+  downloads: "9.1M",
+  size: "520 MB",
+  version: "1.64",
+  age: "3+",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/veexkd",
+  lockerId: "veexkd",
+
+  category: "Simulation / Role Play",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://cdn.aptoide.com/imgs/e/d/0/ed0044abab4392c013a173ede5f3cc0d_screen.png",
+
+  images: [
+    "https://play-lh.googleusercontent.com/avatar1=s0",
+    "https://play-lh.googleusercontent.com/avatar2=s0",
+    "https://play-lh.googleusercontent.com/avatar3=s0",
+  ],
+
+  description:
+    "Create your own life stories in Avatar World MOD. Customize characters, explore different locations, and enjoy a fun role-playing experience with unlocked content.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "Character Creation",
+      desc: "Design unique avatars your way",
+    },
+    {
+      title: "Open World Play",
+      desc: "Explore homes, shops, and fun places",
+    },
+    {
+      title: "MOD Experience",
+      desc: "Unlocked items and full customization",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Ella Brown",
+      initials: "EB",
+      rating: 5,
+      text: "Super fun and creative! I love customizing everything.",
+      gradient: "from-pink-500 to-purple-500",
+    },
+    {
+      name: "Lucas Green",
+      initials: "LG",
+      rating: 4.6,
+      text: "Great game for creativity and role play. Very enjoyable.",
+      gradient: "from-blue-500 to-cyan-500",
+    },
+  ],
+},
+{
   id: "toca-boca-world-mod",
   title: "Toca Boca World MOD",
   shortName: "TOCA WORLD MOD",
