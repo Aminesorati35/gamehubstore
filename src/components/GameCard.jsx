@@ -6,6 +6,17 @@ const GameCard = ({ game, onDownloadClick }) => {
     onDownloadClick(game);
   };
 
+  // ✅ ADD THIS HERE (before return)
+  const isClaim = game.type === "claim";
+
+  const baseClasses =
+  "w-full text-white font-semibold py-3 px-4 rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer text-sm border backdrop-blur-md active:scale-[0.98]";
+
+const claimClasses =
+  "bg-emerald-500/90 hover:bg-emerald-400 border-emerald-300/30 shadow-[0_8px_25px_rgba(16,185,129,0.35)]";
+
+const downloadClasses =
+  "bg-red-600/90 hover:bg-red-500 border-red-300/20 shadow-[0_8px_25px_rgba(220,38,38,0.35)]";
   return (
     <div className="bg-white/5 backdrop-blur-xl rounded-2xl overflow-hidden border border-white/10 shadow-xl hover:shadow-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer hover:-translate-y-2 group">
       <div className="relative h-40 sm:h-48 overflow-hidden">
@@ -51,20 +62,27 @@ const GameCard = ({ game, onDownloadClick }) => {
           </div>
         </div>
 
-        <button
-          onClick={handleDownload}
-          className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold py-2.5 px-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm"
-        >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-            />
-          </svg>
-          Download
-        </button>
+        {/* ✅ REPLACE YOUR BUTTON WITH THIS */}
+        {isClaim ? (
+          <a href={game.claimUrl} className={`${baseClasses} ${claimClasses}`}>
+            🎁 Claim Rewards
+          </a>
+        ) : (
+          <button
+            onClick={handleDownload}
+            className={`${baseClasses} ${downloadClasses}`}
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              />
+            </svg>
+            Download
+          </button>
+        )}
       </div>
     </div>
   );

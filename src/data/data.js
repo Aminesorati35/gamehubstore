@@ -85,6 +85,8 @@ export const games = [
   downloads: "9.1M",
   size: "520 MB",
   version: "1.64",
+  type:"claim",
+  claimUrl:"https://avartarworld3.blogspot.com/",
   age: "3+",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
