@@ -64,9 +64,9 @@ const downloadClasses =
 
         {/* ✅ REPLACE YOUR BUTTON WITH THIS */}
         {isClaim ? (
-          <a href={game.claimUrl} className={`${baseClasses} ${claimClasses}`}>
+          <button onClick={handleDownload}  className={`${baseClasses} ${claimClasses}`}>
             🎁 Claim Rewards
-          </a>
+          </button>
         ) : (
           <button
             onClick={handleDownload}

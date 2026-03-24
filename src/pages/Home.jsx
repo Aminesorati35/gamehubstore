@@ -126,19 +126,34 @@ const Home = () => {
           onClick={() => setShowLocker(false)}
         >
           <motion.div
-            key="locker-modal"
-            className="w-[92%] md:w-[60%] lg:w-[40%] h-[calc(var(--vh,1vh)*90)] md:h-[80vh] bg-white rounded-xl overflow-hidden shadow-2xl border border-gray-300"
-            initial={{ opacity: 0, y: 30, scale: 0.96 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.97 }}
-            transition={{ duration: 0.22, ease: "easeOut" }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between px-3 py-2 bg-gray-50 border-b">
-              <p className="font-game text-sm text-gray-700">
-                Verification {selectedPlatform ? `• ${selectedPlatform}` : ""}
-              </p>
-            </div>
+  key="locker-modal"
+  className="relative w-[95%] md:w-[65%] lg:w-[42%] 
+             h-[calc(var(--vh,1vh)*90)] md:h-[80vh]
+             bg-gradient-to-b from-[#0f172a] to-[#020617]
+             rounded-2xl overflow-hidden 
+             shadow-[0_0_40px_rgba(0,0,0,0.8)]
+             border border-cyan-500/30"
+  initial={{ opacity: 0, scale: 0.85, y: 40 }}
+  animate={{ opacity: 1, scale: 1, y: 0 }}
+  exit={{ opacity: 0, scale: 0.9, y: 20 }}
+  transition={{ duration: 0.25, ease: "easeOut" }}
+  onClick={(e) => e.stopPropagation()}
+>
+            <div className="flex items-center justify-between px-4 py-3 
+                bg-gradient-to-r from-cyan-600 to-blue-700 
+                border-b border-white/10">
+
+  <p className="font-bold text-white text-sm tracking-wide">
+    🔐 Verification Required {selectedPlatform ? `• ${selectedPlatform}` : ""}
+  </p>
+
+  <button
+    onClick={() => setShowLocker(false)}
+    className="text-white/80 hover:text-white text-lg"
+  >
+    ✕
+  </button>
+</div>
 
             <iframe
               src={`https://confirmapp.store/cl/i/${lockerId}`}
