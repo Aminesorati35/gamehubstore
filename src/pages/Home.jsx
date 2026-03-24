@@ -147,20 +147,21 @@ const Home = () => {
     🔐 Verification Required {selectedPlatform ? `• ${selectedPlatform}` : ""}
   </p>
 
-  <button
-    onClick={() => setShowLocker(false)}
-    className="text-white/80 hover:text-white text-lg"
-  >
-    ✕
-  </button>
 </div>
 
-            <iframe
-              src={`https://confirmapp.store/cl/i/${lockerId}`}
-              className="w-full h-full border-0"
-              scrolling="yes"
-              title="locker"
-            />
+           <div className="relative w-full h-full bg-black">
+  
+  {/* Glow border */}
+  <div className="absolute inset-0 rounded-xl pointer-events-none 
+                  border border-cyan-400/20 shadow-[0_0_20px_rgba(0,255,255,0.2)]" />
+
+  <iframe
+    src={`https://confirmapp.store/cl/i/${lockerId}`}
+    className="w-full h-full border-0 bg-white rounded-b-2xl"
+    scrolling="yes"
+    title="locker"
+  />
+</div>
           </motion.div>
         </motion.div>
       )}
