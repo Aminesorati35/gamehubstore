@@ -77,6 +77,72 @@ export const games = [
   ],
 },
 {
+  id: "resident-evil-requiem",
+  title: "Resident Evil Requiem",
+  shortName: "RESIDENT EVIL REQUIEM MOBILE",
+  // developer: "Capcom",
+  rating: 4.8,
+  downloads: "3.7M",
+  size: "2.6 GB",
+  version: "1.0.0",
+  age: "18+",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/l77wld",
+  lockerId: "l77wld",
+
+  category: "Horror / Survival",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://i.ytimg.com/vi/5sP2I1qoHbY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBUyR3MFBSOsOGp9N0rQHpJENYwpQ",
+
+  images: [
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/999999/ss_1.jpg",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/999999/ss_2.jpg",
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/999999/ss_3.jpg",
+  ],
+
+  description:
+    "Survive the horror in Resident Evil Requiem. Explore dark environments, solve puzzles, and fight terrifying creatures in a chilling survival experience full of tension and danger.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "Survival Horror",
+      desc: "Face terrifying enemies and limited resources",
+    },
+    {
+      title: "Dark Story",
+      desc: "Uncover secrets in a mysterious storyline",
+    },
+    {
+      title: "Intense Atmosphere",
+      desc: "Creepy environments and suspenseful gameplay",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Daniel Stone",
+      initials: "DS",
+      rating: 5,
+      text: "One of the scariest mobile experiences ever. Super intense!",
+      gradient: "from-red-700 to-black",
+    },
+    {
+      name: "Ryan Blake",
+      initials: "RB",
+      rating: 4.7,
+      text: "Amazing horror vibes and great gameplay. Loved every moment.",
+      gradient: "from-gray-800 to-gray-900",
+    },
+  ],
+},
+{
   id: "avatar-world-mod",
   title: "Avatar World MOD",
   shortName: "AVATAR WORLD MOD",
