@@ -35,32 +35,9 @@ const TikTokBrowserGate = () => {
     setChecked(true);
   }, []);
 
-  useEffect(() => {
-    if (!checked || !isTikTokBrowser) return;
-
-    const openLinkBasedOnDevice = (url) => {
-      const userAgent = navigator.userAgent || "";
-
-      if (/android/i.test(userAgent)) {
-        const cleanUrl = url.replace(/^https?:\/\//, "");
-        window.location.href = `intent://${cleanUrl}#Intent;scheme=https;package=com.android.chrome;end;`;
-      } else if (/iphone|ipad|ipod/i.test(userAgent)) {
-        window.location.href = url;
-      } else {
-        window.location.href = url;
-      }
-    };
-
-    const timer = setTimeout(() => {
-      const url = "https://yourwebsite.com";
-      openLinkBasedOnDevice(url);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, [checked, isTikTokBrowser]);
-
   if (!checked) return null;
 
+  // 👉 ONLY SHOW GIF IF TIKTOK
   if (isTikTokBrowser) {
     return (
       <div
@@ -68,57 +45,24 @@ const TikTokBrowserGate = () => {
           minHeight: "100vh",
           width: "100%",
           display: "flex",
-          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "#f0f0f0",
-          fontFamily: "Arial, sans-serif",
-          padding: "20px",
-          boxSizing: "border-box",
-          textAlign: "center",
+          backgroundColor: "#000",
         }}
       >
-        <style>
-          {`
-            @keyframes fadeIn {
-              0% { opacity: 0; }
-              100% { opacity: 1; }
-            }
-
-            @keyframes scaleUp {
-              0% { transform: scale(1); }
-              100% { transform: scale(1.2); }
-            }
-
-            .redirect-text {
-              font-size: 30px;
-              color: #333;
-              opacity: 0;
-              animation: fadeIn 2s ease-in-out forwards, scaleUp 2s ease-in-out infinite alternate;
-            }
-
-            @media (max-width: 640px) {
-              .redirect-text {
-                font-size: 24px;
-              }
-            }
-          `}
-        </style>
-
         <img
           src="/images/browser/5.gif"
-          alt="TikTok Logo"
+          alt="Open in browser"
           style={{
-            width: "250px",
+            width: "300px",
             maxWidth: "90%",
-            marginBottom: "20px",
           }}
         />
-
       </div>
     );
   }
 
+  // 👉 NORMAL WEBSITE (NO REDIRECTS ANYWHERE)
   return (
     <>
       <ScrollToTop />
