@@ -77,6 +77,72 @@ export const games = [
   ],
 },
 {
+  id: "roblox-lite",
+  title: "Roblox Lite",
+  shortName: "ROBLOX LITE MOBILE",
+  // developer: "Roblox Corporation",
+  rating: 4.7,
+  downloads: "15.2M",
+  size: "120 MB",
+  version: "2.605",
+  age: "7+",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/344mx7",
+  lockerId: "344mx7",
+
+  category: "Sandbox / Multiplayer",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://apktodo.io/uploads/2025/9/roblox-lite-icon.jpg",
+
+  images: [
+    "https://play-lh.googleusercontent.com/roblox1=s0",
+    "https://play-lh.googleusercontent.com/roblox2=s0",
+    "https://play-lh.googleusercontent.com/roblox3=s0",
+  ],
+
+  description:
+    "Enjoy a lightweight version of Roblox with Roblox Lite. Play your favorite games, explore worlds, and connect with friends while using less storage and performance.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "Lightweight Version",
+      desc: "Optimized for low storage and smooth performance",
+    },
+    {
+      title: "Play Popular Games",
+      desc: "Access thousands of Roblox experiences",
+    },
+    {
+      title: "Online Multiplayer",
+      desc: "Join friends and play together anytime",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Ethan Walker",
+      initials: "EW",
+      rating: 5,
+      text: "Runs super smooth on my phone. Love the lightweight version!",
+      gradient: "from-blue-500 to-indigo-600",
+    },
+    {
+      name: "Sofia Martinez",
+      initials: "SM",
+      rating: 4.6,
+      text: "Great for low-end devices. Still has all the fun games!",
+      gradient: "from-purple-500 to-pink-500",
+    },
+  ],
+},
+{
   id: "resident-evil-requiem",
   title: "Resident Evil Requiem",
   shortName: "RESIDENT EVIL REQUIEM MOBILE",
