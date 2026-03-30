@@ -2,9 +2,8 @@ import React from "react";
 
 const GameCard = ({ game, onDownloadClick }) => {
   const handleDownload = (e) => {
-    // e.stopPropagation();
-    // onDownloadClick(game);
-    window.location.replace(game.downloadUrl);
+    e.stopPropagation();
+    onDownloadClick(game);
   };
 
   // ✅ ADD THIS HERE (before return)
