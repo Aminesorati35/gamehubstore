@@ -143,6 +143,71 @@ export const games = [
   ],
 },
 {
+  id: "fortnite-og-mobile",
+  title: "Fortnite OG",
+  shortName: "FORTNITE OG MOBILE",
+  // developer: "Epic Games",
+  rating: 4.8,
+  downloads: "9.4M",
+  size: "2.9 GB",
+  version: "26.30",
+  age: "12+",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/o44172",
+  lockerId: "o44172",
+
+  category: "Battle Royale / Action",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://cdn-0001.qstv.on.epicgames.com/FNGvuseARqPCBcpoUr/image/landscape_comp.jpeg",
+
+  images: [
+    "https://cdn2.unrealengine.com/fortnite-og-season-1-1920x1080-1920x1080-5e6c2c9d8c7b.jpg",
+    "https://cdn2.unrealengine.com/fortnite-og-map-1920x1080-1920x1080-2a4c6f9d8e7b.jpg",
+    "https://cdn2.unrealengine.com/fortnite-og-battle-royale-1920x1080-1920x1080-9f8e7d6c5b4a.jpg",
+  ],
+
+  description:
+    "Drop back into the classic Fortnite OG experience. Land on the original map, use classic weapons, build fast, and fight your way to Victory Royale in the legendary battle royale everyone loves.",
+
+  downloadButtonAction: "show fake modal then call og_load()",
+
+  // ❌ NO ICONS HERE
+  features: [
+    {
+      title: "OG Map",
+      desc: "Play on the original Fortnite island",
+    },
+    {
+      title: "Classic Weapons",
+      desc: "Old-school loot and mechanics",
+    },
+    {
+      title: "Fast Building",
+      desc: "Build, edit, and fight in real time",
+    },
+  ],
+
+  reviews: [
+    {
+      name: "Alex Turner",
+      initials: "AT",
+      rating: 5,
+      text: "OG Fortnite is pure nostalgia. Feels amazing on mobile!",
+      gradient: "from-purple-600 to-pink-600",
+    },
+    {
+      name: "Chris Walker",
+      initials: "CW",
+      rating: 4.7,
+      text: "Classic map and weapons bring back the best Fortnite memories.",
+      gradient: "from-blue-600 to-cyan-600",
+    },
+  ],
+},
+{
   id: "resident-evil-requiem",
   title: "Resident Evil Requiem",
   shortName: "RESIDENT EVIL REQUIEM MOBILE",
