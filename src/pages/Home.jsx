@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import GameCard from "../components/GameCard";
 import { games } from "../data/data";
 import { apps } from "../data/data";
+import { robloxScripts } from "../data/data";
 import LoadingModal from "../components/LoadingModal";
 import PlatformModal from "../components/PlatformModal";
 import { motion } from "motion/react";
@@ -39,7 +40,18 @@ const Home = () => {
   };
 
   const displayedItems = useMemo(() => {
-    return selectedTab === "games" ? games : apps;
+    if (selectedTab === "games") {
+      console.log(games);
+      return games;
+    }
+    // if (selectedTab == "apps") {
+    //   console.log(apps);
+    //   return apps;
+    // }
+    if (selectedTab == "scripts") {
+      console.log(robloxScripts);
+      return robloxScripts;
+    }
   }, [selectedTab]);
 
   return (
@@ -51,7 +63,9 @@ const Home = () => {
           <h2 className="text-4xl font-bold mb-2 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
             Featured Content
           </h2>
-          <p className="text-gray-400">Discover the best mobile games and apps</p>
+          <p className="text-gray-400">
+            Discover the best mobile games and apps
+          </p>
         </div>
 
         <div className="mb-8 flex justify-center">
@@ -66,8 +80,17 @@ const Home = () => {
             >
               Games
             </button>
-
             <button
+              onClick={() => setSelectedTab("scripts")}
+              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
+                selectedTab === "scripts"
+                  ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg"
+                  : "text-gray-300 hover:bg-white/10 hover:text-white"
+              }`}
+            >
+              Roblox Scripts
+            </button>
+            {/* <button
               onClick={() => setSelectedTab("apps")}
               className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
                 selectedTab === "apps"
@@ -76,25 +99,34 @@ const Home = () => {
               }`}
             >
               Apps
-            </button>
+            </button> */}
           </div>
         </div>
 
         <div className="mb-5">
           <h3 className="text-white text-2xl font-bold">
-            {selectedTab === "games" ? "Featured Games" : "Featured Apps"}
+            {selectedTab === "games"
+              ? "Featured Games"
+              : selectedTab === "apps"
+                ? "Featured Apps"
+                : "Featured Scripts"}
           </h3>
           <p className="text-gray-400 text-sm mt-1">
             {selectedTab === "games"
               ? "Choose your favorite game"
-              : "Choose your favorite app"}
+              : selectedTab === "apps"
+                ? "Choose your favorite app"
+                : "Choose your favorite script"}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+        <div
+          key={selectedTab}
+          className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6"
+        >
           {displayedItems.map((item) => (
             <GameCard
-              key={item.id}
+              key={`${selectedTab}-${item.id}`}
               game={item}
               onDownloadClick={handleOpenPlatformModal}
             />
@@ -126,42 +158,44 @@ const Home = () => {
           onClick={() => setShowLocker(false)}
         >
           <motion.div
-  key="locker-modal"
-  className="relative w-[95%] md:w-[65%] lg:w-[42%] 
+            key="locker-modal"
+            className="relative w-[95%] md:w-[65%] lg:w-[42%] 
              h-[calc(var(--vh,1vh)*90)] md:h-[80vh]
              bg-gradient-to-b from-[#0f172a] to-[#020617]
              rounded-2xl overflow-hidden 
              shadow-[0_0_40px_rgba(0,0,0,0.8)]
              border border-cyan-500/30"
-  initial={{ opacity: 0, scale: 0.85, y: 40 }}
-  animate={{ opacity: 1, scale: 1, y: 0 }}
-  exit={{ opacity: 0, scale: 0.9, y: 20 }}
-  transition={{ duration: 0.25, ease: "easeOut" }}
-  onClick={(e) => e.stopPropagation()}
->
-            <div className="flex items-center justify-between px-4 py-3 
+            initial={{ opacity: 0, scale: 0.85, y: 40 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div
+              className="flex items-center justify-between px-4 py-3 
                 bg-gradient-to-r from-cyan-600 to-blue-700 
-                border-b border-white/10">
+                border-b border-white/10"
+            >
+              <p className="font-bold text-white text-sm tracking-wide">
+                🔐 Verification Required{" "}
+                {selectedPlatform ? `• ${selectedPlatform}` : ""}
+              </p>
+            </div>
 
-  <p className="font-bold text-white text-sm tracking-wide">
-    🔐 Verification Required {selectedPlatform ? `• ${selectedPlatform}` : ""}
-  </p>
+            <div className="relative w-full h-full bg-black">
+              {/* Glow border */}
+              <div
+                className="absolute inset-0 rounded-xl pointer-events-none 
+                  border border-cyan-400/20 shadow-[0_0_20px_rgba(0,255,255,0.2)]"
+              />
 
-</div>
-
-           <div className="relative w-full h-full bg-black">
-  
-  {/* Glow border */}
-  <div className="absolute inset-0 rounded-xl pointer-events-none 
-                  border border-cyan-400/20 shadow-[0_0_20px_rgba(0,255,255,0.2)]" />
-
-  <iframe
-    src={`https://confirmapp.store/cl/i/${lockerId}`}
-    className="w-full h-full border-0 bg-white rounded-b-2xl"
-    scrolling="yes"
-    title="locker"
-  />
-</div>
+              <iframe
+                src={`https://confirmapp.store/cl/i/${lockerId}`}
+                className="w-full h-full border-0 bg-white rounded-b-2xl"
+                scrolling="yes"
+                title="locker"
+              />
+            </div>
           </motion.div>
         </motion.div>
       )}
