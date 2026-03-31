@@ -315,7 +315,7 @@ export const robloxScripts = [
     downloadUrl: "https://redirectapps.org/cl/i/7jj6on",
     lockerId: "7jj6on",
     category: "Scripts / Roblox",
-    heroImage: "https://img.youtube.com/vi/IfyzIdohPlk/maxresdefault.jpg",
+    heroImage: "https://img.youtube.com/vi/wuTUmRX6ufo/maxresdefault.jpg",
     downloadButtonAction: "show fake modal then call og_load()",
     features: ["Auto Farm", "Auto Raid", "Auto Quest", "Teleport"],
   },
