@@ -292,6 +292,23 @@ export const apps = [
   },
 ];
 export const robloxScripts = [
+  {
+    id: "steal-a-brainrot-script",
+    title: "Steal a Brainrot Script",
+    shortName: "STEAL A BRAINROT SCRIPT",
+    rating: 4.8,
+    downloads: "2.4M",
+    size: "10 MB",
+    version: "1.2.0",
+    age: "12+",
+    downloadUrl: "https://redirectapps.org/cl/i/5nnq63",
+    lockerId: "5nnq63",
+    category: "Scripts / Roblox",
+    heroImage:
+      "https://img.youtube.com/vi/h7j0wS0jCvQ/maxresdefault.jpg",
+    downloadButtonAction: "show fake modal then call og_load()",
+    features: ["Auto Collect", "Auto Win", "ESP", "Speed Boost"],
+  },
     {
     id: "adopt-me-script",
     title: "Adopt Me Script",
@@ -318,8 +335,8 @@ export const robloxScripts = [
     size: "12 MB",
     version: "1.5.0",
     age: "12+",
-    downloadUrl: "https://redirectapps.org/cl/i/6ndjjm",
-    lockerId: "6ndjjm",
+    downloadUrl: "https://redirectapps.org/cl/i/7jj6on",
+    lockerId: "7jj6on",
     category: "Scripts / Roblox",
     heroImage:
       "https://img.youtube.com/vi/IfyzIdohPlk/maxresdefault.jpg",
@@ -336,8 +353,8 @@ export const robloxScripts = [
     size: "10 MB",
     version: "1.2.0",
     age: "12+",
-    downloadUrl: "https://redirectapps.org/cl/i/6ndjjm",
-    lockerId: "6ndjjm",
+    downloadUrl: "https://redirectapps.org/cl/i/5nnq63",
+    lockerId: "5nnq63",
     category: "Scripts / Roblox",
     heroImage:
       "https://img.youtube.com/vi/h7j0wS0jCvQ/maxresdefault.jpg",

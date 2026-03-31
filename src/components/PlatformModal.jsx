@@ -1,8 +1,14 @@
 import React from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Smartphone, Apple, X } from "lucide-react";
+import { Smartphone, Apple, Monitor, X } from "lucide-react";
 
-const PlatformModal = ({ isOpen, onClose, onSelect, gameTitle }) => {
+const PlatformModal = ({
+  isOpen,
+  onClose,
+  onSelect,
+  gameTitle,
+  showPcOption = false,
+}) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -71,6 +77,25 @@ const PlatformModal = ({ isOpen, onClose, onSelect, gameTitle }) => {
                   </div>
                 </div>
               </button>
+
+              {showPcOption && (
+                <button
+                  onClick={() => onSelect("PC")}
+                  className="w-full group rounded-2xl border border-purple-400/20 bg-gradient-to-r from-purple-500/15 to-pink-500/10 hover:from-purple-500/25 hover:to-pink-500/20 p-4 text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="w-14 h-14 rounded-2xl bg-purple-500/20 border border-purple-400/20 flex items-center justify-center">
+                      <Monitor className="text-purple-300" size={28} />
+                    </div>
+                    <div>
+                      <h3 className="text-white font-bold text-lg">PC / Windows</h3>
+                      <p className="text-gray-400 text-sm">
+                        Continue with PC version
+                      </p>
+                    </div>
+                  </div>
+                </button>
+              )}
             </div>
 
             <div className="px-5 pb-5">

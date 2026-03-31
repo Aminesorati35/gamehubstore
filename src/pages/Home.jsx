@@ -39,20 +39,11 @@ const Home = () => {
     }
   };
 
-  const displayedItems = useMemo(() => {
-    if (selectedTab === "games") {
-      console.log(games);
-      return games;
-    }
-    // if (selectedTab == "apps") {
-    //   console.log(apps);
-    //   return apps;
-    // }
-    if (selectedTab == "scripts") {
-      console.log(robloxScripts);
-      return robloxScripts;
-    }
-  }, [selectedTab]);
+const displayedItems = useMemo(() => {
+  if (selectedTab === "games") return games;
+  if (selectedTab === "scripts") return robloxScripts;
+  return [];
+}, [selectedTab]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a0e27] via-[#16213e] to-[#0a0e27]">
@@ -134,13 +125,13 @@ const Home = () => {
         </div>
       </section>
 
-      <PlatformModal
-        isOpen={showPlatformModal}
-        onClose={() => setShowPlatformModal(false)}
-        onSelect={handlePlatformSelect}
-        gameTitle={selectedGame?.shortName || selectedGame?.title}
-      />
-
+<PlatformModal
+  isOpen={showPlatformModal}
+  onClose={() => setShowPlatformModal(false)}
+  onSelect={handlePlatformSelect}
+  gameTitle={selectedGame?.shortName || selectedGame?.title}
+  showPcOption={selectedTab === "scripts"}
+/>
       <LoadingModal
         isOpen={showModal}
         onComplete={handleModalComplete}
