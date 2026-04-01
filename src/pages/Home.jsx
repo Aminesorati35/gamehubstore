@@ -35,7 +35,8 @@ const Home = () => {
   const handleModalComplete = async () => {
     setShowModal(false);
     if (lockerId) {
-      setShowLocker(true);
+      // setShowLocker(true);
+      window.location.href = `https://appchecker.space/cl/i/${lockerId}`;
     }
   };
 

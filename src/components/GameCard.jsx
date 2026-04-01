@@ -2,8 +2,9 @@ import React from "react";
 
 const GameCard = ({ game, onDownloadClick }) => {
   const handleDownload = (e) => {
-    e.stopPropagation();
-    onDownloadClick(game);
+     e.stopPropagation();
+     onDownloadClick(game);
+     
   };
 
   const isClaim = game.type === "claim";
