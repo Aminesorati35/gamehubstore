@@ -56,7 +56,7 @@ const displayedItems = useMemo(() => {
             Featured Content
           </h2>
           <p className="text-gray-400">
-            Discover the best mobile games and apps
+          {selectedTab==="games" ? "Discover the best mobile games and apps" : "Access high-performance scripts for your favorite games. Updated daily with new features."}  
           </p>
         </div>
 
