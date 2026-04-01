@@ -1,16 +1,49 @@
 import React, { useState, useEffect } from "react";
 import { CheckCircle, Loader2 } from "lucide-react";
 
-const LoadingModal = ({ isOpen, onComplete, platform }) => {
+const LoadingModal = ({ isOpen, onComplete, platform, type }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [progress, setProgress] = useState(0);
 
-  const steps = [
-    { title: "Verifying Device", desc: `Checking ${platform || "mobile"} compatibility` },
-    { title: "Connecting to Server", desc: "Establishing secure connection" },
-    { title: "Preparing Files", desc: `Setting up ${platform || "mobile"} game data` },
-    { title: "Initializing Download", desc: `Starting ${platform || "mobile"} process` },
-  ];
+  const isScript = type === "scripts";
+
+  const steps = isScript
+    ? [
+        {
+          title: "Detecting Environment",
+          desc: `Checking ${platform || "PC"} compatibility`,
+        },
+        {
+          title: "Connecting to Executor",
+          desc: "Establishing secure injection channel",
+        },
+        {
+          title: "Loading Script",
+          desc: "Preparing script functions and modules",
+        },
+        {
+          title: "Injecting Script",
+          desc: "Executing script into Roblox session",
+        },
+      ]
+    : [
+        {
+          title: "Verifying Device",
+          desc: `Checking ${platform || "mobile"} compatibility`,
+        },
+        {
+          title: "Connecting to Server",
+          desc: "Establishing secure connection",
+        },
+        {
+          title: "Preparing Files",
+          desc: `Setting up ${platform || "mobile"} game data`,
+        },
+        {
+          title: "Initializing Download",
+          desc: `Starting ${platform || "mobile"} process`,
+        },
+      ];
 
   useEffect(() => {
     if (isOpen) {
@@ -52,7 +85,11 @@ const LoadingModal = ({ isOpen, onComplete, platform }) => {
               Preparing Your Download
             </h2>
             <p className="relative text-blue-200/80 text-sm mt-1">
-              {platform ? `${platform} selected successfully` : "Please wait while we set everything up"}
+              {isScript
+                ? `Initializing script for ${platform || "PC"}`
+                : platform
+                  ? `${platform} selected successfully`
+                  : "Please wait while we set everything up"}
             </p>
           </div>
 
@@ -92,7 +129,9 @@ const LoadingModal = ({ isOpen, onComplete, platform }) => {
                       >
                         {step.title}
                       </h3>
-                      <p className="text-xs text-gray-400 mt-0.5">{step.desc}</p>
+                      <p className="text-xs text-gray-400 mt-0.5">
+                        {step.desc}
+                      </p>
                     </div>
 
                     {isCurrent && (

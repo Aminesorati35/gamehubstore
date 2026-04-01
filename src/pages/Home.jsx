@@ -137,6 +137,7 @@ const displayedItems = useMemo(() => {
         isOpen={showModal}
         onComplete={handleModalComplete}
         platform={selectedPlatform}
+        type={selectedTab}
       />
 
       {showLocker && (
