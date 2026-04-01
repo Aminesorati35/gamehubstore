@@ -37,15 +37,12 @@ const GameCard = ({ game, onDownloadClick }) => {
             NEW
           </span>
         </div>
-
-        <div className="absolute bottom-3 left-3 right-3">
-          <h3 className="text-base sm:text-lg font-bold drop-shadow-lg line-clamp-1">
-            {game.shortName}
-          </h3>
-        </div>
       </div>
 
       <div className="p-3 sm:p-4">
+        <h3 className="text-base sm:text-lg font-bold drop-shadow-lg line-clamp-1">
+            {game.shortName}
+          </h3>
         <p className="text-gray-300 text-xs sm:text-sm mb-2 line-clamp-1">
           {game.developer || game.category || "Unknown"}
         </p>
@@ -69,8 +66,9 @@ const GameCard = ({ game, onDownloadClick }) => {
           </div>
         </div>
 
-        {hasFeatures && (
-          <div className="mb-3 flex flex-wrap gap-2">
+        <div className="h-17">
+          {hasFeatures && (
+          <div className="mb-3 flex flex-wrap gap-2 ">
             {game.features.slice(0, 4).map((feature, index) => (
               <span
                 key={index}
@@ -81,6 +79,7 @@ const GameCard = ({ game, onDownloadClick }) => {
             ))}
           </div>
         )}
+        </div>
 
         {isClaim ? (
           <button
