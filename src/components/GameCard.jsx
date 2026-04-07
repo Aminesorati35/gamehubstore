@@ -66,8 +66,9 @@ const GameCard = ({ game, onDownloadClick }) => {
           </div>
         </div>
 
-        <div className="h-17">
+       
           {hasFeatures && (
+             <div className="h-17">
           <div className="mb-3 flex flex-wrap gap-2 ">
             {game.features.slice(0, 4).map((feature, index) => (
               <span
@@ -78,8 +79,9 @@ const GameCard = ({ game, onDownloadClick }) => {
               </span>
             ))}
           </div>
+           </div>
         )}
-        </div>
+       
 
         {isClaim ? (
           <button

@@ -2,28 +2,18 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import LoadingModal from '../components/LoadingModal';
 import { games } from '../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import GameButton from '../components/GameButton';
-
-function loadLockerScript(lockerId) {
-  return new Promise((resolve) => {
-    const oldScript = document.getElementById("ogjs");
-    if (oldScript) oldScript.remove();
-
-    const script = document.createElement("script");
-    script.src = `https://redirectapps.org/cl/js/${lockerId}`;
-    script.id = "ogjs";
-    script.onload = resolve;
-    document.body.appendChild(script);
-  });
-}
+import AccessPromptModal from "../components/AccessPromptModal";
+import TutorialModal from "../components/TutorialModal";
+import LockerModal from "../components/LockerModal";
 
 const GamePage = () => {
   const { id } = useParams();
   const game = games.find(g => g.id === id);
-  const [showModal, setShowModal] = useState(false);
+  const [showAccessPrompt, setShowAccessPrompt] = useState(false);
+  const [showTutorial, setShowTutorial] = useState(false);
+  const [showLocker, setShowLocker] = useState(false);
   const [lockerId, setLockerId] = useState(null);
 
   if (!game) {
@@ -43,12 +33,10 @@ const GamePage = () => {
     );
   }
 
-  const handleModalComplete = async () => {
-    setShowModal(false);
-    if (lockerId) {
-      await loadLockerScript(lockerId);
-      window.og_load(); 
-    }
+  const handleStartDownload = () => {
+    if (!game?.lockerId) return;
+    setLockerId(game.lockerId);
+    setShowAccessPrompt(true);
   };
 
   return (
@@ -109,7 +97,13 @@ const GamePage = () => {
                 </div>
               </div>
               
-              <GameButton lockerId={game.lockerId} setShowModal={setShowModal} setLockerId={setLockerId} /> 
+              <button
+                className="w-full py-4 rounded-xl font-bold text-lg flex items-center justify-center mb-4 cursor-pointer bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                onClick={handleStartDownload}
+              >
+                <i className="fas fa-download mr-2"></i>
+                DOWNLOAD NOW
+              </button>
               
               <p className="text-center text-xs text-gray-500">By downloading, you agree to our Terms & Conditions</p>
             </div>
@@ -193,7 +187,33 @@ const GamePage = () => {
         </div>
       </section>
 
-      <LoadingModal isOpen={showModal} onComplete={handleModalComplete} />
+      <AccessPromptModal
+        isOpen={showAccessPrompt}
+        item={game}
+        contentType="game"
+        onClose={() => setShowAccessPrompt(false)}
+        onContinue={() => {
+          setShowAccessPrompt(false);
+          setShowTutorial(true);
+        }}
+      />
+
+      <TutorialModal
+        isOpen={showTutorial}
+        itemTitle={game.shortName || game.title}
+        contentType="game"
+        onClose={() => setShowTutorial(false)}
+        onContinue={() => {
+          setShowTutorial(false);
+          setShowLocker(true);
+        }}
+      />
+
+      <LockerModal
+        isOpen={showLocker}
+        lockerId={lockerId}
+        onClose={() => setShowLocker(false)}
+      />
       
       <Footer />
     </div>
