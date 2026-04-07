@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "motion/react";
 
 const TUTORIAL_SOURCES = {
   game:
-    "https://player.cloudinary.com/embed/?cloud_name=dendxflaj&public_id=0404_yehrq2x",
+    "https://player.cloudinary.com/embed/?cloud_name=dendxflaj&public_id=games_content_locker_gue8er",
   script:
     "https://player.cloudinary.com/embed/?cloud_name=dendxflaj&public_id=0404_yehrq2x",
 };
