@@ -15,7 +15,7 @@ const Home = () => {
   const [showLocker, setShowLocker] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  const [selectedTab, setSelectedTab] = useState("scripts");
+  const [selectedTab, setSelectedTab] = useState("games");
 
   const handleOpenAccessPrompt = (item) => {
     setSelectedItem(item);
