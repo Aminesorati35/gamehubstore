@@ -2,8 +2,7 @@ import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 const TUTORIAL_SOURCES = {
-  game:
-    "https://player.cloudinary.com/embed/?cloud_name=dendxflaj&public_id=games_content_locker_gue8er",
+  game: "https://player.cloudinary.com/embed/?cloud_name=dendxflaj&public_id=games_content_locker_gue8er",
   script:
     "https://player.cloudinary.com/embed/?cloud_name=dendxflaj&public_id=0407_3_czwcuk",
 };
@@ -47,11 +46,11 @@ export default function TutorialModal({
           </div>
 
           <div className="p-4 text-center">
-            <p className="text-white/90 text-sm mb-4">
-              {itemTitle ? `${itemTitle}: ` : ""}
+            <p className="text-white/90 text-sm mb-4 ">
+              <span className="font-semibold text-red-400">{itemTitle ? `${itemTitle}: ` : ""}</span>
               {isScript
-                ? "Follow the script tutorial, then continue to the locker."
-                : "Follow the game download tutorial, then continue to the locker."}
+                ? "Complete the tutorial to see how to download the script."
+                : "Complete the tutorial to see how to download the game."}
             </p>
 
             <button

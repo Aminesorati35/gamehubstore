@@ -15,7 +15,7 @@ const Home = () => {
   const [showLocker, setShowLocker] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  const [selectedTab, setSelectedTab] = useState("scripts");
+  const [selectedTab, setSelectedTab] = useState("games");
 
   const handleOpenAccessPrompt = (item) => {
     setSelectedItem(item);
@@ -50,6 +50,16 @@ const displayedItems = useMemo(() => {
 
         <div className="mb-8 flex justify-center">
           <div className="inline-flex p-2 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-xl gap-2">
+          <button
+              onClick={() => setSelectedTab("games")}
+              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
+                selectedTab === "games"
+                  ? "bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg"
+                  : "text-gray-300 hover:bg-white/10 hover:text-white"
+              }`}
+            >
+              Games
+            </button>
             <button
               onClick={() => setSelectedTab("scripts")}
               className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
@@ -60,16 +70,7 @@ const displayedItems = useMemo(() => {
             >
               Roblox Scripts
             </button>
-            <button
-              onClick={() => setSelectedTab("games")}
-              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
-                selectedTab === "games"
-                  ? "bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg"
-                  : "text-gray-300 hover:bg-white/10 hover:text-white"
-              }`}
-            >
-              Games
-            </button>
+            
             {/* <button
               onClick={() => setSelectedTab("apps")}
               className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${

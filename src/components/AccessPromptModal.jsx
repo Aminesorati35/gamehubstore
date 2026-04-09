@@ -59,8 +59,7 @@ export default function AccessPromptModal({
 
           <div className="p-5 sm:p-6">
             <p className="text-white/90 text-sm sm:text-base leading-relaxed">
-              To {actionText}, complete one quick verification offer. After that,
-              you will be sent to the final locker step.
+              To {actionText}, complete one quick verification offer.
             </p>
 
             <div className="mt-4 rounded-xl border border-white/15 bg-white/5 p-4">
@@ -81,7 +80,7 @@ export default function AccessPromptModal({
               onClick={onContinue}
               className="mt-5 w-full rounded-xl bg-[#b7a507] hover:bg-[#c7b50c] text-white font-semibold py-3 transition-colors cursor-pointer"
             >
-              {continueText} →
+              Continue to {actionText}
             </button>
           </div>
         </motion.div>
