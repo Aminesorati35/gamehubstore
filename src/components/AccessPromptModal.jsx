@@ -5,6 +5,7 @@ export default function AccessPromptModal({
   isOpen,
   item,
   contentType = "game",
+  platform,
   onClose,
   onContinue,
 }) {
@@ -14,9 +15,9 @@ export default function AccessPromptModal({
 
   const heading = isScript ? "Unlock Script Access" : "Unlock Game Download";
   const actionText = isScript ? "get this script" : "download this game";
-  const continueText = isScript ? "Continue to script guide" : "Continue to download guide";
 
   const detailBadges = [
+    platform ? `Platform: ${platform}` : null,
     item.category,
     item.size ? `Size: ${item.size}` : null,
     item.version ? `Version: ${item.version}` : null,

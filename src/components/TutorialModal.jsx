@@ -11,6 +11,7 @@ export default function TutorialModal({
   isOpen,
   contentType = "game",
   itemTitle,
+  platform,
   onClose,
   onContinue,
 }) {
@@ -48,6 +49,7 @@ export default function TutorialModal({
           <div className="p-4 text-center">
             <p className="text-white/90 text-sm mb-4 ">
               <span className="font-semibold text-red-400">{itemTitle ? `${itemTitle}: ` : ""}</span>
+              {platform ? `(${platform}) ` : ""}
               {isScript
                 ? "Complete the tutorial to see how to download the script."
                 : "Complete the tutorial to see how to download the game."}

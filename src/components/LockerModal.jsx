@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion } from "motion/react";
 
-export default function LockerModal({ isOpen, lockerId, onClose }) {
+export default function LockerModal({ isOpen, lockerId, platform, onClose }) {
   if (!isOpen || !lockerId) return null;
 
   return (
@@ -24,6 +24,7 @@ export default function LockerModal({ isOpen, lockerId, onClose }) {
           <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-cyan-600 to-blue-700 border-b border-white/10">
             <p className="font-bold text-white text-sm tracking-wide">
               Verification Required
+              {platform ? ` · ${platform}` : ""}
             </p>
             <button
               onClick={onClose}

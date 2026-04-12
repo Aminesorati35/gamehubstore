@@ -7,14 +7,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AccessPromptModal from "../components/AccessPromptModal";
 import TutorialModal from "../components/TutorialModal";
 import LockerModal from "../components/LockerModal";
+import PlatformModal from "../components/PlatformModal";
 
 const GamePage = () => {
   const { id } = useParams();
   const game = games.find(g => g.id === id);
+  const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
   const [showTutorial, setShowTutorial] = useState(false);
   const [showLocker, setShowLocker] = useState(false);
   const [lockerId, setLockerId] = useState(null);
+  const [selectedPlatform, setSelectedPlatform] = useState("");
 
   if (!game) {
     return (
@@ -36,7 +39,19 @@ const GamePage = () => {
   const handleStartDownload = () => {
     if (!game?.lockerId) return;
     setLockerId(game.lockerId);
+    setSelectedPlatform("");
+    setShowPlatformModal(true);
+  };
+
+  const handlePlatformSelect = (platform) => {
+    setSelectedPlatform(platform);
+    setShowPlatformModal(false);
     setShowAccessPrompt(true);
+  };
+
+  const handleClosePlatformModal = () => {
+    setShowPlatformModal(false);
+    setSelectedPlatform("");
   };
 
   return (
@@ -187,10 +202,20 @@ const GamePage = () => {
         </div>
       </section>
 
+      <PlatformModal
+        isOpen={showPlatformModal}
+        onClose={handleClosePlatformModal}
+        onSelect={handlePlatformSelect}
+        gameTitle={game.shortName || game.title}
+        showPcOption={false}
+        flowType="game"
+      />
+
       <AccessPromptModal
         isOpen={showAccessPrompt}
         item={game}
         contentType="game"
+        platform={selectedPlatform}
         onClose={() => setShowAccessPrompt(false)}
         onContinue={() => {
           setShowAccessPrompt(false);
@@ -202,6 +227,7 @@ const GamePage = () => {
         isOpen={showTutorial}
         itemTitle={game.shortName || game.title}
         contentType="game"
+        platform={selectedPlatform}
         onClose={() => setShowTutorial(false)}
         onContinue={() => {
           setShowTutorial(false);
@@ -212,6 +238,7 @@ const GamePage = () => {
       <LockerModal
         isOpen={showLocker}
         lockerId={lockerId}
+        platform={selectedPlatform}
         onClose={() => setShowLocker(false)}
       />
       

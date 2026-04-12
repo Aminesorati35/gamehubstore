@@ -7,20 +7,37 @@ import { robloxScripts } from "../data/data";
 import AccessPromptModal from "../components/AccessPromptModal";
 import TutorialModal from "../components/TutorialModal";
 import LockerModal from "../components/LockerModal";
+import PlatformModal from "../components/PlatformModal";
 
 const Home = () => {
+  const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
   const [showTutorial, setShowTutorial] = useState(false);
   const [lockerId, setLockerId] = useState(null);
   const [showLocker, setShowLocker] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedPlatform, setSelectedPlatform] = useState("");
 
   const [selectedTab, setSelectedTab] = useState("games");
 
-  const handleOpenAccessPrompt = (item) => {
+  const handleOpenPlatformPicker = (item) => {
     setSelectedItem(item);
     setLockerId(item.lockerId);
+    setSelectedPlatform("");
+    setShowPlatformModal(true);
+  };
+
+  const handlePlatformSelect = (platform) => {
+    setSelectedPlatform(platform);
+    setShowPlatformModal(false);
     setShowAccessPrompt(true);
+  };
+
+  const handleClosePlatformModal = () => {
+    setShowPlatformModal(false);
+    setSelectedItem(null);
+    setLockerId(null);
+    setSelectedPlatform("");
   };
 
   const handleTutorialContinue = () => {
@@ -109,16 +126,26 @@ const displayedItems = useMemo(() => {
             <GameCard
               key={`${selectedTab}-${item.id}`}
               game={item}
-              onDownloadClick={handleOpenAccessPrompt}
+              onDownloadClick={handleOpenPlatformPicker}
             />
           ))}
         </div>
       </section>
 
+      <PlatformModal
+        isOpen={showPlatformModal}
+        onClose={handleClosePlatformModal}
+        onSelect={handlePlatformSelect}
+        gameTitle={selectedItem?.shortName || selectedItem?.title}
+        showPcOption={selectedTab === "scripts"}
+        flowType={selectedTab === "scripts" ? "script" : "game"}
+      />
+
       <AccessPromptModal
         isOpen={showAccessPrompt}
         item={selectedItem}
         contentType={selectedTab === "scripts" ? "script" : "game"}
+        platform={selectedPlatform}
         onClose={() => setShowAccessPrompt(false)}
         onContinue={() => {
           setShowAccessPrompt(false);
@@ -130,6 +157,7 @@ const displayedItems = useMemo(() => {
         isOpen={showTutorial}
         itemTitle={selectedItem?.shortName || selectedItem?.title}
         contentType={selectedTab === "scripts" ? "script" : "game"}
+        platform={selectedPlatform}
         onClose={() => setShowTutorial(false)}
         onContinue={handleTutorialContinue}
       />
@@ -137,6 +165,7 @@ const displayedItems = useMemo(() => {
       <LockerModal
         isOpen={showLocker}
         lockerId={lockerId}
+        platform={selectedPlatform}
         onClose={() => setShowLocker(false)}
       />
 
