@@ -149,18 +149,18 @@ const displayedItems = useMemo(() => {
         onClose={() => setShowAccessPrompt(false)}
         onContinue={() => {
           setShowAccessPrompt(false);
-          setShowTutorial(true);
+          setShowLocker(true);
         }}
       />
 
-      <TutorialModal
+      {/* <TutorialModal
         isOpen={showTutorial}
         itemTitle={selectedItem?.shortName || selectedItem?.title}
         contentType={selectedTab === "scripts" ? "script" : "game"}
         platform={selectedPlatform}
         onClose={() => setShowTutorial(false)}
         onContinue={handleTutorialContinue}
-      />
+      /> */}
 
       <LockerModal
         isOpen={showLocker}
