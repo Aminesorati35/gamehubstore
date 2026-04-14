@@ -10,6 +10,27 @@ import {
 
 export const games = [
   {
+    id: "tomodachi-life-living-the-dream",
+    title: "Tomodachi Life: Living the Dream",
+    shortName: "Tomodachi Life: Living the Dream",
+    // developer: "Mob Entertainment",
+    rating: 4.7,
+    downloads: "4.9M",
+    size: "500 MB",
+    version: "1.0.0",
+    age: "+3",
+
+    // 🔒 KEEP LOCKER (UNCHANGED)
+    downloadUrl: "https://redirectapps.org/cl/i/1x3x2k",
+    lockerId: "1x3x2k",
+
+    category: "Simulation / Role Play",
+
+    // 🖼️ HERO IMAGE
+    heroImage:
+      "https://gamingbolt.com/wp-content/uploads/2025/03/Tomodachi-Life-Living-the-Dream.jpg",
+  },
+  {
     id: "poppy-playtime-chapter-5",
     title: "Poppy Playtime Chapter 5",
     shortName: "POPPY PLAYTIME 5 MOBILE",
