@@ -5,14 +5,12 @@ import GameCard from "../components/GameCard";
 import { games } from "../data/data";
 import { robloxScripts } from "../data/data";
 import AccessPromptModal from "../components/AccessPromptModal";
-import TutorialModal from "../components/TutorialModal";
 import LockerModal from "../components/LockerModal";
 import PlatformModal from "../components/PlatformModal";
 
 const Home = () => {
   const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
-  const [showTutorial, setShowTutorial] = useState(false);
   const [lockerId, setLockerId] = useState(null);
   const [showLocker, setShowLocker] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -40,11 +38,6 @@ const Home = () => {
     setSelectedPlatform("");
   };
 
-  const handleTutorialContinue = () => {
-    setShowTutorial(false);
-    setShowLocker(true);
-  };
-
 const displayedItems = useMemo(() => {
   if (selectedTab === "games") return games;
   if (selectedTab === "scripts") return robloxScripts;
@@ -52,27 +45,27 @@ const displayedItems = useMemo(() => {
 }, [selectedTab]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0a0e27] via-[#16213e] to-[#0a0e27]">
+    <div className="min-h-screen">
       <Navbar />
 
-      <section className="container mx-auto px-10 py-8 min-h-screen">
-        <div className="mb-8">
-          <h2 className="text-4xl font-bold mb-2 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-10 py-8 min-h-screen">
+        <div className="mb-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl px-5 py-6 sm:px-7">
+          <h2 className="text-3xl sm:text-4xl font-black mb-2 tracking-tight bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
             Featured Content
           </h2>
-          <p className="text-gray-400">
+          <p className="text-white/50 leading-relaxed">
           {selectedTab==="games" ? "Discover the best mobile games and apps" : "Access high-performance scripts for your favorite games. Updated daily with new features."  }  
           </p>
         </div>
 
         <div className="mb-8 flex justify-center">
-          <div className="inline-flex p-2 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-xl gap-2">
+          <div className="inline-flex p-1.5 rounded-2xl bg-white/[0.04] border border-white/[0.08] backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.35)] gap-2">
           <button
               onClick={() => setSelectedTab("games")}
               className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
                 selectedTab === "games"
-                  ? "bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg"
-                  : "text-gray-300 hover:bg-white/10 hover:text-white"
+                  ? "bg-white text-[#0b1020] shadow-lg"
+                  : "text-white/70 hover:bg-white/10 hover:text-white"
               }`}
             >
               Games
@@ -81,8 +74,8 @@ const displayedItems = useMemo(() => {
               onClick={() => setSelectedTab("scripts")}
               className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
                 selectedTab === "scripts"
-                  ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg"
-                  : "text-gray-300 hover:bg-white/10 hover:text-white"
+                  ? "bg-white text-[#0b1020] shadow-lg"
+                  : "text-white/70 hover:bg-white/10 hover:text-white"
               }`}
             >
               Roblox Scripts
@@ -102,14 +95,14 @@ const displayedItems = useMemo(() => {
         </div>
 
         <div className="mb-5">
-          <h3 className="text-white text-2xl font-bold">
+          <h3 className="text-white text-2xl font-bold tracking-tight">
             {selectedTab === "games"
               ? "Featured Games"
               : selectedTab === "apps"
                 ? "Featured Apps"
                 : "Featured Scripts"}
           </h3>
-          <p className="text-gray-400 text-sm mt-1">
+          <p className="text-white/45 text-sm mt-1">
             {selectedTab === "games"
               ? "Choose your favorite game"
               : selectedTab === "apps"
@@ -152,15 +145,6 @@ const displayedItems = useMemo(() => {
           setShowLocker(true);
         }}
       />
-
-      {/* <TutorialModal
-        isOpen={showTutorial}
-        itemTitle={selectedItem?.shortName || selectedItem?.title}
-        contentType={selectedTab === "scripts" ? "script" : "game"}
-        platform={selectedPlatform}
-        onClose={() => setShowTutorial(false)}
-        onContinue={handleTutorialContinue}
-      /> */}
 
       <LockerModal
         isOpen={showLocker}

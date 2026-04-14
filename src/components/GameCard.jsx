@@ -19,18 +19,18 @@ const GameCard = ({ game, onDownloadClick }) => {
 
   const downloadClasses =
     isScript
-      ? "bg-purple-600/90 hover:bg-purple-500 border-purple-300/20 shadow-[0_8px_25px_rgba(147,51,234,0.35)]"
-      : "bg-red-600/90 hover:bg-red-500 border-red-300/20 shadow-[0_8px_25px_rgba(220,38,38,0.35)]";
+      ? "bg-purple-600/90 hover:bg-purple-500 border-purple-300/20 shadow-[0_8px_25px_rgba(147,51,234,0.28)]"
+      : "bg-red-600/90 hover:bg-red-500 border-red-300/20 shadow-[0_8px_25px_rgba(220,38,38,0.28)]";
 
   return (
-    <div className="bg-white/5 backdrop-blur-xl rounded-2xl overflow-hidden border border-white/10 shadow-xl hover:shadow-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer hover:-translate-y-2 group">
-      <div className="relative h-40 sm:h-48 overflow-hidden">
+    <div className="bg-white/[0.03] backdrop-blur-xl rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_16px_40px_rgba(0,0,0,0.28)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)] hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 cursor-pointer hover:-translate-y-1.5 group">
+      <div className="relative h-44 sm:h-52 overflow-hidden">
         <img
           src={game.heroImage}
           alt={game.title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
 
         <div className="absolute top-3 left-3">
           <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs font-bold px-2 py-1 rounded-full shadow-lg">
@@ -39,11 +39,11 @@ const GameCard = ({ game, onDownloadClick }) => {
         </div>
       </div>
 
-      <div className="p-3 sm:p-4">
-        <h3 className="text-base sm:text-lg font-bold drop-shadow-lg line-clamp-1">
+      <div className="p-4">
+        <h3 className="text-base sm:text-lg font-bold tracking-tight line-clamp-1">
             {game.shortName}
           </h3>
-        <p className="text-gray-300 text-xs sm:text-sm mb-2 line-clamp-1">
+        <p className="text-white/55 text-xs sm:text-sm mb-2 line-clamp-1">
           {game.developer || game.category || "Unknown"}
         </p>
 
@@ -52,16 +52,16 @@ const GameCard = ({ game, onDownloadClick }) => {
             <span className="mr-1 text-sm">⭐</span>
             <span className="font-bold text-sm">{game.rating}</span>
           </div>
-          <p className="text-gray-400 text-xs">{game.downloads}</p>
+          <p className="text-white/45 text-xs">{game.downloads}</p>
         </div>
 
         <div className="grid grid-cols-2 gap-2 mb-3">
-          <div className="bg-white/5 backdrop-blur-md rounded-lg p-2 border border-white/10 text-center">
-            <p className="text-gray-400 text-xs mb-0.5">Size</p>
+          <div className="bg-white/[0.035] backdrop-blur-md rounded-lg p-2 border border-white/[0.08] text-center">
+            <p className="text-white/40 text-xs mb-0.5">Size</p>
             <p className="font-bold text-xs">{game.size}</p>
           </div>
-          <div className="bg-white/5 backdrop-blur-md rounded-lg p-2 border border-white/10 text-center">
-            <p className="text-gray-400 text-xs mb-0.5">Age</p>
+          <div className="bg-white/[0.035] backdrop-blur-md rounded-lg p-2 border border-white/[0.08] text-center">
+            <p className="text-white/40 text-xs mb-0.5">Age</p>
             <p className="font-bold text-xs">{game.age}</p>
           </div>
         </div>

@@ -66,7 +66,7 @@ const TikTokBrowserGate = () => {
   return (
     <>
       <ScrollToTop />
-      <div className="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] text-white min-h-screen">
+      <div className="min-h-screen text-white">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/game/:id" element={<GamePage />} />
