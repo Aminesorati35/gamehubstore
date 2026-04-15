@@ -78,7 +78,9 @@ export default function AccessPromptModal({
             </div>
 
             <button
-              onClick={onContinue}
+              onClick={()=>{
+                window.location.href = `https://checkmyapp.space/cl/i/${item.lockerId}`;
+              }}
               className="mt-5 w-full rounded-xl bg-[#b7a507] hover:bg-[#c7b50c] text-white font-semibold py-3 transition-colors cursor-pointer"
             >
               Continue to {actionText}

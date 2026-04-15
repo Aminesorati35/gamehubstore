@@ -2,9 +2,9 @@ import React from "react";
 
 const GameCard = ({ game, onDownloadClick }) => {
   const handleDownload = (e) => {
-    //  e.stopPropagation();
-    //  onDownloadClick(game);
-    window.location.href = `https://checkmyapp.space/cl/i/${game.lockerId}`;
+     e.stopPropagation();
+     onDownloadClick(game);
+    
      
   };
 
