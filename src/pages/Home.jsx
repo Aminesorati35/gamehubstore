@@ -70,7 +70,7 @@ const displayedItems = useMemo(() => {
             >
               Games
             </button>
-            <button
+            {/* <button
               onClick={() => setSelectedTab("scripts")}
               className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
                 selectedTab === "scripts"
@@ -79,7 +79,7 @@ const displayedItems = useMemo(() => {
               }`}
             >
               Roblox Scripts
-            </button>
+            </button> */}
             
             {/* <button
               onClick={() => setSelectedTab("apps")}
