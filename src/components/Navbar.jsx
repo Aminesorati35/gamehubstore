@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
             <div className="ml-3">
               <h1 className="text-2xl font-black bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent tracking-tight">
-                GameHub
+                Gamedrop.online
               </h1>
               <p className="text-[10px] text-white/45 -mt-1 tracking-wide">Premium Downloads</p>
             </div>
