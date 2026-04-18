@@ -26,6 +26,7 @@ const Navbar = () => {
               <span className="text-xs font-semibold text-white/85">2.4M+</span>
               <span className="text-xs text-white/45 ml-1">Downloads</span>
             </div>
+            
 
           </div>
         </div>

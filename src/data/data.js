@@ -15,8 +15,8 @@ export const games = [
     shortName: "Tomodachi Life: Living the Dream",
     // developer: "Mob Entertainment",
     rating: 4.7,
-    downloads: "4.9M",
-    size: "500 MB",
+    downloads: "200k",
+    size: "6 GB",
     version: "1.0.0",
     age: "+3",
 
