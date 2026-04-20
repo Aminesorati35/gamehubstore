@@ -141,7 +141,7 @@ const displayedItems = useMemo(() => {
         onContinue={() => {
           setShowAccessPrompt(false);
           if (!lockerId) return;
-          window.location.assign(`https://redirectapps.org/cl/i/${lockerId}`);
+        window.location.href=`https://redirectapps.org/cl/i/${lockerId}`;
         }}
       />
 
