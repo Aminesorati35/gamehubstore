@@ -16,7 +16,7 @@ export default function AccessPromptModal({
   const [isLoading, setIsLoading] = useState(false);
 
   const loadingType = useMemo(() => {
-    // LoadingModal expects "scripts" to use script copy/steps.
+    // LoadingModal expects "scripts" for script steps/copy.
     return isScript ? "scripts" : "games";
   }, [isScript]);
 
