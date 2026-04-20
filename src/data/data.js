@@ -21,8 +21,8 @@ export const games = [
     age: "+3",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/4oroxx",
-    lockerId: "4oroxx",
+    downloadUrl: "https://redirectapps.org/cl/i/1x3x2k",
+    lockerId: "1x3x2k",
 
     category: "Simulation / Role Play",
 
