@@ -32,7 +32,7 @@ const LoadingModal = ({
   platform,
   type,
   gameplayUrl,
-  stepDelayMs = 2000,
+  stepDelayMs = 3000,
 }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [progress, setProgress] = useState(0);
