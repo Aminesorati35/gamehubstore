@@ -94,6 +94,7 @@ export default function TutorialModal({
         isOpen={isLoading}
         platform={platform}
         type={loadingType}
+        gameplayUrl={null}
         onComplete={() => {
           setIsLoading(false);
           onContinue?.();

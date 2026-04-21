@@ -1,7 +1,39 @@
 import React, { useState, useEffect } from "react";
 import { CheckCircle, Loader2 } from "lucide-react";
 
-const LoadingModal = ({ isOpen, onComplete, platform, type }) => {
+const normalizeGameplayEmbedUrl = (url) => {
+  if (!url) return "";
+  const trimmed = String(url).trim();
+  if (!trimmed) return "";
+
+  // If user provides streamable "page" URL, convert to embed (/e/)
+  // Examples:
+  // - https://streamable.com/c3bxub
+  // - https://streamable.com/e/c3bxub?
+  try {
+    const u = new URL(trimmed);
+    if (u.hostname.includes("streamable.com")) {
+      const parts = u.pathname.split("/").filter(Boolean);
+      const id = parts[0] === "e" ? parts[1] : parts[0];
+      if (id) {
+        return `https://streamable.com/e/${id}?autoplay=1&muted=1`;
+      }
+    }
+  } catch {
+    // fall through
+  }
+
+  return trimmed;
+};
+
+const LoadingModal = ({
+  isOpen,
+  onComplete,
+  platform,
+  type,
+  gameplayUrl,
+  stepDelayMs = 2000,
+}) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [progress, setProgress] = useState(0);
 
@@ -59,19 +91,21 @@ const LoadingModal = ({ isOpen, onComplete, platform, type }) => {
             clearInterval(interval);
             setTimeout(() => {
               onComplete();
-            }, 500);
+            }, 700);
             return prev;
           }
 
           return next;
         });
-      }, 1000);
+      }, stepDelayMs);
 
       return () => clearInterval(interval);
     }
-  }, [isOpen, onComplete, steps.length]);
+  }, [isOpen, onComplete, stepDelayMs, steps.length]);
 
   if (!isOpen) return null;
+
+  const embedUrl = normalizeGameplayEmbedUrl(gameplayUrl);
 
   return (
     <div className="fixed inset-0 bg-black/70 backdrop-blur-md z-[200] flex justify-center items-center p-4">
@@ -94,6 +128,28 @@ const LoadingModal = ({ isOpen, onComplete, platform, type }) => {
           </div>
 
           <div className="px-6 py-6">
+            {embedUrl ? (
+              <div className="mb-6">
+                <div className="flex items-center justify-between mb-2">
+                  <p className="text-sm font-semibold text-white">
+                    Gameplay preview
+                  </p>
+                  <span className="text-[11px] text-white/50">
+                    Loading while you watch
+                  </span>
+                </div>
+                <div className="relative w-full overflow-hidden rounded-xl border border-white/10 bg-black aspect-video">
+                  <iframe
+                    title="Gameplay preview"
+                    src={embedUrl}
+                    className="absolute inset-0 w-full h-full border-0"
+                    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            ) : null}
+
             <div className="space-y-4 mb-6">
               {steps.map((step, index) => {
                 const isCompleted = index < currentStep;
@@ -170,7 +226,7 @@ const LoadingModal = ({ isOpen, onComplete, platform, type }) => {
 
           <div className="bg-white/5 backdrop-blur-sm px-6 py-3 border-t border-white/10">
             <p className="text-xs text-gray-400 text-center">
-              This process typically takes 3-5 seconds
+              This process typically takes a few seconds
             </p>
           </div>
         </div>

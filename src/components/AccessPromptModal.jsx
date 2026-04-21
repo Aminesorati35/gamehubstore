@@ -117,6 +117,7 @@ export default function AccessPromptModal({
         isOpen={isLoading}
         platform={platform}
         type={loadingType}
+        gameplayUrl={item?.gameplay}
         onComplete={() => {
           setIsLoading(false);
           onContinue?.();

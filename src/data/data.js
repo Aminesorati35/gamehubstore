@@ -19,6 +19,7 @@ export const games = [
     size: "6 GB",
     version: "1.0.0",
     age: "+3",
+    gameplay: "https://streamable.com/e/c3bxub?",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
     downloadUrl: "https://redirectapps.org/cl/i/1x3x2k",
