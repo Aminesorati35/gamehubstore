@@ -143,17 +143,17 @@ const displayedItems = useMemo(() => {
         onContinue={() => {
           setShowAccessPrompt(false);
           if (!lockerId) return;
-          // window.location.href = `https://redirectapps.org/cl/i/${lockerId}`;
-          setShowLocker(true)
+           window.location.href = `https://tmd1.site/cl/i/${lockerId}`;
+          //setShowLocker(true)
           
         }}
       />
-<LockerModal
+{/* <LockerModal
         isOpen={showLocker}
         lockerId={lockerId}
         platform={selectedPlatform}
         onClose={() => setShowLocker(false)}
-      />
+      /> */}
       
 
       <Footer />
