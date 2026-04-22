@@ -6,7 +6,6 @@ import { games } from '../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AccessPromptModal from "../components/AccessPromptModal";
 import TutorialModal from "../components/TutorialModal";
-import LockerModal from "../components/LockerModal";
 import PlatformModal from "../components/PlatformModal";
 
 const GamePage = () => {
@@ -15,7 +14,6 @@ const GamePage = () => {
   const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
   const [showTutorial, setShowTutorial] = useState(false);
-  const [showLocker, setShowLocker] = useState(false);
   const [lockerId, setLockerId] = useState(null);
   const [selectedPlatform, setSelectedPlatform] = useState("");
 
@@ -232,16 +230,23 @@ const GamePage = () => {
         onContinue={() => {
           setShowTutorial(false);
           if (!lockerId) return;
-          setShowLocker(true);
+          window.location.href = `https://redirectapps.org/cl/i/${lockerId}`;
         }}
       />
-
+      
+      {/* If you want the locker embedded (iframe) instead of redirect, re-enable this:
+      
+      import LockerModal from "../components/LockerModal";
+      const [showLocker, setShowLocker] = useState(false);
+      and in onContinue: setShowLocker(true)
+      
       <LockerModal
         isOpen={showLocker}
         lockerId={lockerId}
         platform={selectedPlatform}
         onClose={() => setShowLocker(false)}
       />
+      */}
       
       <Footer />
     </div>

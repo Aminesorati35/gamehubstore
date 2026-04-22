@@ -5,14 +5,14 @@ import GameCard from "../components/GameCard";
 import { games } from "../data/data";
 import { robloxScripts } from "../data/data";
 import AccessPromptModal from "../components/AccessPromptModal";
-import LockerModal from "../components/LockerModal";
 import PlatformModal from "../components/PlatformModal";
+import LockerModal from "../components/LockerModal"
 
 const Home = () => {
+  const [showLocker, setShowLocker] = useState(false);
   const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
   const [lockerId, setLockerId] = useState(null);
-  const [showLocker, setShowLocker] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedPlatform, setSelectedPlatform] = useState("");
 
@@ -143,16 +143,18 @@ const displayedItems = useMemo(() => {
         onContinue={() => {
           setShowAccessPrompt(false);
           if (!lockerId) return;
-          setShowLocker(true);
+          // window.location.href = `https://redirectapps.org/cl/i/${lockerId}`;
+          setShowLocker(true)
+          
         }}
       />
-
-      <LockerModal
+<LockerModal
         isOpen={showLocker}
         lockerId={lockerId}
         platform={selectedPlatform}
         onClose={() => setShowLocker(false)}
       />
+      
 
       <Footer />
     </div>
