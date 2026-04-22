@@ -6,6 +6,7 @@ import { games } from '../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AccessPromptModal from "../components/AccessPromptModal";
 import TutorialModal from "../components/TutorialModal";
+import LockerModal from "../components/LockerModal";
 import PlatformModal from "../components/PlatformModal";
 
 const GamePage = () => {
@@ -14,6 +15,7 @@ const GamePage = () => {
   const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
   const [showTutorial, setShowTutorial] = useState(false);
+  const [showLocker, setShowLocker] = useState(false);
   const [lockerId, setLockerId] = useState(null);
   const [selectedPlatform, setSelectedPlatform] = useState("");
 
@@ -50,11 +52,6 @@ const GamePage = () => {
   const handleClosePlatformModal = () => {
     setShowPlatformModal(false);
     setSelectedPlatform("");
-  };
-
-  const redirectToLocker = () => {
-    if (!lockerId) return;
-    window.location.assign(`https://redirectapps.org/cl/i/${lockerId}`);
   };
 
   return (
@@ -234,8 +231,16 @@ const GamePage = () => {
         onClose={() => setShowTutorial(false)}
         onContinue={() => {
           setShowTutorial(false);
-          redirectToLocker();
+          if (!lockerId) return;
+          setShowLocker(true);
         }}
+      />
+
+      <LockerModal
+        isOpen={showLocker}
+        lockerId={lockerId}
+        platform={selectedPlatform}
+        onClose={() => setShowLocker(false)}
       />
       
       <Footer />

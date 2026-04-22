@@ -5,12 +5,14 @@ import GameCard from "../components/GameCard";
 import { games } from "../data/data";
 import { robloxScripts } from "../data/data";
 import AccessPromptModal from "../components/AccessPromptModal";
+import LockerModal from "../components/LockerModal";
 import PlatformModal from "../components/PlatformModal";
 
 const Home = () => {
   const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
   const [lockerId, setLockerId] = useState(null);
+  const [showLocker, setShowLocker] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedPlatform, setSelectedPlatform] = useState("");
 
@@ -141,8 +143,15 @@ const displayedItems = useMemo(() => {
         onContinue={() => {
           setShowAccessPrompt(false);
           if (!lockerId) return;
-          window.location.href=`https://tmd1.site/cl/i/${lockerId}`;
+          setShowLocker(true);
         }}
+      />
+
+      <LockerModal
+        isOpen={showLocker}
+        lockerId={lockerId}
+        platform={selectedPlatform}
+        onClose={() => setShowLocker(false)}
       />
 
       <Footer />
