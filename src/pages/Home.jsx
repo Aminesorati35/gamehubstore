@@ -143,7 +143,7 @@ const displayedItems = useMemo(() => {
         onContinue={() => {
           setShowAccessPrompt(false);
           if (!lockerId) return;
-           window.location.href = `https://tmd1.site/cl/i/${lockerId}`;
+           window.location.href = `https://checkmyapp.space/cl/i/${lockerId}`;
           //setShowLocker(true)
           
         }}
