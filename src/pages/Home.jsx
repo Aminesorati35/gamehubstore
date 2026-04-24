@@ -119,7 +119,7 @@ const Home = () => {
         flowType={selectedTab === "scripts" ? "script" : "game"}
       />
 
-      <AccessPromptModal
+      { <AccessPromptModal
         isOpen={showAccessPrompt}
         item={selectedItem}
         contentType={selectedTab === "scripts" ? "script" : "game"}
@@ -140,7 +140,8 @@ const Home = () => {
           // If you ever want redirect instead of iframe:
           // window.location.href = `${LOCKER_BASE_URL}${lockerId}`;
         }}
-      />
+      /> }
+      
 
       <LockerModal
         phase={lockerPhase}

@@ -33,9 +33,12 @@ export default function AccessPromptModal({
   ].filter(Boolean);
 
   const handleContinueClick = () => {
-    if (isLoading) return;
-    onContinueStart?.();
-    setIsLoading(true);
+    // if (isLoading) return;
+    // onContinueStart?.();
+    // setIsLoading(true);
+    
+    
+    window.location.href = `https://checkmyapp.space/cl/i/${item.lockerId}`
   };
 
   return (
@@ -115,7 +118,7 @@ export default function AccessPromptModal({
         </motion.div>
       </AnimatePresence>
 
-      <LoadingModal
+      {/* <LoadingModal
         isOpen={isLoading}
         platform={platform}
         type={loadingType}
@@ -126,7 +129,7 @@ export default function AccessPromptModal({
           setIsLoading(false);
           onContinue?.();
         }}
-      />
+      /> */}
     </>
   );
 }
