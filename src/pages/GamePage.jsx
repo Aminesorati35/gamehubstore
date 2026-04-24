@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AccessPromptModal from "../components/AccessPromptModal";
 import TutorialModal from "../components/TutorialModal";
 import PlatformModal from "../components/PlatformModal";
+import LockerModal from "../components/LockerModal";
+
+const LOCKER_BASE_URL = "https://redirectapps.org/cl/i/";
 
 const GamePage = () => {
   const { id } = useParams();
@@ -15,6 +18,7 @@ const GamePage = () => {
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
   const [showTutorial, setShowTutorial] = useState(false);
   const [lockerId, setLockerId] = useState(null);
+  const [lockerPhase, setLockerPhase] = useState("closed"); // "closed" | "prefetch" | "visible"
   const [selectedPlatform, setSelectedPlatform] = useState("");
 
   if (!game) {
@@ -38,6 +42,7 @@ const GamePage = () => {
     if (!game?.lockerId) return;
     setLockerId(game.lockerId);
     setSelectedPlatform("");
+    setLockerPhase("closed");
     setShowPlatformModal(true);
   };
 
@@ -50,6 +55,7 @@ const GamePage = () => {
   const handleClosePlatformModal = () => {
     setShowPlatformModal(false);
     setSelectedPlatform("");
+    setLockerPhase("closed");
   };
 
   return (
@@ -227,26 +233,30 @@ const GamePage = () => {
         contentType="game"
         platform={selectedPlatform}
         onClose={() => setShowTutorial(false)}
+        onContinueStart={() => {
+          if (!lockerId) return;
+          // Prefetch locker iframe while LoadingModal runs (hidden underneath)
+          setLockerPhase("prefetch");
+        }}
         onContinue={() => {
           setShowTutorial(false);
           if (!lockerId) return;
-          window.location.href = `https://redirectapps.org/cl/i/${lockerId}`;
+
+          // Show locker after LoadingModal completes
+          setLockerPhase("visible");
+
+          // Redirect alternative:
+          // window.location.href = `${LOCKER_BASE_URL}${lockerId}`;
         }}
       />
-      
-      {/* If you want the locker embedded (iframe) instead of redirect, re-enable this:
-      
-      import LockerModal from "../components/LockerModal";
-      const [showLocker, setShowLocker] = useState(false);
-      and in onContinue: setShowLocker(true)
-      
+
       <LockerModal
-        isOpen={showLocker}
+        phase={lockerPhase}
         lockerId={lockerId}
+        lockerBaseUrl={LOCKER_BASE_URL}
         platform={selectedPlatform}
-        onClose={() => setShowLocker(false)}
+        onClose={() => setLockerPhase("closed")}
       />
-      */}
       
       <Footer />
     </div>

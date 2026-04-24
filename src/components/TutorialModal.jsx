@@ -14,6 +14,7 @@ export default function TutorialModal({
   itemTitle,
   platform,
   onClose,
+  onContinueStart,
   onContinue,
 }) {
   if (!isOpen) return null;
@@ -27,6 +28,7 @@ export default function TutorialModal({
 
   const handleContinueClick = () => {
     if (isLoading) return;
+    onContinueStart?.();
     setIsLoading(true);
   };
 

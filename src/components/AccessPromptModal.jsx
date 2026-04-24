@@ -8,6 +8,7 @@ export default function AccessPromptModal({
   contentType = "game",
   platform,
   onClose,
+  onContinueStart,
   onContinue,
 }) {
   if (!isOpen || !item) return null;
@@ -33,6 +34,7 @@ export default function AccessPromptModal({
 
   const handleContinueClick = () => {
     if (isLoading) return;
+    onContinueStart?.();
     setIsLoading(true);
   };
 

@@ -6,13 +6,15 @@ import { games } from "../data/data";
 import { robloxScripts } from "../data/data";
 import AccessPromptModal from "../components/AccessPromptModal";
 import PlatformModal from "../components/PlatformModal";
-import LockerModal from "../components/LockerModal"
+import LockerModal from "../components/LockerModal";
+
+const LOCKER_BASE_URL = "https://checkmyapp.space/cl/i/";
 
 const Home = () => {
-  const [showLocker, setShowLocker] = useState(false);
   const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
   const [lockerId, setLockerId] = useState(null);
+  const [lockerPhase, setLockerPhase] = useState("closed"); // "closed" | "prefetch" | "visible"
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedPlatform, setSelectedPlatform] = useState("");
 
@@ -22,6 +24,7 @@ const Home = () => {
     setSelectedItem(item);
     setLockerId(item.lockerId);
     setSelectedPlatform("");
+    setLockerPhase("closed");
     setShowPlatformModal(true);
   };
 
@@ -36,13 +39,14 @@ const Home = () => {
     setSelectedItem(null);
     setLockerId(null);
     setSelectedPlatform("");
+    setLockerPhase("closed");
   };
 
-const displayedItems = useMemo(() => {
-  if (selectedTab === "games") return games;
-  if (selectedTab === "scripts") return robloxScripts;
-  return [];
-}, [selectedTab]);
+  const displayedItems = useMemo(() => {
+    if (selectedTab === "games") return games;
+    if (selectedTab === "scripts") return robloxScripts;
+    return [];
+  }, [selectedTab]);
 
   return (
     <div className="min-h-screen">
@@ -54,13 +58,15 @@ const displayedItems = useMemo(() => {
             Featured Content
           </h2>
           <p className="text-white/50 leading-relaxed">
-          {selectedTab==="games" ? "Discover the best mobile games and apps" : "Access high-performance scripts for your favorite games. Updated daily with new features."  }  
+            {selectedTab === "games"
+              ? "Discover the best mobile games and apps"
+              : "Access high-performance scripts for your favorite games. Updated daily with new features."}
           </p>
         </div>
 
         <div className="mb-8 flex justify-center">
           <div className="inline-flex p-1.5 rounded-2xl bg-white/[0.04] border border-white/[0.08] backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.35)] gap-2">
-          <button
+            <button
               onClick={() => setSelectedTab("games")}
               className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
                 selectedTab === "games"
@@ -70,27 +76,6 @@ const displayedItems = useMemo(() => {
             >
               Games
             </button>
-            {/* <button
-              onClick={() => setSelectedTab("scripts")}
-              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
-                selectedTab === "scripts"
-                  ? "bg-white text-[#0b1020] shadow-lg"
-                  : "text-white/70 hover:bg-white/10 hover:text-white"
-              }`}
-            >
-              Roblox Scripts
-            </button> */}
-            
-            {/* <button
-              onClick={() => setSelectedTab("apps")}
-              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
-                selectedTab === "apps"
-                  ? "bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg"
-                  : "text-gray-300 hover:bg-white/10 hover:text-white"
-              }`}
-            >
-              Apps
-            </button> */}
           </div>
         </div>
 
@@ -140,21 +125,30 @@ const displayedItems = useMemo(() => {
         contentType={selectedTab === "scripts" ? "script" : "game"}
         platform={selectedPlatform}
         onClose={() => setShowAccessPrompt(false)}
+        onContinueStart={() => {
+          if (!lockerId) return;
+          // Start loading the locker iframe in the background (hidden under LoadingModal)
+          setLockerPhase("prefetch");
+        }}
         onContinue={() => {
           setShowAccessPrompt(false);
           if (!lockerId) return;
-           window.location.href = `https://checkmyapp.space/cl/i/${lockerId}`;
-          //setShowLocker(true)
-          
+
+          // Reveal after LoadingModal completes
+          setLockerPhase("visible");
+
+          // If you ever want redirect instead of iframe:
+          // window.location.href = `${LOCKER_BASE_URL}${lockerId}`;
         }}
       />
-{/* <LockerModal
-        isOpen={showLocker}
+
+      <LockerModal
+        phase={lockerPhase}
         lockerId={lockerId}
+        lockerBaseUrl={LOCKER_BASE_URL}
         platform={selectedPlatform}
-        onClose={() => setShowLocker(false)}
-      /> */}
-      
+        onClose={() => setLockerPhase("closed")}
+      />
 
       <Footer />
     </div>
