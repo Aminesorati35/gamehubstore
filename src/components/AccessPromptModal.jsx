@@ -120,6 +120,8 @@ export default function AccessPromptModal({
         platform={platform}
         type={loadingType}
         gameplayUrl={item?.gameplay}
+        compact
+        requireAcknowledge
         onComplete={() => {
           setIsLoading(false);
           onContinue?.();

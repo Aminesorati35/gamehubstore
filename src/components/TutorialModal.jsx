@@ -97,6 +97,8 @@ export default function TutorialModal({
         platform={platform}
         type={loadingType}
         gameplayUrl={null}
+        compact
+        requireAcknowledge
         onComplete={() => {
           setIsLoading(false);
           onContinue?.();
