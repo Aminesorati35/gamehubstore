@@ -184,8 +184,8 @@ const LoadingModal = ({
               </div>
             ) : null}
 
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-3">
+            <div className="">
+              <div className="flex items-center justify-between mb-3 ">
                 <p className="text-xs text-white/60">
                   Step {Math.min(currentStep + 1, steps.length)} of {steps.length}
                 </p>
@@ -194,7 +194,7 @@ const LoadingModal = ({
                 </p>
               </div>
 
-              <div className="relative min-h-[92px]">
+              <div className="relative min-h-[92px] ">
                 <AnimatePresence mode="wait" initial={false}>
                   {!isDone ? (
                     <motion.div
