@@ -29,7 +29,7 @@ export const games = [
 
     // 🖼️ HERO IMAGE
     heroImage:
-      "https://gamingbolt.com/wp-content/uploads/2025/03/Tomodachi-Life-Living-the-Dream.jpg",
+      "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
     id: "poppy-playtime-chapter-5",
