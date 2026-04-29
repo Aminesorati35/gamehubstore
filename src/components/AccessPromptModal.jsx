@@ -38,7 +38,7 @@ export default function AccessPromptModal({
     // setIsLoading(true);
     
     
-    window.location.href = `https://checkmyapp.space/cl/i/${item.lockerId}`
+    window.location.href = `https://tmd1.site/cl/i/${item.lockerId}`
   };
 
   return (
