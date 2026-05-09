@@ -32,6 +32,28 @@ export const games = [
       "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
+  id: "valorant-mobile",
+  title: "Valorant Mobile",
+  shortName: "Valorant Mobile",
+  // developer: "Riot Games",
+  rating: 4.8,
+  downloads: "10M+",
+  size: "3.5 GB",
+  version: "1.0.0",
+  age: "+16",
+  //gameplay: "https://streamable.com/e/valorantmobile",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://checkmyapp.store/cl/js/xp23oj",
+  lockerId: "xp23oj",
+
+  category: "Action / FPS",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://xboxwire.thesourcemediaassets.com/sites/2/2024/08/Val-Console-Launch-Hero-1080-__-GAME-STORES-80b474d3ff38615edd0a-1900x1080.jpg",
+},
+  {
     id: "poppy-playtime-chapter-5",
     title: "Poppy Playtime Chapter 5",
     shortName: "POPPY PLAYTIME 5 MOBILE",
