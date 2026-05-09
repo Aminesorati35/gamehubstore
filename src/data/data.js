@@ -32,6 +32,28 @@ export const games = [
       "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
+  id: "repo-mobile",
+  title: "R.E.P.O. Mobile",
+  shortName: "R.E.P.O. Mobile",
+  // developer: "semiwork",
+  rating: 4.9,
+  downloads: "500k+",
+  size: "2.8 GB",
+  version: "1.0.2",
+  age: "+16",
+  //gameplay: "https://streamable.com/e/repogameplay",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/5nlrpk",
+  lockerId: "5nlrpk",
+
+  category: "Horror / Co-op",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3241660/a12c92856b71315da885924ea5e1d5290c8025b8/header_alt_assets_2.jpg?t=1778158882",
+},
+  {
   id: "valorant-mobile",
   title: "Valorant Mobile",
   shortName: "Valorant Mobile",
