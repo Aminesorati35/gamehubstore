@@ -32,6 +32,28 @@ export const games = [
       "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
+  id: "mixtape-mobile",
+  title: "Mixtape Mobile",
+  shortName: "Mixtape",
+  // developer: "Beethoven & Dinosaur",
+  rating: 4.8,
+  downloads: "300k+",
+  size: "4.1 GB",
+  version: "1.0.0",
+  age: "+12",
+  //gameplay: "https://streamable.com/e/mixtapegameplay",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/4or4j1",
+  lockerId: "4or4j1",
+
+  category: "Adventure / Story",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/mixtape/16x9_Mixtape_image1600w.jpg",
+},
+  {
   id: "repo-mobile",
   title: "R.E.P.O. Mobile",
   shortName: "R.E.P.O. Mobile",
