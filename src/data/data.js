@@ -32,6 +32,28 @@ export const games = [
       "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
+  id: "zelda-twilight-princess-mobile",
+  title: "The Legend of Zelda: Twilight Princess",
+  shortName: "Zelda: Twilight Princess",
+  // developer: "Nintendo",
+  rating: 4.9,
+  downloads: "5M+",
+  size: "7.2 GB",
+  version: "1.0.0",
+  age: "+12",
+  //gameplay: "https://streamable.com/e/twilightprincess",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/xp23el",
+  lockerId: "xp23el",
+
+  category: "Adventure / Action RPG",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://media.overclock3d.net/2026/05/TLOZ-Twilight-Princess-Dusk-PC.jpg",
+},
+  {
   id: "mixtape-mobile",
   title: "Mixtape Mobile",
   shortName: "Mixtape",
