@@ -32,6 +32,28 @@ export const games = [
       "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
+  id: "subnautica-2-mobile",
+  title: "Subnautica 2 Mobile",
+  shortName: "Subnautica 2",
+  // developer: "Unknown Worlds Entertainment",
+  rating: 4.8,
+  downloads: "1M+",
+  size: "5.6 GB",
+  version: "1.0.0",
+  age: "+12",
+  gameplay: "https://streamable.com/e/subnautica2",
+
+  // 🔒 KEEP LOCKER (UNCHANGED)
+  downloadUrl: "https://redirectapps.org/cl/i/vejmmm",
+  lockerId: "vejmmm",
+
+  category: "Survival / Adventure",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/header.jpg?t=1778510411",
+},
+  {
   id: "zelda-twilight-princess-mobile",
   title: "The Legend of Zelda: Twilight Princess",
   shortName: "Zelda: Twilight Princess",
