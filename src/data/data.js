@@ -32,6 +32,29 @@ export const games = [
       "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
+    id: "lego-batman-legacy-of-the-dark-knight-mobile",
+    title: "LEGO Batman: Legacy of the Dark Knight Mobile",
+    shortName: "LEGO Batman Mobile",
+
+    // developer: "TT Games / Warner Bros. Games",
+    rating: 4.8,
+    downloads: "500k",
+    size: "5.8 GB",
+    version: "1.0.0",
+    age: "+7",
+    //gameplay: "https://streamable.com/e/9m7x8u?",
+
+    // 🔒 KEEP LOCKER (UNCHANGED)
+    downloadUrl: "https://redirectapps.org/cl/i/ex29ed",
+    lockerId: "ex29ed",
+
+    category: "Action / Adventure",
+
+    // 🖼️ HERO IMAGE
+    heroImage:
+      "https://images.ctfassets.net/nwksj2ft7iku/4WbVzweG4y1Y7afElrlfPJ/79027a14b48e14a00bdc39182e425833/LEGO_Batman__Legacy_of_the_Dark_Knight_Combat_Key_Art_16x9.png",
+},
+  {
   id: "subnautica-2-mobile",
   title: "Subnautica 2 Mobile",
   shortName: "Subnautica 2",
