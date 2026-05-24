@@ -32,6 +32,27 @@ export const games = [
       "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
+    id: "toca-boca-world-mod",
+    title: "Toca Boca World MOD",
+    shortName: "Toca Boca World Mod",
+    // developer: "Toca Boca",
+    rating: 4.8,
+    downloads: "12.3M",
+    size: "725 MB",
+    version: "1.89",
+    age: "3+",
+
+    // 🔒 KEEP LOCKER (UNCHANGED)
+    downloadUrl: "https://redirectapps.org/cl/i/rnnveg",
+    lockerId: "rnnveg",
+
+    category: "Simulation / Kids",
+
+    // 🖼️ HERO IMAGE
+    heroImage:
+      "https://d2duuy9yo5pldo.cloudfront.net/dashboard-resources/tocaboca/ea2ce3d3-63c0-41ea-b9e5-7e5abd576e7a.png",
+  },
+  {
     id: "lego-batman-legacy-of-the-dark-knight-mobile",
     title: "LEGO Batman: Legacy of the Dark Knight Mobile",
     shortName: "LEGO Batman Mobile",
