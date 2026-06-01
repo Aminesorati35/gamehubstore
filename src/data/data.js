@@ -32,26 +32,28 @@ export const games = [
       "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
-    id: "toca-boca-world-mod",
-    title: "Toca Boca World MOD",
-    shortName: "Toca Boca World Mod",
-    // developer: "Toca Boca",
-    rating: 4.8,
-    downloads: "12.3M",
-    size: "725 MB",
-    version: "1.89",
-    age: "3+",
+  id: "paralives-mobile",
+  title: "Paralives Mobile",
+  shortName: "Paralives Mobile",
 
-    // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/rnnveg",
-    lockerId: "rnnveg",
+  rating: 4.8,
+  downloads: "500k+",
+  size: "5.8 GB",
+  version: "1.0.0",
+  age: "+3",
 
-    category: "Simulation / Kids",
+  gameplay: "https://www.youtube.com/watch?v=YOUR_GAMEPLAY_VIDEO",
 
-    // 🖼️ HERO IMAGE
-    heroImage:
-      "https://d2duuy9yo5pldo.cloudfront.net/dashboard-resources/tocaboca/ea2ce3d3-63c0-41ea-b9e5-7e5abd576e7a.png",
-  },
+  // 🔒 KEEP LOCKER
+  downloadUrl: "https://redirectapps.org/cl/i/qn653w",
+  lockerId: "qn653w",
+
+  category: "Simulation / Life Simulation",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1118520/277ab7a2ad1bbce0f4837bb37a3c86d109bd5258/header.jpg?t=1779721278"
+},
   {
     id: "lego-batman-legacy-of-the-dark-knight-mobile",
     title: "LEGO Batman: Legacy of the Dark Knight Mobile",
@@ -75,6 +77,27 @@ export const games = [
     heroImage:
       "https://images.ctfassets.net/nwksj2ft7iku/4WbVzweG4y1Y7afElrlfPJ/79027a14b48e14a00bdc39182e425833/LEGO_Batman__Legacy_of_the_Dark_Knight_Combat_Key_Art_16x9.png",
 },
+{
+    id: "toca-boca-world-mod",
+    title: "Toca Boca World MOD",
+    shortName: "Toca Boca World Mod",
+    // developer: "Toca Boca",
+    rating: 4.8,
+    downloads: "12.3M",
+    size: "725 MB",
+    version: "1.89",
+    age: "3+",
+
+    // 🔒 KEEP LOCKER (UNCHANGED)
+    downloadUrl: "https://redirectapps.org/cl/i/rnnveg",
+    lockerId: "rnnveg",
+
+    category: "Simulation / Kids",
+
+    // 🖼️ HERO IMAGE
+    heroImage:
+      "https://d2duuy9yo5pldo.cloudfront.net/dashboard-resources/tocaboca/ea2ce3d3-63c0-41ea-b9e5-7e5abd576e7a.png",
+  },
   {
   id: "subnautica-2-mobile",
   title: "Subnautica 2 Mobile",
