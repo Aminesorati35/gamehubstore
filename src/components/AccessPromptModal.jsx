@@ -38,7 +38,7 @@ export default function AccessPromptModal({
     // setIsLoading(true);
     
     
-    window.location.href = `https://appsave.online/cl/i/${item.lockerId}`
+    window.location.href = item.downloadUrl ? item.downloadUrl : `https://appsave.space/cl/i/${item.lockerId}`
   };
 
   return (

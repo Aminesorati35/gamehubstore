@@ -22,7 +22,7 @@ export const games = [
     gameplay: "https://streamable.com/e/c3bxub?",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/1x3x2k",
+    downloadUrl: "https://appsave.online/cl/i/1x3x2k",
     lockerId: "1x3x2k",
 
     category: "Simulation / Role Play",
@@ -45,7 +45,7 @@ export const games = [
   gameplay: "https://www.youtube.com/watch?v=YOUR_GAMEPLAY_VIDEO",
 
   // 🔒 KEEP LOCKER
-  downloadUrl: "https://redirectapps.org/cl/i/qn653w",
+  downloadUrl: "https://saveapp.store/cl/i/qn653w",
   lockerId: "qn653w",
 
   category: "Simulation / Life Simulation",
@@ -68,7 +68,7 @@ export const games = [
     //gameplay: "https://streamable.com/e/9m7x8u?",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/ex29ed",
+    downloadUrl: "https://appsave.store/cl/i/ex29ed",
     lockerId: "ex29ed",
 
     category: "Action / Adventure",
@@ -89,7 +89,6 @@ export const games = [
     age: "3+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/rnnveg",
     lockerId: "rnnveg",
 
     category: "Simulation / Kids",
@@ -111,7 +110,6 @@ export const games = [
   gameplay: "https://streamable.com/e/subnautica2",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
-  downloadUrl: "https://redirectapps.org/cl/i/vejmmm",
   lockerId: "vejmmm",
 
   category: "Survival / Adventure",
@@ -133,7 +131,6 @@ export const games = [
   //gameplay: "https://streamable.com/e/twilightprincess",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
-  downloadUrl: "https://redirectapps.org/cl/i/xp23el",
   lockerId: "xp23el",
 
   category: "Adventure / Action RPG",
@@ -177,7 +174,6 @@ export const games = [
   //gameplay: "https://streamable.com/e/repogameplay",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
-  downloadUrl: "https://redirectapps.org/cl/i/5nlrpk",
   lockerId: "5nlrpk",
 
   category: "Horror / Co-op",
@@ -199,7 +195,6 @@ export const games = [
   //gameplay: "https://streamable.com/e/valorantmobile",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
-  downloadUrl: "https://checkmyapp.store/cl/js/xp23oj",
   lockerId: "xp23oj",
 
   category: "Action / FPS",
@@ -220,7 +215,6 @@ export const games = [
     age: "16+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/9vvwow",
     lockerId: "9vvwow",
 
     category: "Horror / Puzzle",
@@ -241,7 +235,6 @@ export const games = [
     age: "7+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/344mx7",
     lockerId: "344mx7",
 
     category: "Sandbox / Multiplayer",
@@ -261,7 +254,6 @@ export const games = [
     age: "12+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/o44172",
     lockerId: "o44172",
 
     category: "Battle Royale / Action",
@@ -282,7 +274,6 @@ export const games = [
     age: "18+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/l77wld",
     lockerId: "l77wld",
 
     category: "Horror / Survival",
@@ -305,7 +296,6 @@ export const games = [
     age: "3+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/veexkd",
     lockerId: "veexkd",
 
     category: "Simulation / Role Play",
@@ -347,7 +337,6 @@ export const games = [
     age: "7+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/pqq9dn",
     lockerId: "pqq9dn",
 
     category: "Music / Simulation",
@@ -368,7 +357,6 @@ export const games = [
     age: "12+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/j77vkj",
     lockerId: "j77vkj",
 
     category: "Adventure / Sandbox",
@@ -388,7 +376,6 @@ export const games = [
     age: "18+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/d22kdw",
     lockerId: "d22kdw",
 
     category: "Open World / Action-Adventure",
@@ -415,7 +402,6 @@ export const games = [
     age: "16+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/o443d2",
     lockerId: "o443d2",
 
     category: "Fighting / Boxing",
@@ -436,7 +422,6 @@ export const games = [
     age: "12+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/3448k7",
     lockerId: "3448k7",
 
     category: "Sports / Volleyball",
@@ -457,7 +442,6 @@ export const games = [
     age: "12+",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://redirectapps.org/cl/i/6ndjjm",
     lockerId: "6ndjjm",
 
     category: "Racing / Open World",
