@@ -22,7 +22,7 @@ export const games = [
     gameplay: "https://streamable.com/e/c3bxub?",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://downloadtomodachi.site/cl/1x3x2k",
+    downloadUrl: "https://downloadtomodachi.site/cl/i/1x3x2k",
     lockerId: "1x3x2k",
 
     category: "Simulation / Role Play",
