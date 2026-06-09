@@ -21,6 +21,10 @@ export default function AccessPromptModal({
     return isScript ? "scripts" : "games";
   }, [isScript]);
 
+  const hasGameplayVideo = useMemo(() => {
+    return Boolean(item?.gameplay && String(item.gameplay).trim());
+  }, [item?.gameplay]);
+
   const heading = isScript ? "Unlock Script Access" : "Unlock Game Download";
   const actionText = isScript ? "get this script" : "download this game";
 
@@ -35,7 +39,13 @@ export default function AccessPromptModal({
   const handleContinueClick = () => {
     if (isLoading) return;
     onContinueStart?.();
-    setIsLoading(true);
+
+    if (hasGameplayVideo) {
+      setIsLoading(true);
+      return;
+    }
+
+    onContinue?.();
   };
 
   return (
@@ -115,18 +125,20 @@ export default function AccessPromptModal({
         </motion.div>
       </AnimatePresence>
 
-      <LoadingModal
-        isOpen={isLoading}
-        platform={platform}
-        type={loadingType}
-        gameplayUrl={item?.gameplay}
-        compact
-        requireAcknowledge
-        onComplete={() => {
-          setIsLoading(false);
-          onContinue?.();
-        }}
-      />
+      {hasGameplayVideo ? (
+        <LoadingModal
+          isOpen={isLoading}
+          platform={platform}
+          type={loadingType}
+          gameplayUrl={item.gameplay}
+          compact
+          requireAcknowledge
+          onComplete={() => {
+            setIsLoading(false);
+            onContinue?.();
+          }}
+        />
+      ) : null}
     </>
   );
 }

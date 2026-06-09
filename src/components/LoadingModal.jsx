@@ -136,7 +136,7 @@ const LoadingModal = ({
       } ${compact ? "bg-black/55 backdrop-blur-sm p-4 sm:p-8" : "bg-black/70 backdrop-blur-md p-4"}`}
     >
       <div
-        className={`relative w-full ${
+        className={`relative w-full h-90 ${
           compact ? "max-w-md scale-[0.96] sm:scale-[0.98]" : "max-w-lg"
         }`}
       >
