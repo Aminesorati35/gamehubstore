@@ -19,7 +19,6 @@ export const games = [
     size: "6 GB",
     version: "1.0.0",
     age: "+3",
-    gameplay: "https://streamable.com/e/c3bxub?",
 
     // 🔒 KEEP LOCKER (UNCHANGED)
     downloadUrl: "https://downloadtomodachi.site/cl/i/4oroxx",
@@ -42,7 +41,6 @@ export const games = [
   version: "1.0.0",
   age: "+3",
 
-  gameplay: "https://www.youtube.com/watch?v=YOUR_GAMEPLAY_VIDEO",
 
   // 🔒 KEEP LOCKER
   downloadUrl: "https://saveapp.store/cl/i/qn653w",
@@ -107,7 +105,6 @@ export const games = [
   size: "5.6 GB",
   version: "1.0.0",
   age: "+12",
-  gameplay: "https://streamable.com/e/subnautica2",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
   lockerId: "vejmmm",
@@ -128,7 +125,6 @@ export const games = [
   size: "7.2 GB",
   version: "1.0.0",
   age: "+12",
-  //gameplay: "https://streamable.com/e/twilightprincess",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
   lockerId: "xp23el",
@@ -149,7 +145,6 @@ export const games = [
   size: "4.1 GB",
   version: "1.0.0",
   age: "+12",
-  //gameplay: "https://streamable.com/e/mixtapegameplay",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
   downloadUrl: "https://redirectapps.org/cl/i/4or4j1",
@@ -171,7 +166,6 @@ export const games = [
   size: "2.8 GB",
   version: "1.0.2",
   age: "+16",
-  //gameplay: "https://streamable.com/e/repogameplay",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
   lockerId: "5nlrpk",
@@ -192,7 +186,6 @@ export const games = [
   size: "3.5 GB",
   version: "1.0.0",
   age: "+16",
-  //gameplay: "https://streamable.com/e/valorantmobile",
 
   // 🔒 KEEP LOCKER (UNCHANGED)
   lockerId: "xp23oj",
