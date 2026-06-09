@@ -14,6 +14,7 @@ const Home = () => {
   const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
   const [lockerId, setLockerId] = useState(null);
+  const [lockerUrl, setLockerUrl] = useState(null);
   const [lockerPhase, setLockerPhase] = useState("closed"); // "closed" | "prefetch" | "visible"
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedPlatform, setSelectedPlatform] = useState("");
@@ -23,6 +24,7 @@ const Home = () => {
   const handleOpenPlatformPicker = (item) => {
     setSelectedItem(item);
     setLockerId(item.lockerId);
+    setLockerUrl(item.downloadUrl || null);
     setSelectedPlatform("");
     setLockerPhase("closed");
     setShowPlatformModal(true);
@@ -38,6 +40,7 @@ const Home = () => {
     setShowPlatformModal(false);
     setSelectedItem(null);
     setLockerId(null);
+    setLockerUrl(null);
     setSelectedPlatform("");
     setLockerPhase("closed");
   };
@@ -146,6 +149,7 @@ const Home = () => {
       <LockerModal
         phase={lockerPhase}
         lockerId={lockerId}
+        lockerUrl={lockerUrl}
         lockerBaseUrl={LOCKER_BASE_URL}
         platform={selectedPlatform}
         onClose={() => setLockerPhase("closed")}

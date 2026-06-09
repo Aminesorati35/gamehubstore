@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 import { games } from '../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AccessPromptModal from "../components/AccessPromptModal";
-import TutorialModal from "../components/TutorialModal";
 import PlatformModal from "../components/PlatformModal";
 import LockerModal from "../components/LockerModal";
 
@@ -16,8 +15,8 @@ const GamePage = () => {
   const game = games.find(g => g.id === id);
   const [showPlatformModal, setShowPlatformModal] = useState(false);
   const [showAccessPrompt, setShowAccessPrompt] = useState(false);
-  const [showTutorial, setShowTutorial] = useState(false);
   const [lockerId, setLockerId] = useState(null);
+  const [lockerUrl, setLockerUrl] = useState(null);
   const [lockerPhase, setLockerPhase] = useState("closed"); // "closed" | "prefetch" | "visible"
   const [selectedPlatform, setSelectedPlatform] = useState("");
 
@@ -41,6 +40,7 @@ const GamePage = () => {
   const handleStartDownload = () => {
     if (!game?.lockerId) return;
     setLockerId(game.lockerId);
+    setLockerUrl(game.downloadUrl || null);
     setSelectedPlatform("");
     setLockerPhase("closed");
     setShowPlatformModal(true);
@@ -221,38 +221,21 @@ const GamePage = () => {
         contentType="game"
         platform={selectedPlatform}
         onClose={() => setShowAccessPrompt(false)}
-        onContinue={() => {
-          setShowAccessPrompt(false);
-          setShowTutorial(true);
-        }}
-      />
-
-      <TutorialModal
-        isOpen={showTutorial}
-        itemTitle={game.shortName || game.title}
-        contentType="game"
-        platform={selectedPlatform}
-        onClose={() => setShowTutorial(false)}
         onContinueStart={() => {
           if (!lockerId) return;
-          // Prefetch locker iframe while LoadingModal runs (hidden underneath)
           setLockerPhase("prefetch");
         }}
         onContinue={() => {
-          setShowTutorial(false);
+          setShowAccessPrompt(false);
           if (!lockerId) return;
-
-          // Show locker after LoadingModal completes
           setLockerPhase("visible");
-
-          // Redirect alternative:
-          // window.location.href = `${LOCKER_BASE_URL}${lockerId}`;
         }}
       />
 
       <LockerModal
         phase={lockerPhase}
         lockerId={lockerId}
+        lockerUrl={lockerUrl}
         lockerBaseUrl={LOCKER_BASE_URL}
         platform={selectedPlatform}
         onClose={() => setLockerPhase("closed")}

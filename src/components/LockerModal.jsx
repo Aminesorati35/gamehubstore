@@ -4,14 +4,16 @@ import { AnimatePresence, motion } from "motion/react";
 export default function LockerModal({
   phase = "closed", // "closed" | "prefetch" | "visible"
   lockerId,
+  lockerUrl: lockerUrlOverride,
   lockerBaseUrl = "https://redirectapps.org/cl/i/",
   platform,
   onClose,
 }) {
   const lockerUrl = useMemo(() => {
+    if (lockerUrlOverride) return lockerUrlOverride;
     if (!lockerId) return "";
     return `${lockerBaseUrl}${lockerId}`;
-  }, [lockerBaseUrl, lockerId]);
+  }, [lockerBaseUrl, lockerId, lockerUrlOverride]);
 
   const [iframeLoaded, setIframeLoaded] = useState(false);
 
@@ -21,7 +23,7 @@ export default function LockerModal({
     }
   }, [phase, lockerUrl]);
 
-  if (phase === "closed" || !lockerId || !lockerUrl) return null;
+  if (phase === "closed" || !lockerUrl) return null;
 
   const isPrefetch = phase === "prefetch";
   const isVisible = phase === "visible";

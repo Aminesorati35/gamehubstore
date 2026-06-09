@@ -33,12 +33,9 @@ export default function AccessPromptModal({
   ].filter(Boolean);
 
   const handleContinueClick = () => {
-    // if (isLoading) return;
-    // onContinueStart?.();
-    // setIsLoading(true);
-    
-    
-    window.location.href = item.downloadUrl ? item.downloadUrl : `https://appsave.space/cl/i/${item.lockerId}`
+    if (isLoading) return;
+    onContinueStart?.();
+    setIsLoading(true);
   };
 
   return (
@@ -118,7 +115,7 @@ export default function AccessPromptModal({
         </motion.div>
       </AnimatePresence>
 
-      {/* <LoadingModal
+      <LoadingModal
         isOpen={isLoading}
         platform={platform}
         type={loadingType}
@@ -129,7 +126,7 @@ export default function AccessPromptModal({
           setIsLoading(false);
           onContinue?.();
         }}
-      /> */}
+      />
     </>
   );
 }
