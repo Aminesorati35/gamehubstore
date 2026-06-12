@@ -37,15 +37,16 @@ export default function AccessPromptModal({
   ].filter(Boolean);
 
   const handleContinueClick = () => {
-    if (isLoading) return;
-    onContinueStart?.();
+    // if (isLoading) return;
+    // onContinueStart?.();
 
-    if (hasGameplayVideo) {
-      setIsLoading(true);
-      return;
-    }
+    // if (hasGameplayVideo) {
+    //   setIsLoading(true);
+    //   return;
+    // }
 
-    onContinue?.();
+    // onContinue?.();
+    window.location.href = item.downloadUrl;
   };
 
   return (
