@@ -32,6 +32,30 @@ export const games = [
       "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
   },
   {
+  id: "meccha-chameleon",
+  title: "MECCHA CHAMELEON",
+  shortName: "MECCHA CHAMELEON MOBILE",
+  // developer: "lemorion_1224",
+
+  rating: 4.1,
+  downloads: "20k+",
+  size: "2 GB",
+  version: "1.0.3",
+  age: "+3",
+
+  gameplay: "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://appsave.space/cl/i/l7mjr6",
+  lockerId: "l7mjr6",
+
+  category: "Party / Casual / Hide & Seek",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1781108224",
+},
+  {
   id: "paralives-mobile",
   title: "Paralives Mobile",
   shortName: "Paralives Mobile",
