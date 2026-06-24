@@ -56,16 +56,7 @@ const GameCard = ({ game, onDownloadClick }) => {
           <p className="text-white/45 text-xs">{game.downloads}</p>
         </div>
 
-        <div className="grid grid-cols-2 gap-2 mb-3">
-          <div className="bg-white/[0.035] backdrop-blur-md rounded-lg p-2 border border-white/[0.08] text-center">
-            <p className="text-white/40 text-xs mb-0.5">Size</p>
-            <p className="font-bold text-xs">{game.size}</p>
-          </div>
-          <div className="bg-white/[0.035] backdrop-blur-md rounded-lg p-2 border border-white/[0.08] text-center">
-            <p className="text-white/40 text-xs mb-0.5">Age</p>
-            <p className="font-bold text-xs">{game.age}</p>
-          </div>
-        </div>
+        
 
        
           {hasFeatures && (
