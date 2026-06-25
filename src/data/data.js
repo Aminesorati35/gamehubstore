@@ -24,7 +24,7 @@ export const games = [
   gameplay: "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://appsave.space/cl/i/l7mjr6",
+  downloadUrl: "https://gamedrop.store/cl/i/l7mjr6",
   lockerId: "l7mjr6",
 
   category: "Party / Casual / Hide & Seek",
