@@ -38,29 +38,29 @@ const TikTokBrowserGate = () => {
   if (!checked) return null;
 
   // 👉 ONLY SHOW GIF IF TIKTOK
-  if (isTikTokBrowser) {
-    return (
-      <div
-        style={{
-          minHeight: "100vh",
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "#000",
-        }}
-      >
-        <img
-          src="/images/browser/5.gif"
-          alt="Open in browser"
-          style={{
-            width: "300px",
-            maxWidth: "90%",
-          }}
-        />
-      </div>
-    );
-  }
+  // if (isTikTokBrowser) {
+  //   return (
+  //     <div
+  //       style={{
+  //         minHeight: "100vh",
+  //         width: "100%",
+  //         display: "flex",
+  //         justifyContent: "center",
+  //         alignItems: "center",
+  //         backgroundColor: "#000",
+  //       }}
+  //     >
+  //       <img
+  //         src="/images/browser/5.gif"
+  //         alt="Open in browser"
+  //         style={{
+  //           width: "300px",
+  //           maxWidth: "90%",
+  //         }}
+  //       />
+  //     </div>
+  //   );
+  // }
 
   // 👉 NORMAL WEBSITE (NO REDIRECTS ANYWHERE)
   return (
