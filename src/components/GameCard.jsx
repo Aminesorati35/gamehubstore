@@ -33,11 +33,7 @@ const GameCard = ({ game, onDownloadClick }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
 
-        <div className="absolute top-3 left-3">
-          <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-xs font-bold px-2 py-1 rounded-full shadow-lg">
-            NEW
-          </span>
-        </div>
+        
       </div>
 
       <div className="p-4">

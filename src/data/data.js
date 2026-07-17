@@ -10,29 +10,29 @@ import {
 
 export const games = [
   {
-  id: "palworld-mobile",
-  title: "PALWORLD MOBILE",
-  shortName: "PALWORLD MOBILE",
+  id: "go-go-town-mobile",
+  title: "GO-GO TOWN MOBILE!",
+  shortName: "GO-GO TOWN MOBILE!",
 
-  // developer: "Pocketpair",
+  // developer: "Prideful Sloth",
 
   rating: 4.8,
-  downloads: "5M+",
-  size: "1.8 GB",
+  downloads: "1M+",
+  size: "1.5 GB",
   version: "1.0.0",
-  age: "+12",
+  age: "+3",
 
-  //gameplay: "https://palworldgame.com/",
+  // gameplay: "https://store.steampowered.com/app/2195120/Go-Go_Town/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/5nljm3",
-  lockerId: "l7mjr6",
+  downloadUrl: "https://gamedrop.store/cl/i/5nlxvv",
+  lockerId: "5nlxvv",
 
-  category: "Adventure / Survival / Open World",
+  category: "Simulation / City Builder / Casual",
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/57df7aed61d65c9012a11d58e812aff275b7daed/capsule_616x353.jpg?t=1783654507",
+    "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/gogotown/16x9_GoGoTown_image1600w.jpg",
 },
   {
   id: "meccha-chameleon",
@@ -57,6 +57,31 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1781108224",
+},
+{
+  id: "palworld-mobile",
+  title: "PALWORLD MOBILE",
+  shortName: "PALWORLD MOBILE",
+
+  // developer: "Pocketpair",
+
+  rating: 4.8,
+  downloads: "5M+",
+  size: "1.8 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  //gameplay: "https://palworldgame.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/5nljm3",
+  lockerId: "l7mjr6",
+
+  category: "Adventure / Survival / Open World",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/57df7aed61d65c9012a11d58e812aff275b7daed/capsule_616x353.jpg?t=1783654507",
 },
   {
     id: "tomodachi-life-living-the-dream",
