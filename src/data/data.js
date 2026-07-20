@@ -10,29 +10,29 @@ import {
 
 export const games = [
   {
-  id: "dear-passengers-mobile",
-  title: "DEAR PASSENGERS MOBILE",
-  shortName: "DEAR PASSENGERS MOBILE",
+  id: "funnel-runners-mobile",
+  title: "FUNNEL RUNNERS MOBILE",
+  shortName: "FUNNEL RUNNERS MOBILE",
 
-  // developer: "FLEXUS",
+  // developer: "Supernova Studios LLC",
 
   rating: 4.9,
   downloads: "1M+",
-  size: "1.4 GB",
+  size: "2.0 GB",
   version: "1.0.0",
   age: "+12",
 
-  // gameplay: "https://store.steampowered.com/app/4534960/Dear_Passengers/",
+  // gameplay: "https://store.steampowered.com/app/3712080/Funnel_Runners/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
   downloadUrl: "https://gamedrop.store/cl/i/6n9vgj",
   lockerId: "6n9vgj",
 
-  category: "Co-op / Action / Simulation",
+  category: "Survival / Co-op / Horror",
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4534960/e62d98831a294ec338c312a2824d8d607c0d169e/capsule_616x353.jpg?t=1784401335",
+    "https://gaming-cdn.com/images/products/22132/orig/funnel-runners-pc-steam-cover.jpg?v=1773756560",
 },
   {
   id: "meccha-chameleon",
