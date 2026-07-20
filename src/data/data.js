@@ -10,29 +10,29 @@ import {
 
 export const games = [
   {
-  id: "go-go-town-mobile",
-  title: "GO-GO TOWN MOBILE!",
-  shortName: "GO-GO TOWN MOBILE!",
+  id: "dear-passengers-mobile",
+  title: "DEAR PASSENGERS MOBILE",
+  shortName: "DEAR PASSENGERS MOBILE",
 
-  // developer: "Prideful Sloth",
+  // developer: "FLEXUS",
 
-  rating: 4.8,
+  rating: 4.9,
   downloads: "1M+",
-  size: "1.5 GB",
+  size: "1.4 GB",
   version: "1.0.0",
-  age: "+3",
+  age: "+12",
 
-  // gameplay: "https://store.steampowered.com/app/2195120/Go-Go_Town/",
+  // gameplay: "https://store.steampowered.com/app/4534960/Dear_Passengers/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/5nlxvv",
-  lockerId: "5nlxvv",
+  downloadUrl: "https://gamedrop.store/cl/i/6n9vgj",
+  lockerId: "6n9vgj",
 
-  category: "Simulation / City Builder / Casual",
+  category: "Co-op / Action / Simulation",
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/gogotown/16x9_GoGoTown_image1600w.jpg",
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4534960/e62d98831a294ec338c312a2824d8d607c0d169e/capsule_616x353.jpg?t=1784401335",
 },
   {
   id: "meccha-chameleon",
@@ -58,6 +58,31 @@ export const games = [
   heroImage:
     "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1781108224",
 },
+//   {
+//   id: "go-go-town-mobile",
+//   title: "GO-GO TOWN MOBILE!",
+//   shortName: "GO-GO TOWN MOBILE!",
+
+//   // developer: "Prideful Sloth",
+
+//   rating: 4.8,
+//   downloads: "1M+",
+//   size: "1.5 GB",
+//   version: "1.0.0",
+//   age: "+3",
+
+//   // gameplay: "https://store.steampowered.com/app/2195120/Go-Go_Town/",
+
+//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+//   downloadUrl: "https://gamedrop.store/cl/i/5nlxvv",
+//   lockerId: "5nlxvv",
+
+//   category: "Simulation / City Builder / Casual",
+
+//   // 🖼️ HERO IMAGE
+//   heroImage:
+//     "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/gogotown/16x9_GoGoTown_image1600w.jpg",
+// },
 {
   id: "palworld-mobile",
   title: "PALWORLD MOBILE",
