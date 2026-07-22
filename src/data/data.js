@@ -10,6 +10,31 @@ import {
 
 export const games = [
   {
+  id: "grounded-mobile",
+  title: "GROUNDED MOBILE",
+  shortName: "GROUNDED MOBILE",
+
+  // developer: "Obsidian Entertainment",
+
+  rating: 4.9,
+  downloads: "10M+",
+  size: "2.3 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  // gameplay: "https://store.steampowered.com/app/962130/Grounded/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/l7m1ej",
+  lockerId: "l7m1ej",
+
+  category: "Survival / Adventure / Open World",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/962130/capsule_616x353.jpg?t=1768264530",
+},
+  {
   id: "funnel-runners-mobile",
   title: "FUNNEL RUNNERS MOBILE",
   shortName: "FUNNEL RUNNERS MOBILE",
