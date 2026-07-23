@@ -10,29 +10,29 @@ import {
 
 export const games = [
   {
-  id: "grounded-mobile",
-  title: "GROUNDED MOBILE",
-  shortName: "GROUNDED MOBILE",
+  id: "splatoon-raiders-mobile",
+  title: "SPLATOON RAIDERS MOBILE",
+  shortName: "SPLATOON RAIDERS MOBILE",
 
-  // developer: "Obsidian Entertainment",
+  // developer: "Nintendo",
 
   rating: 4.9,
   downloads: "10M+",
-  size: "2.3 GB",
+  size: "2.4 GB",
   version: "1.0.0",
-  age: "+12",
+  age: "+10",
 
-  // gameplay: "https://store.steampowered.com/app/962130/Grounded/",
+  // gameplay: "https://splatoon.nintendo.com/en/news/splatoon-raiders-the-first-ever-splatoon-spinoff-game-is-coming-to-nintendo-switch-2/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
   downloadUrl: "https://gamedrop.store/cl/i/l7m1ej",
   lockerId: "l7m1ej",
 
-  category: "Survival / Adventure / Open World",
+  category: "Action / Shooter / Adventure",
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/962130/capsule_616x353.jpg?t=1768264530",
+    "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000122824/cf587e01f6f115398f411f280dba21e025795eb69f234a41722341ea999d170d",
 },
   {
   id: "funnel-runners-mobile",
