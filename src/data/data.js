@@ -10,6 +10,31 @@ import {
 
 export const games = [
   {
+  id: "palworld-mobile",
+  title: "PALWORLD MOBILE",
+  shortName: "PALWORLD MOBILE",
+
+  // developer: "Pocketpair",
+
+  rating: 4.8,
+  downloads: "5M+",
+  size: "1.8 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  //gameplay: "https://palworldgame.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/5nljm3",
+  lockerId: "l7mjr6",
+
+  category: "Adventure / Survival / Open World",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/57df7aed61d65c9012a11d58e812aff275b7daed/capsule_616x353.jpg?t=1783654507",
+},
+  {
   id: "splatoon-raiders-mobile",
   title: "SPLATOON RAIDERS MOBILE",
   shortName: "SPLATOON RAIDERS MOBILE",
@@ -108,31 +133,6 @@ export const games = [
 //   heroImage:
 //     "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/gogotown/16x9_GoGoTown_image1600w.jpg",
 // },
-{
-  id: "palworld-mobile",
-  title: "PALWORLD MOBILE",
-  shortName: "PALWORLD MOBILE",
-
-  // developer: "Pocketpair",
-
-  rating: 4.8,
-  downloads: "5M+",
-  size: "1.8 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  //gameplay: "https://palworldgame.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/5nljm3",
-  lockerId: "l7mjr6",
-
-  category: "Adventure / Survival / Open World",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/57df7aed61d65c9012a11d58e812aff275b7daed/capsule_616x353.jpg?t=1783654507",
-},
   {
     id: "tomodachi-life-living-the-dream",
     title: "Tomodachi Life: Living the Dream",
