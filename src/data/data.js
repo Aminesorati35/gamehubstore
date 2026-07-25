@@ -10,6 +10,28 @@ import {
 
 export const games = [
   {
+    id: "tomodachi-life-living-the-dream",
+    title: "Tomodachi Life: Living the Dream",
+    shortName: "Tomodachi Life: Living the Dream",
+    // developer: "Mob Entertainment",
+    rating: 4.7,
+    downloads: "200k",
+    size: "6 GB",
+    version: "1.0.0",
+    age: "+3",
+    gameplay: "https://streamable.com/e/c3bxub?",
+
+    // 🔒 KEEP LOCKER (UNCHANGED)
+    downloadUrl: "https://downloadtomodachi.site/cl/i/4oroxx",
+    lockerId: "4oroxx",
+
+    category: "Simulation / Role Play",
+
+    // 🖼️ HERO IMAGE
+    heroImage:
+      "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
+  },
+  {
   id: "palworld-mobile",
   title: "PALWORLD MOBILE",
   shortName: "PALWORLD MOBILE",
@@ -133,28 +155,6 @@ export const games = [
 //   heroImage:
 //     "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/gogotown/16x9_GoGoTown_image1600w.jpg",
 // },
-  {
-    id: "tomodachi-life-living-the-dream",
-    title: "Tomodachi Life: Living the Dream",
-    shortName: "Tomodachi Life: Living the Dream",
-    // developer: "Mob Entertainment",
-    rating: 4.7,
-    downloads: "200k",
-    size: "6 GB",
-    version: "1.0.0",
-    age: "+3",
-    gameplay: "https://streamable.com/e/c3bxub?",
-
-    // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://downloadtomodachi.site/cl/i/4oroxx",
-    lockerId: "4oroxx",
-
-    category: "Simulation / Role Play",
-
-    // 🖼️ HERO IMAGE
-    heroImage:
-      "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/tomodachilifelivingthedream/16x9_NSwitch_TomodachiLiveLTD_BASE_UK_image1600w.jpg",
-  },
   
   {
   id: "paralives-mobile",
