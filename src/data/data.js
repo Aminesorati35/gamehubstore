@@ -11,8 +11,8 @@ import {
 export const games = [
   {
     id: "tomodachi-life-living-the-dream",
-    title: "Tomodachi Life: Living the Dream",
-    shortName: "Tomodachi Life: Living the Dream",
+    title: "Tomodachi Life: Living the Dream Mobile",
+    shortName: "Tomodachi Life: Living the Dream Mobile",
     // developer: "Mob Entertainment",
     rating: 4.7,
     downloads: "200k",
