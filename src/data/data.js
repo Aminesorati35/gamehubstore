@@ -10,6 +10,31 @@ import {
 
 export const games = [
   {
+  id: "shift-at-midnight-mobile",
+  title: "SHIFT AT MIDNIGHT MOBILE",
+  shortName: "SHIFT AT MIDNIGHT MOBILE",
+
+  // developer: "Midnight Games",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.9 GB",
+  version: "1.0.0",
+  age: "+16",
+
+  // gameplay: "https://store.steampowered.com/app/3762050/Shift_At_Midnight/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/w6jk4m",
+  lockerId: "w6jk4m",
+
+  category: "Horror / Survival / Adventure",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://www.allkeyshop.com/blog/wp-content/uploads/shift-at-midnight-game-pass-july-2026.webp",
+},
+  {
     id: "tomodachi-life-living-the-dream",
     title: "Tomodachi Life: Living the Dream Mobile",
     shortName: "Tomodachi Life: Living the Dream Mobile",
