@@ -10,6 +10,55 @@ import {
 
 export const games = [
   {
+  id: "free-fire-2022",
+  title: "FREE FIRE 2022",
+  shortName: "FREE FIRE 2022",
+
+  // developer: "Garena",
+
+  rating: 4.4,
+  downloads: "1B+",
+  size: "744 MB",
+  version: "1.88.1",
+  age: "+12",
+
+  // gameplay: "https://ff.garena.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/5nlxvv",
+  lockerId: "5nlxvv",
+
+  category: "Battle Royale / Action / Shooter",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg",
+},
+{
+  id: "speed-keyboard-escape-rewards",
+  title: "KEYBOARD ESCAPE REWARDS",
+  shortName: "KEYBOARD ESCAPE REWARDS",
+
+  // developer: "Speek Studios",
+
+  rating: 4.7,
+  downloads: "500K+",
+  size: "185 MB",
+  version: "1.0.0",
+  age: "+3",
+  type : "rewards",
+
+  // gameplay: "https://example.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/5nljm3",
+  lockerId: "l7mjr6",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://topgames.gg/data/image/game/1-speed-keyboard-escape.png",
+},
+  {
   id: "shift-at-midnight-mobile",
   title: "SHIFT AT MIDNIGHT MOBILE",
   shortName: "SHIFT AT MIDNIGHT MOBILE",

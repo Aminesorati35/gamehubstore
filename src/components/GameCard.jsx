@@ -8,15 +8,15 @@ const GameCard = ({ game, onDownloadClick }) => {
      
   };
 
-  const isClaim = game.type === "claim";
+  const isRewards = game.type === "rewards";
   const hasFeatures = Array.isArray(game.features) && game.features.length > 0;
   const isScript = game.category?.toLowerCase().includes("scripts");
 
   const baseClasses =
-    "w-full text-white font-semibold py-3 px-4 rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer text-sm border backdrop-blur-md active:scale-[0.98]";
+    "w-full font-semibold py-3 px-4 rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer text-sm border backdrop-blur-md active:scale-[0.98]";
 
-  const claimClasses =
-    "bg-emerald-500/90 hover:bg-emerald-400 border-emerald-300/30 shadow-[0_8px_25px_rgba(16,185,129,0.35)]";
+const claimClasses =
+  "bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 border-yellow-300/30 shadow-[0_8px_10px_rgba(245,158,11,0.4)] text-black";
 
   const downloadClasses =
     isScript
@@ -71,13 +71,31 @@ const GameCard = ({ game, onDownloadClick }) => {
         )}
        
 
-        {isClaim ? (
-          <button
-            onClick={handleDownload}
-            className={`${baseClasses} ${claimClasses}`}
-          >
-            🎁 Claim Rewards
-          </button>
+        {isRewards ? (
+           <a
+    href="https://www.key3.site"
+    className={`${baseClasses} ${claimClasses}`}
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="3" y="8" width="18" height="4" rx="1" />
+      <path d="M12 8v13" />
+      <path d="M19 12v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8" />
+      <path d="M7.5 8A2.5 2.5 0 1 1 10 5.5V8" />
+      <path d="M16.5 8A2.5 2.5 0 1 0 14 5.5V8" />
+    </svg>
+
+    Claim Rewards
+  </a>
         ) : (
           <button
             onClick={handleDownload}
