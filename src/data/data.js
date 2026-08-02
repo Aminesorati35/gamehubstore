@@ -51,8 +51,8 @@ export const games = [
   // gameplay: "https://example.com/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/5nljm3",
-  lockerId: "l7mjr6",
+  downloadUrl: "https://gamedrop.store/cl/i/d2od5o",
+  lockerId: "d2od5o",
 
   // 🖼️ HERO IMAGE
   heroImage:
