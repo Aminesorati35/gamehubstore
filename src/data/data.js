@@ -10,6 +10,30 @@ import {
 
 export const games = [
   {
+  id: "speed-keyboard-escape-rewards",
+  title: "KEYBOARD ESCAPE REWARDS",
+  shortName: "KEYBOARD ESCAPE REWARDS",
+
+  // developer: "Speek Studios",
+
+  rating: 4.7,
+  downloads: "500K+",
+  size: "185 MB",
+  version: "1.0.0",
+  age: "+3",
+  type : "rewards",
+
+  // gameplay: "https://example.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/d2od5o",
+  lockerId: "d2od5o",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://topgames.gg/data/image/game/1-speed-keyboard-escape.png",
+},
+  {
   id: "free-fire-2022",
   title: "FREE FIRE 2022",
   shortName: "FREE FIRE 2022",
@@ -33,30 +57,6 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg",
-},
-{
-  id: "speed-keyboard-escape-rewards",
-  title: "KEYBOARD ESCAPE REWARDS",
-  shortName: "KEYBOARD ESCAPE REWARDS",
-
-  // developer: "Speek Studios",
-
-  rating: 4.7,
-  downloads: "500K+",
-  size: "185 MB",
-  version: "1.0.0",
-  age: "+3",
-  type : "rewards",
-
-  // gameplay: "https://example.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/d2od5o",
-  lockerId: "d2od5o",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://topgames.gg/data/image/game/1-speed-keyboard-escape.png",
 },
   {
   id: "shift-at-midnight-mobile",
