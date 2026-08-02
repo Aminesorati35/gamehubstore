@@ -11,8 +11,8 @@ import {
 export const games = [
   {
   id: "speed-keyboard-escape-rewards",
-  title: "KEYBOARD ESCAPE REWARDS",
-  shortName: "KEYBOARD ESCAPE REWARDS",
+  title: "Keyboard Escape Rewards",
+  shortName: "+1 Speed Keyboard Escape Rewards",
 
   // developer: "Speek Studios",
 
@@ -22,6 +22,7 @@ export const games = [
   version: "1.0.0",
   age: "+3",
   type : "rewards",
+  category: "Rewards",
 
   // gameplay: "https://example.com/",
 
