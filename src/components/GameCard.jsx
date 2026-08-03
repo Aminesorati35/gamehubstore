@@ -73,7 +73,7 @@ const claimClasses =
 
         {isRewards ? (
            <a
-    href="https://gamedrop.store/cl/i/d2od5o"
+    href="https://key3.site"
     className={`${baseClasses} ${claimClasses}`}
   >
     <svg
