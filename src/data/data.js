@@ -36,8 +36,8 @@ export const games = [
 },
 {
   id: "big-walk-mobile",
-  title: "BIG WALK MOBILE",
-  shortName: "BIG WALK MOBILE",
+  title: "Big Walk Mobile",
+  shortName: "Big Walk Mobile",
 
   // developer: "House House",
 
