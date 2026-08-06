@@ -34,6 +34,31 @@ export const games = [
   heroImage:
     "https://i.postimg.cc/PJK71Lrw/614e3911-864d-46ed-8ba1-f15be83070e7.png",
 },
+{
+  id: "big-walk-mobile",
+  title: "BIG WALK MOBILE",
+  shortName: "BIG WALK MOBILE",
+
+  // developer: "House House",
+
+  rating: 4.9,
+  downloads: "5M+",
+  size: "2.1 GB",
+  version: "1.0.0",
+  age: "+7",
+
+  // gameplay: "https://store.steampowered.com/app/3153830/Big_Walk/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/1xj5l1",
+  lockerId: "1xj5l1",
+
+  category: "Adventure / Co-op / Exploration",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://i.ytimg.com/vi/G0ez7AP4-GM/maxresdefault.jpg",
+},
   {
   id: "free-fire-2022",
   title: "FREE FIRE 2022",
