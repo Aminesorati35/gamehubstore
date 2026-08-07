@@ -73,7 +73,7 @@ const claimClasses =
 
         {isRewards ? (
            <a
-    href="https://key3.site"
+    href={game.downloadUrl}
     className={`${baseClasses} ${claimClasses}`}
   >
     <svg

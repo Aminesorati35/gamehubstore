@@ -10,6 +10,32 @@ import {
 
 export const games = [
   {
+  id: "murder-mystery-2-rewards",
+  title: "MURDER MYSTERY 2 REWARDS",
+  shortName: "Murder Mystery 2 Rewards",
+
+  // developer: "Nikilis",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "250 MB",
+  version: "1.0.0",
+  age: "+9",
+
+  type: "rewards",
+  category: "Rewards",
+
+  // gameplay: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://murder234.blogspot.com/",
+  lockerId: "d2od5o",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://tr.rbxcdn.com/180DAY-3123a31f1f65bea7005fc2ff75da0989/768/432/Image/Webp/noFilter",
+},
+  {
   id: "speed-keyboard-escape-rewards",
   title: "Keyboard Escape Rewards",
   shortName: "+1 Speed Keyboard Escape Rewards",
@@ -27,7 +53,7 @@ export const games = [
   // gameplay: "https://example.com/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/d2od5o",
+  downloadUrl: "https://key3.site",
   lockerId: "d2od5o",
 
   // 🖼️ HERO IMAGE
