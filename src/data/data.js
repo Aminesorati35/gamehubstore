@@ -28,8 +28,8 @@ export const games = [
   // gameplay: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  //downloadUrl: "https://murder234.blogspot.com/",
-    downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
+  downloadUrl: "https://murder234.blogspot.com/",
+  //downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
   lockerId: "d2od5o",
 
   // 🖼️ HERO IMAGE
