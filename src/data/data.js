@@ -61,6 +61,31 @@ export const games = [
   heroImage:
     "https://i.postimg.cc/PJK71Lrw/614e3911-864d-46ed-8ba1-f15be83070e7.png",
 },
+{
+  id: "pes-2021-mobile",
+  title: "PES 2021 MOBILE",
+  shortName: "PES 2021",
+
+  // developer: "Konami",
+
+  rating: 4.6,
+  downloads: "100M+",
+  size: "1.9 GB",
+  version: "5.5.0",
+  age: "+3",
+
+  category: "Sports / Football / Simulation",
+
+  // gameplay: "https://www.konami.com/efootball/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/o4m4pr",
+  lockerId: "o4m4pr",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://www.konami.com/products_master/eu_publish/pes2021_mobile/eu/fr/images/pes2021_thumbnail.jpg",
+},
   {
   id: "free-fire-2022",
   title: "FREE FIRE 2022",
