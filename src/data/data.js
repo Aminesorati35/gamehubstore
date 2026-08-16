@@ -64,7 +64,7 @@ export const games = [
 {
   id: "pes-2021-mobile",
   title: "PES 2021 MOBILE",
-  shortName: "PES 2021",
+  shortName: "PES 2021 MOBILE",
 
   // developer: "Konami",
 
