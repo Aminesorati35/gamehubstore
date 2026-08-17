@@ -86,6 +86,31 @@ export const games = [
   heroImage:
     "https://www.konami.com/products_master/eu_publish/pes2021_mobile/eu/fr/images/pes2021_thumbnail.jpg",
 },
+{
+  id: "fortnite-2018",
+  title: "FORTNITE 2018",
+  shortName: "FORTNITE 2018",
+
+  // developer: "Epic Games",
+
+  rating: 4.8,
+  downloads: "100M+",
+  size: "7.5 GB",
+  version: "6.31",
+  age: "+12",
+
+  category: "Battle Royale / Action / Shooter",
+
+  // gameplay: "https://www.fortnite.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/qn1npw",
+  lockerId: "qn1npw",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://img.redbull.com/images/c_crop,w_1920,h_960,x_0,y_0/c_auto,w_1200,h_600/f_auto,q_auto/redbullcom/2018/03/21/9a48fe91-8df2-4609-9698-0b04c645d927/fortnite-battle-royale",
+},
   {
   id: "free-fire-2022",
   title: "FREE FIRE 2022",
@@ -352,107 +377,6 @@ export const games = [
     // 🖼️ HERO IMAGE
     heroImage:
       "https://images.ctfassets.net/nwksj2ft7iku/4WbVzweG4y1Y7afElrlfPJ/79027a14b48e14a00bdc39182e425833/LEGO_Batman__Legacy_of_the_Dark_Knight_Combat_Key_Art_16x9.png",
-},
-{
-    id: "toca-boca-world-mod",
-    title: "Toca Boca World MOD",
-    shortName: "Toca Boca World Mod",
-    // developer: "Toca Boca",
-    rating: 4.8,
-    downloads: "12.3M",
-    size: "725 MB",
-    version: "1.89",
-    age: "3+",
-
-    // 🔒 KEEP LOCKER (UNCHANGED)
-    lockerId: "rnnveg",
-
-    category: "Simulation / Kids",
-
-    // 🖼️ HERO IMAGE
-    heroImage:
-      "https://d2duuy9yo5pldo.cloudfront.net/dashboard-resources/tocaboca/ea2ce3d3-63c0-41ea-b9e5-7e5abd576e7a.png",
-  },
-  {
-  id: "subnautica-2-mobile",
-  title: "Subnautica 2 Mobile",
-  shortName: "Subnautica 2",
-  // developer: "Unknown Worlds Entertainment",
-  rating: 4.8,
-  downloads: "1M+",
-  size: "5.6 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  // 🔒 KEEP LOCKER (UNCHANGED)
-  lockerId: "vejmmm",
-
-  category: "Survival / Adventure",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/header.jpg?t=1778510411",
-},
-  {
-  id: "zelda-twilight-princess-mobile",
-  title: "The Legend of Zelda: Twilight Princess",
-  shortName: "Zelda: Twilight Princess",
-  // developer: "Nintendo",
-  rating: 4.9,
-  downloads: "5M+",
-  size: "7.2 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  // 🔒 KEEP LOCKER (UNCHANGED)
-  lockerId: "xp23el",
-
-  category: "Adventure / Action RPG",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://media.overclock3d.net/2026/05/TLOZ-Twilight-Princess-Dusk-PC.jpg",
-},
-  {
-  id: "mixtape-mobile",
-  title: "Mixtape Mobile",
-  shortName: "Mixtape",
-  // developer: "Beethoven & Dinosaur",
-  rating: 4.8,
-  downloads: "300k+",
-  size: "4.1 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  // 🔒 KEEP LOCKER (UNCHANGED)
-  downloadUrl: "https://redirectapps.org/cl/i/4or4j1",
-  lockerId: "4or4j1",
-
-  category: "Adventure / Story",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_2_games/mixtape/16x9_Mixtape_image1600w.jpg",
-},
-  {
-  id: "repo-mobile",
-  title: "R.E.P.O. Mobile",
-  shortName: "R.E.P.O. Mobile",
-  // developer: "semiwork",
-  rating: 4.9,
-  downloads: "500k+",
-  size: "2.8 GB",
-  version: "1.0.2",
-  age: "+16",
-
-  // 🔒 KEEP LOCKER (UNCHANGED)
-  lockerId: "5nlrpk",
-
-  category: "Horror / Co-op",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3241660/a12c92856b71315da885924ea5e1d5290c8025b8/header_alt_assets_2.jpg?t=1778158882",
 },
 ];
 export const apps = [
