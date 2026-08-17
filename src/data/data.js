@@ -85,8 +85,6 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://www.konami.com/products_master/eu_publish/pes2021_mobile/eu/fr/images/pes2021_thumbnail.jpg",
-    ads : true,
-    adLink:"https://pl30895403.effectivecpmnetwork.com/06/66/28/0666280a9dba8a905cb7d6f983432809.js"
 },
   {
   id: "free-fire-2022",

@@ -2,28 +2,11 @@ import React from "react";
 
 const GameCard = ({ game, onDownloadClick }) => {
   const handleDownload = (e) => {
-  e.stopPropagation();
-
-  // شغل Popunder غير إلا كانت اللعبة ads: true
-  if (game.ads === true) {
-    const scriptId = "popunder-ad-script";
-
-    // نزيد السكريبت غير مرة وحدة
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement("script");
-
-      script.id = scriptId;
-      script.src =game.adLink;
-
-      script.async = true;
-
-      document.body.appendChild(script);
-    }
-  }
-
-  // كمل عملية التحميل ديال اللعبة
-  onDownloadClick(game);
-};
+     e.stopPropagation();
+     onDownloadClick(game);
+    
+     
+  };
 
   const isRewards = game.type === "rewards";
   const hasFeatures = Array.isArray(game.features) && game.features.length > 0;
