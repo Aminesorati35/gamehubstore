@@ -106,7 +106,7 @@ export const games = [
   // gameplay: "https://www.konami.com/efootball/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/o4m4pr",
+  downloadUrl: "https://appsave.store/cl/i/o4m4pr",
   lockerId: "o4m4pr",
 
   // 🖼️ HERO IMAGE
@@ -131,7 +131,7 @@ export const games = [
   // gameplay: "https://www.fortnite.com/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/qn1npw",
+  downloadUrl: "https://appsave.store/cl/i/qn1npw",
   lockerId: "qn1npw",
 
   // 🖼️ HERO IMAGE
@@ -154,7 +154,7 @@ export const games = [
   // gameplay: "https://ff.garena.com/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/5nlxvv",
+  downloadUrl: "https://appsave.store/cl/i/5nlxvv",
   lockerId: "5nlxvv",
 
   category: "Battle Royale / Action / Shooter",
@@ -179,7 +179,7 @@ export const games = [
   // gameplay: "https://store.steampowered.com/app/3153830/Big_Walk/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/1xj5l1",
+  downloadUrl: "https://appsave.store/cl/i/1xj5l1",
   lockerId: "1xj5l1",
 
   category: "Adventure / Co-op / Exploration",
@@ -204,7 +204,7 @@ export const games = [
   // gameplay: "https://store.steampowered.com/app/3762050/Shift_At_Midnight/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/w6jk4m",
+  downloadUrl: "https://appsave.store/cl/i/w6jk4m",
   lockerId: "w6jk4m",
 
   category: "Horror / Survival / Adventure",
@@ -251,7 +251,7 @@ export const games = [
   //gameplay: "https://palworldgame.com/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/5nljm3",
+  downloadUrl: "https://appsave.store/cl/i/5nljm3",
   lockerId: "l7mjr6",
 
   category: "Adventure / Survival / Open World",
@@ -276,7 +276,7 @@ export const games = [
   // gameplay: "https://splatoon.nintendo.com/en/news/splatoon-raiders-the-first-ever-splatoon-spinoff-game-is-coming-to-nintendo-switch-2/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/l7m1ej",
+  downloadUrl: "https://appsave.store/cl/i/l7m1ej",
   lockerId: "l7m1ej",
 
   category: "Action / Shooter / Adventure",
@@ -284,31 +284,6 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000122824/cf587e01f6f115398f411f280dba21e025795eb69f234a41722341ea999d170d",
-},
-  {
-  id: "funnel-runners-mobile",
-  title: "FUNNEL RUNNERS MOBILE",
-  shortName: "FUNNEL RUNNERS MOBILE",
-
-  // developer: "Supernova Studios LLC",
-
-  rating: 4.9,
-  downloads: "1M+",
-  size: "2.0 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  // gameplay: "https://store.steampowered.com/app/3712080/Funnel_Runners/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/6n9vgj",
-  lockerId: "6n9vgj",
-
-  category: "Survival / Co-op / Horror",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://gaming-cdn.com/images/products/22132/orig/funnel-runners-pc-steam-cover.jpg?v=1773756560",
 },
   {
   id: "meccha-chameleon",
@@ -325,7 +300,7 @@ export const games = [
   gameplay: "https://store.steampowered.com/app/4704690/MECCHA_CHAMELEON/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/l7mjr6",
+  downloadUrl: "https://appsave.store/cl/i/l7mjr6",
   lockerId: "l7mjr6",
 
   category: "Party / Casual / Hide & Seek",
@@ -334,32 +309,6 @@ export const games = [
   heroImage:
     "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1781108224",
 },
-//   {
-//   id: "go-go-town-mobile",
-//   title: "GO-GO TOWN MOBILE!",
-//   shortName: "GO-GO TOWN MOBILE!",
-
-//   // developer: "Prideful Sloth",
-
-//   rating: 4.8,
-//   downloads: "1M+",
-//   size: "1.5 GB",
-//   version: "1.0.0",
-//   age: "+3",
-
-//   // gameplay: "https://store.steampowered.com/app/2195120/Go-Go_Town/",
-
-//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-//   downloadUrl: "https://gamedrop.store/cl/i/5nlxvv",
-//   lockerId: "5nlxvv",
-
-//   category: "Simulation / City Builder / Casual",
-
-//   // 🖼️ HERO IMAGE
-//   heroImage:
-//     "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/gogotown/16x9_GoGoTown_image1600w.jpg",
-// },
-  
   {
   id: "paralives-mobile",
   title: "Paralives Mobile",
@@ -373,7 +322,7 @@ export const games = [
 
 
   // 🔒 KEEP LOCKER
-  downloadUrl: "https://saveapp.store/cl/i/qn653w",
+  downloadUrl: "https://appsave.store/cl/i/qn653w",
   lockerId: "qn653w",
 
   category: "Simulation / Life Simulation",
