@@ -89,6 +89,32 @@ export const games = [
     "https://i.postimg.cc/PJK71Lrw/614e3911-864d-46ed-8ba1-f15be83070e7.png",
 },
 {
+  id: "gta-vi-beta",
+  title: "GTA VI BETA",
+  shortName: "GTA VI BETA Mobile",
+
+  // developer: "Rockstar Games",
+
+  rating: 4.9,
+  downloads: "5M+",
+  size: "3.5 GB",
+  version: "1.0.0",
+  age: "+18",
+
+  
+
+  // gameplay: "https://www.rockstargames.com/VI",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  //downloadUrl: "https://murder234.blogspot.com/",
+  downloadUrl: "https://gamedrop.store/cl/i/ex11xd",
+  lockerId: "d2od5o",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&imdensity=1&imwidth=3840",
+},
+{
   id: "pes-2021-mobile",
   title: "PES 2021 MOBILE",
   shortName: "PES 2021 MOBILE",
