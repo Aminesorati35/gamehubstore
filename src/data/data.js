@@ -10,33 +10,6 @@ import {
 
 export const games = [
   {
-  id: "steal-an-egg-rewards",
-  title: "STEAL AN EGG REWARDS",
-  shortName: "Steal An Egg Rewards",
-
-  // developer: "Roblox",
-
-  rating: 4.8,
-  downloads: "1M+",
-  size: "250 MB",
-  version: "1.0.0",
-  age: "+9",
-
-  type: "rewards",
-  category: "Rewards",
-
-  // gameplay: "https://www.roblox.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://stealanegg3.blogspot.com/",
-  // downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
-  lockerId: "d2od5o",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://shorturl.at/D8KBG",
-},
-  {
   id: "murder-mystery-2-rewards",
   title: "MURDER MYSTERY 2 REWARDS",
   shortName: "Murder Mystery 2 Rewards",
@@ -62,6 +35,33 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://tr.rbxcdn.com/180DAY-3123a31f1f65bea7005fc2ff75da0989/768/432/Image/Webp/noFilter",
+},
+{
+  id: "steal-an-egg-rewards",
+  title: "STEAL AN EGG REWARDS",
+  shortName: "Steal An Egg Rewards",
+
+  // developer: "Roblox",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "250 MB",
+  version: "1.0.0",
+  age: "+9",
+
+  type: "rewards",
+  category: "Rewards",
+
+  // gameplay: "https://www.roblox.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://stealanegg3.blogspot.com/",
+  // downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
+  lockerId: "d2od5o",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shorturl.at/D8KBG",
 },
   {
   id: "speed-keyboard-escape-rewards",
