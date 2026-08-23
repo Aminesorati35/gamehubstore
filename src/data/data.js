@@ -86,7 +86,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://i.postimg.cc/PJK71Lrw/614e3911-864d-46ed-8ba1-f15be83070e7.png",
+    "https://i.postimg.cc/nzBpks8M/614e3911-864d-46ed-8ba1-f15be83070e7.png",
 },
 {
   id: "wobbly-life-mobile",
