@@ -89,6 +89,31 @@ export const games = [
     "https://i.postimg.cc/PJK71Lrw/614e3911-864d-46ed-8ba1-f15be83070e7.png",
 },
 {
+  id: "wobbly-life-mobile",
+  title: "WOBBLY LIFE MOBILE",
+  shortName: "WOBBLY LIFE MOBILE",
+
+  // developer: "RubberBandGames",
+
+  rating: 4.8,
+  downloads: "5M+",
+  size: "1.8 GB",
+  version: "1.0.0",
+  age: "+3",
+
+  category: "Adventure / Open World / Simulation",
+
+  // gameplay: "https://www.wobblylife.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/qn1136",
+  lockerId: "l7mjr6",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/wobblylife/2x1_WobblyLife.jpg",
+},
+{
   id: "gta-vi-beta",
   title: "GTA VI BETA",
   shortName: "GTA VI BETA Mobile",
@@ -138,31 +163,6 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://www.konami.com/products_master/eu_publish/pes2021_mobile/eu/fr/images/pes2021_thumbnail.jpg",
-},
-{
-  id: "fortnite-2018",
-  title: "FORTNITE 2018",
-  shortName: "FORTNITE 2018",
-
-  // developer: "Epic Games",
-
-  rating: 4.8,
-  downloads: "100M+",
-  size: "7.5 GB",
-  version: "6.31",
-  age: "+12",
-
-  category: "Battle Royale / Action / Shooter",
-
-  // gameplay: "https://www.fortnite.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://appsave.store/cl/i/qn1npw",
-  lockerId: "qn1npw",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://img.redbull.com/images/c_crop,w_1920,h_960,x_0,y_0/c_auto,w_1200,h_600/f_auto,q_auto/redbullcom/2018/03/21/9a48fe91-8df2-4609-9698-0b04c645d927/fortnite-battle-royale",
 },
   {
   id: "free-fire-2022",
