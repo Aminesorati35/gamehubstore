@@ -56,7 +56,7 @@ const Home = () => {
       <Navbar />
 
       <section className="container mx-auto px-4 sm:px-6 lg:px-10 py-8 min-h-screen">
-        <div className="mb-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl px-5 py-6 sm:px-7">
+        {/* <div className="mb-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl px-5 py-6 sm:px-7">
           <h2 className="text-3xl sm:text-4xl font-black mb-2 tracking-tight bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
             Featured Content
           </h2>
@@ -80,7 +80,7 @@ const Home = () => {
               Games
             </button>
           </div>
-        </div>
+        </div> */}
 
         <div className="mb-5">
           <h3 className="text-white text-2xl font-bold tracking-tight">
