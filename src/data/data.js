@@ -9,6 +9,31 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const games = [
+   {
+  id: "speed-keyboard-escape-rewards",
+  title: "Keyboard Escape Rewards",
+  shortName: "+1 Speed Keyboard Escape Rewards",
+
+  // developer: "Speek Studios",
+
+  rating: 4.7,
+  downloads: "500K+",
+  size: "185 MB",
+  version: "1.0.0",
+  age: "+3",
+  type : "rewards",
+  category: "Rewards",
+
+  // gameplay: "https://example.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://key3.site",
+  lockerId: "d2od5o",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "images/games/keyboard.png",
+},
   {
   id: "murder-mystery-2-rewards",
   title: "MURDER MYSTERY 2 REWARDS",
@@ -62,31 +87,6 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://shorturl.at/D8KBG",
-},
-  {
-  id: "speed-keyboard-escape-rewards",
-  title: "Keyboard Escape Rewards",
-  shortName: "+1 Speed Keyboard Escape Rewards",
-
-  // developer: "Speek Studios",
-
-  rating: 4.7,
-  downloads: "500K+",
-  size: "185 MB",
-  version: "1.0.0",
-  age: "+3",
-  type : "rewards",
-  category: "Rewards",
-
-  // gameplay: "https://example.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://key3.site",
-  lockerId: "d2od5o",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "images/games/keyboard.png",
 },
 {
   id: "wobbly-life-mobile",
