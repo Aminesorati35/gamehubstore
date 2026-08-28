@@ -91,7 +91,7 @@ export const games = [
 {
   id: "nba-2k27",
   title: "NBA 2K27",
-  shortName: "NBA 2K27",
+  shortName: "NBA 2K27 Mobile",
 
   // developer: "Visual Concepts / 2K",
 
