@@ -89,31 +89,6 @@ export const games = [
     "https://shorturl.at/D8KBG",
 },
 {
-  id: "nba-2k27",
-  title: "NBA 2K27",
-  shortName: "NBA 2K27 Mobile",
-
-  // developer: "Visual Concepts / 2K",
-
-  rating: 4.8,
-  downloads: "10M+",
-  size: "3.2 GB",
-  version: "1.0.0",
-  age: "+3",
-
-  category: "Sports / Basketball / Simulation",
-
-  // gameplay: "https://nba.2k.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/o4mvvn",
-  lockerId: "o4mvvn",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4356430/f36173562a29d72ec0da4bfcd5e66e5825b671e0/capsule_616x353.jpg?t=1787855111",
-},
-{
   id: "wobbly-life-mobile",
   title: "WOBBLY LIFE MOBILE",
   shortName: "WOBBLY LIFE MOBILE",
