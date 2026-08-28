@@ -89,31 +89,6 @@ export const games = [
     "https://shorturl.at/D8KBG",
 },
 {
-  id: "wobbly-life-mobile",
-  title: "WOBBLY LIFE MOBILE",
-  shortName: "WOBBLY LIFE MOBILE",
-
-  // developer: "RubberBandGames",
-
-  rating: 4.8,
-  downloads: "5M+",
-  size: "1.8 GB",
-  version: "1.0.0",
-  age: "+3",
-
-  category: "Adventure / Open World / Simulation",
-
-  // gameplay: "https://www.wobblylife.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/qn1136",
-  lockerId: "l7mjr6",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/wobblylife/2x1_WobblyLife.jpg",
-},
-{
   id: "gta-vi-beta",
   title: "GTA VI BETA",
   shortName: "GTA VI BETA Mobile",
@@ -138,6 +113,31 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&imdensity=1&imwidth=3840",
+},
+{
+  id: "wobbly-life-mobile",
+  title: "WOBBLY LIFE MOBILE",
+  shortName: "WOBBLY LIFE MOBILE",
+
+  // developer: "RubberBandGames",
+
+  rating: 4.8,
+  downloads: "5M+",
+  size: "1.8 GB",
+  version: "1.0.0",
+  age: "+3",
+
+  category: "Adventure / Open World / Simulation",
+
+  // gameplay: "https://www.wobblylife.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/qn1136",
+  lockerId: "l7mjr6",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/wobblylife/2x1_WobblyLife.jpg",
 },
 {
   id: "pes-2021-mobile",
