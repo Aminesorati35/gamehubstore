@@ -32,7 +32,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "images/games/keyboard.png",
+    "https://topgames.gg/data/image/game/1-speed-keyboard-escape.png",
 },
   {
   id: "murder-mystery-2-rewards",
@@ -59,7 +59,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://tr.rbxcdn.com/180DAY-3123a31f1f65bea7005fc2ff75da0989/768/432/Image/Webp/noFilter",
+    "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
 },
 {
   id: "steal-an-egg-rewards",
@@ -86,7 +86,32 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shorturl.at/D8KBG",
+    "https://topgames.gg/data/image/game/steal-an-egg.png",
+},
+{
+  id: "fc-27-mobile-beta",
+  title: "FC 27 MOBILE BETA",
+  shortName: "FC 27 Mobile Beta",
+
+  // developer: "EA SPORTS",
+
+  rating: 4.8,
+  downloads: "5M+",
+  size: "2.5 GB",
+  version: "1.0.0 Beta",
+  age: "+3",
+
+  category: "Sports / Football / Simulation",
+
+  // gameplay: "https://www.ea.com/games/ea-sports-fc",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/o4mvvn",
+  lockerId: "o4mvvn",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://i.ibb.co/nqX1zMqY/IMG-8041.png",
 },
 {
   id: "gta-vi-beta",
@@ -137,7 +162,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/wobblylife/2x1_WobblyLife.jpg",
+    "https://elifesimulator.io/data/image/WobblyLife.png",
 },
 {
   id: "pes-2021-mobile",
@@ -212,7 +237,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://i.ytimg.com/vi/G0ez7AP4-GM/maxresdefault.jpg",
+    "https://pbs.twimg.com/media/HPcYGPfXgAAqgCs.jpg",
 },
   {
   id: "shift-at-midnight-mobile",
@@ -284,7 +309,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/57df7aed61d65c9012a11d58e812aff275b7daed/capsule_616x353.jpg?t=1783654507",
+    "https://cdn2.steamgriddb.com/icon/63e096c5ef79c63feb6023a2f83ce326.ico",
 },
   {
   id: "splatoon-raiders-mobile",
@@ -309,7 +334,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000122824/cf587e01f6f115398f411f280dba21e025795eb69f234a41722341ea999d170d",
+    "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_1200,q_auto:low/f_jpg/fdi3ow47snds5awu7sgf",
 },
   {
   id: "meccha-chameleon",
@@ -333,7 +358,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1781108224",
+    "https://play-lh.googleusercontent.com/HNIzmrrtiZm8no1c1bbzencrNWFBkJzXSPUWYRo1uxV1pt6W-y09mzh_qzD8Ru8cHzlN38XbFx911ltS_68WDZ8",
 },
   {
   id: "paralives-mobile",
@@ -355,7 +380,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1118520/277ab7a2ad1bbce0f4837bb37a3c86d109bd5258/header.jpg?t=1779721278"
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9ee27d6a-799a-4c7d-b71a-f84bf64d4992/dm45nzz-6d22b47f-d419-48a1-8ae2-5eefba2d29cf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi85ZWUyN2Q2YS03OTlhLTRjN2QtYjcxYS1mODRiZjY0ZDQ5OTIvZG00NW56ei02ZDIyYjQ3Zi1kNDE5LTQ4YTEtOGFlMi01ZWVmYmEyZDI5Y2YucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hs1-XI-ee1iO4uRC_Cd2zVYepArmaFfXmsOHrubGMYg"
 },
   {
     id: "lego-batman-legacy-of-the-dark-knight-mobile",

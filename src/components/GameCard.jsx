@@ -12,7 +12,7 @@ const GameCard = ({ game, onDownloadClick }) => {
 
   const baseClasses =
     "font-semibold rounded-xl transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer border backdrop-blur-md active:scale-[0.98] " +
-    "w-full py-2 px-3 text-xs " + // mobile: compact button inside row
+    "w-full py-2 px-3 text-xs " +
     "sm:py-3 sm:px-4 sm:text-sm sm:rounded-2xl";
 
   const claimClasses =
@@ -23,19 +23,19 @@ const GameCard = ({ game, onDownloadClick }) => {
     : "bg-red-600/90 hover:bg-red-500 border-red-300/20 shadow-[0_8px_25px_rgba(220,38,38,0.28)]";
 
   return (
-    <div className="bg-white/[0.03] backdrop-blur-xl rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_16px_40px_rgba(0,0,0,0.28)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)] hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 cursor-pointer group flex flex-row items-center sm:flex-col sm:items-stretch sm:hover:-translate-y-1.5">
-  {/* Image: centered on mobile, top on sm+ */}
-  <div className="relative w-40 h-25 self-center flex-shrink-0 sm:w-full sm:h-44 md:h-52 sm:self-auto overflow-hidden">
-    <img
-      src={game.heroImage}
-      alt={game.title}
-      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/10 sm:from-black/20 via-transparent sm:via-black/10 to-transparent"></div>
-  </div>
+    <div className="bg-white/[0.03] backdrop-blur-xl rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_16px_40px_rgba(0,0,0,0.28)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)] hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 cursor-pointer group flex flex-row">
+      {/* Image: always the left-side strip, just gets a bit wider on larger screens */}
+      <div className="relative w-32 sm:w-40 md:w-48 self-stretch flex-shrink-0 overflow-hidden">
+        <img
+          src={game.heroImage}
+          alt={game.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
+      </div>
 
-      {/* Info: right column on mobile, below image on sm+ */}
-      <div className="flex-1 min-w-0 p-3 sm:p-4 flex flex-col justify-center sm:justify-start">
+      {/* Info: always the right column */}
+      <div className="flex-1 min-w-0 p-3 sm:p-4 flex flex-col justify-center">
         <h3 className="text-sm sm:text-base md:text-lg font-bold tracking-tight line-clamp-1">
           {game.shortName}
         </h3>
@@ -52,7 +52,7 @@ const GameCard = ({ game, onDownloadClick }) => {
         </div>
 
         {hasFeatures && (
-          <div className="mb-2 sm:mb-3 hidden sm:flex flex-wrap gap-2 sm:h-17">
+          <div className="mb-2 sm:mb-3 hidden sm:flex flex-wrap gap-2">
             {game.features.slice(0, 4).map((feature, index) => (
               <span
                 key={index}
