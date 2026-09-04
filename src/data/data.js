@@ -89,6 +89,31 @@ export const games = [
     "https://topgames.gg/data/image/game/steal-an-egg.png",
 },
 {
+  id: "scarlet-skips-mobile",
+  title: "Scarlet Skips Mobile",
+  shortName: "Scarlet Skips Mobile",
+
+  // developer: "—",
+
+  rating: 4.8,
+  downloads: "500K+",
+  size: "1.2 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Adventure / Action / Platformer",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/m5n182",
+  lockerId: "m5n182",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://i.postimg.cc/dtqqNYQ8/4c58273e-99b5-4c19-a8c6-3131384f4255.png",
+},
+{
   id: "fc-27-mobile-beta",
   title: "FC 27 MOBILE BETA",
   shortName: "FC 27 Mobile Beta",
