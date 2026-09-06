@@ -89,6 +89,31 @@ export const games = [
     "https://topgames.gg/data/image/game/steal-an-egg.png",
 },
 {
+  id: "mimic-party-mobile",
+  title: "MIMIC PARTY MOBILE",
+  shortName: "Mimic Party Mobile",
+
+  // developer: "—",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.5 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Party / Multiplayer / Casual",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/n6e4vv",
+  lockerId: "n6e4vv",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5053820/05f346d353c2c713fe9ce335d5bbdb2dfd499836/page_bg_raw.jpg?t=1787839317",
+},
+{
   id: "scarlet-skips-mobile",
   title: "Scarlet Skips Mobile",
   shortName: "Scarlet Skips Mobile",
