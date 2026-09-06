@@ -111,7 +111,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5053820/05f346d353c2c713fe9ce335d5bbdb2dfd499836/page_bg_raw.jpg?t=1787839317",
+    "https://store-images.s-microsoft.com/image/apps.61141.14022687012886557.4bd24c39-d25f-4de8-bf5e-5f9854da85e9.c34dd9a1-ded3-483a-b630-43a27841059e",
 },
 {
   id: "scarlet-skips-mobile",
