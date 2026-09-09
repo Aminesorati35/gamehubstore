@@ -111,7 +111,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://i.postimg.cc/K8Gf6n4X/halloween-1g82z.jpg",
+    "https://i.postimg.cc/4dxTnK8d/halloween-1g82z.jpg",
 },
 {
   id: "mimic-party-mobile",
