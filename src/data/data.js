@@ -89,31 +89,6 @@ export const games = [
     "https://topgames.gg/data/image/game/steal-an-egg.png",
 },
 {
-  id: "halloween-the-game-mobile",
-  title: "HALLOWEEN: THE GAME MOBILE",
-  shortName: "Halloween: The Game Mobile",
-
-  // developer: "—",
-
-  rating: 4.8,
-  downloads: "1M+",
-  size: "1.4 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  category: "Horror / Adventure / Survival",
-
-  // gameplay: "—",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/o4moeq",
-  lockerId: "o4moeq",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://i.postimg.cc/4dxTnK8d/halloween-1g82z.jpg",
-},
-{
   id: "mimic-party-mobile",
   title: "MIMIC PARTY MOBILE",
   shortName: "Mimic Party Mobile",
@@ -137,6 +112,31 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://store-images.s-microsoft.com/image/apps.61141.14022687012886557.4bd24c39-d25f-4de8-bf5e-5f9854da85e9.c34dd9a1-ded3-483a-b630-43a27841059e",
+},
+{
+  id: "halloween-the-game-mobile",
+  title: "HALLOWEEN: THE GAME MOBILE",
+  shortName: "Halloween: The Game Mobile",
+
+  // developer: "—",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.4 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Horror / Adventure / Survival",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/o4moeq",
+  lockerId: "o4moeq",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://i.postimg.cc/4dxTnK8d/halloween-1g82z.jpg",
 },
 {
   id: "scarlet-skips-mobile",
