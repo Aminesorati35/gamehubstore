@@ -89,6 +89,31 @@ export const games = [
     "https://topgames.gg/data/image/game/steal-an-egg.png",
 },
 {
+  id: "halloween-the-game-mobile",
+  title: "HALLOWEEN: THE GAME MOBILE",
+  shortName: "Halloween: The Game Mobile",
+
+  // developer: "—",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.4 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Horror / Adventure / Survival",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/o4moeq",
+  lockerId: "o4moeq",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/000000/header.jpg",
+},
+{
   id: "mimic-party-mobile",
   title: "MIMIC PARTY MOBILE",
   shortName: "Mimic Party Mobile",
