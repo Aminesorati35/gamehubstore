@@ -111,7 +111,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/000000/header.jpg",
+    "https://i.postimg.cc/K8Gf6n4X/halloween-1g82z.jpg",
 },
 {
   id: "mimic-party-mobile",
