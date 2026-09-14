@@ -9,6 +9,32 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const games = [
+  {
+  id: "dress-to-impress-rewards",
+  title: "DRESS TO IMPRESS REWARDS",
+  shortName: "Dress To Impress Rewards",
+
+  // developer: "Dress To Impress Group",
+
+  rating: 4.9,
+  downloads: "10M+",
+  size: "250 MB",
+  version: "1.0.0",
+  age: "+9",
+
+  type: "rewards",
+  category: "Rewards",
+
+  // gameplay: "https://www.roblox.com/games/15101393044/Dress-To-Impress",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://dresstoimpress35.blogspot.com",
+  lockerId: "d2od5o",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://static.wikia.nocookie.net/dti-dress-to-impress/images/9/96/Summer_2026_-_10B_Visits_Game_Icon.png/revision/latest?cb=20260904225119",
+},
    {
   id: "speed-keyboard-escape-rewards",
   title: "Keyboard Escape Rewards",
