@@ -10,6 +10,33 @@ import {
 
 export const games = [
   {
+  id: "murder-mystery-2-rewards",
+  title: "MURDER MYSTERY 2 REWARDS",
+  shortName: "Murder Mystery 2 Rewards",
+
+  // developer: "Nikilis",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "250 MB",
+  version: "1.0.0",
+  age: "+9",
+
+  type: "rewards",
+  category: "Rewards",
+
+  // gameplay: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://murder234.blogspot.com/",
+  //downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
+  lockerId: "d2od5o",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
+},
+  {
   id: "dress-to-impress-rewards",
   title: "DRESS TO IMPRESS REWARDS",
   shortName: "Dress To Impress Rewards",
@@ -59,33 +86,6 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://topgames.gg/data/image/game/1-speed-keyboard-escape.png",
-},
-  {
-  id: "murder-mystery-2-rewards",
-  title: "MURDER MYSTERY 2 REWARDS",
-  shortName: "Murder Mystery 2 Rewards",
-
-  // developer: "Nikilis",
-
-  rating: 4.8,
-  downloads: "1M+",
-  size: "250 MB",
-  version: "1.0.0",
-  age: "+9",
-
-  type: "rewards",
-  category: "Rewards",
-
-  // gameplay: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://murder234.blogspot.com/",
-  //downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
-  lockerId: "d2od5o",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
 },
 {
   id: "steal-an-egg-rewards",
