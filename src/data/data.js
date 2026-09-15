@@ -115,6 +115,31 @@ export const games = [
     "https://topgames.gg/data/image/game/steal-an-egg.png",
 },
 {
+  id: "naruto-ultimate-ninja-storm-4-mobile",
+  title: "NARUTO ULTIMATE NINJA STORM 4 MOBILE",
+  shortName: "Naruto Storm 4 Mobile",
+
+  // developer: "CyberConnect2 / Bandai Namco Entertainment",
+
+  rating: 4.8,
+  downloads: "10M+",
+  size: "3.8 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Fighting / Action / Anime",
+
+  // gameplay: "https://store.steampowered.com/app/349040/NARUTO_SHIPPUDEN_Ultimate_Ninja_STORM_4/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/o4m71r",
+  lockerId: "o4m71r",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://image.api.playstation.com/vulcan/ap/rnd/202512/1614/9e8a8ce118e97205caf982e794f340b2084cda7f4b0d5ce3.png",
+},
+{
   id: "mimic-party-mobile",
   title: "MIMIC PARTY MOBILE",
   shortName: "Mimic Party Mobile",
