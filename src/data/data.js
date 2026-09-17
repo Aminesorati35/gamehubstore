@@ -115,31 +115,6 @@ export const games = [
     "https://topgames.gg/data/image/game/steal-an-egg.png",
 },
 {
-  id: "aniimo-mobile",
-  title: "ANIIMO MOBILE",
-  shortName: "Aniimo Mobile",
-
-  // developer: "Pawprint Studio",
-
-  rating: 4.8,
-  downloads: "1M+",
-  size: "2.5 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  category: "RPG / Adventure / Open World",
-
-  // gameplay: "https://www.aniimo.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/9v2ejv",
-  lockerId: "9v2ejv",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://i.postimg.cc/FRhbqQtH/aniimo-kevr-1200.jpg",
-},
-{
   id: "naruto-ultimate-ninja-storm-4-mobile",
   title: "NARUTO ULTIMATE NINJA STORM 4 MOBILE",
   shortName: "Naruto Storm 4 Mobile",
