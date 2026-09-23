@@ -167,6 +167,31 @@ export const games = [
 //     "https://img.utdstc.com/icon/7e9/b0c/7e9b0c4a6769f08221695e4842cb0f3569501b45e725f582138465a78c3f6bda:600",
 // },
 {
+  id: "efootball-2027-offline",
+  title: "EFOOTBALL 2027 OFFLINE",
+  shortName: "eFootball 2027 Offline",
+
+  // developer: "KONAMI",
+
+  rating: 4.8,
+  downloads: "10M+",
+  size: "2.8 GB",
+  version: "1.0.0",
+  age: "+3",
+
+  category: "Mod / Football / Offline",
+
+  // gameplay: "https://www.konami.com/efootball/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/krn44q",
+  lockerId: "krn44q",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://img.utdstc.com/icon/637/8d4/6378d4098d29f695939c3e370dee6dc9c859dd18b33919250982f7e8c5db519d:600",
+},
+{
   id: "roblox-lite",
   title: "ROBLOX LITE",
   shortName: "Roblox Lite",
