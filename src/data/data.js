@@ -167,6 +167,31 @@ export const games = [
 //     "https://img.utdstc.com/icon/7e9/b0c/7e9b0c4a6769f08221695e4842cb0f3569501b45e725f582138465a78c3f6bda:600",
 // },
 {
+  id: "dressmaker-mobile",
+  title: "DRESSMAKER MOBILE",
+  shortName: "Dressmaker Mobile",
+
+  // developer: "—",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "850 MB",
+  version: "1.0.0",
+  age: "+3",
+
+  category: "Simulation / Fashion / Casual",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/j74pqo",
+  lockerId: "j74pqo",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://play-lh.googleusercontent.com/iu_rzagZayMPsPqKfLT6-xmpKAI9-am5wQ_MOIG-_7Ob-Wu-9N35a7QG8cej59JijXPUMERsQbrHh098mU-MPmk=w240-h480-rw",
+},
+{
   id: "efootball-2027-offline",
   title: "EFOOTBALL 2027 OFFLINE",
   shortName: "eFootball 2027 Offline",
