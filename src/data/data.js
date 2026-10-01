@@ -167,6 +167,31 @@ export const games = [
 //     "https://img.utdstc.com/icon/7e9/b0c/7e9b0c4a6769f08221695e4842cb0f3569501b45e725f582138465a78c3f6bda:600",
 // },
 {
+  id: "minecraft-dungeons-ii-mobile",
+  title: "MINECRAFT DUNGEONS II MOBILE",
+  shortName: "Minecraft Dungeons II",
+
+  // developer: "Mojang Studios",
+
+  rating: 4.9,
+  downloads: "5M+",
+  size: "2.6 GB",
+  version: "1.0.0",
+  age: "+7",
+
+  category: "Action / Adventure / Dungeon Crawler",
+
+  // gameplay: "https://www.minecraft.net/about-dungeons",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/34j5kv",
+  lockerId: "34j5kv",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://www.minecraft.net/content/dam/minecraftnet/games/spicewood/key-art/Minecraft_Dungeons2_.net_565x565.jpg",
+},
+{
   id: "dressmaker-mobile",
   title: "DRESSMAKER MOBILE",
   shortName: "Dressmaker Mobile",
