@@ -189,7 +189,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://www.minecraft.net/content/dam/minecraftnet/games/spicewood/key-art/Minecraft_Dungeons2_.net_565x565.jpg",
+    "https://i.postimg.cc/SR0bjYwm/832468908-1099762415763958-6352086035258140641-n.jpg",
 },
 {
   id: "dressmaker-mobile",
