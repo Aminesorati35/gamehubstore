@@ -214,7 +214,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://i.postimg.cc/DzWNsyQS/832468908-1099762415763958-6352086035258140641-n.jpg",
+    "https://i.postimg.cc/Kjxdrchs/Screenshot-2026-10-06-16-59-09-46-99c04817c0de5652397fc8b56c3b3817.jpg",
 },
 {
   id: "dressmaker-mobile",
