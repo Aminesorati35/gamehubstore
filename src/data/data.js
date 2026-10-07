@@ -167,6 +167,31 @@ export const games = [
 //     "https://img.utdstc.com/icon/7e9/b0c/7e9b0c4a6769f08221695e4842cb0f3569501b45e725f582138465a78c3f6bda:600",
 // },
 {
+  id: "overpeak-mod",
+  title: "OVERPEAK MOD",
+  shortName: "Overpeak Mod",
+
+  // developer: "Third-Party Mod",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.8 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Adventure / Action / Mod",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/1xjkkx",
+  lockerId: "1xjkkx",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://i.postimg.cc/NjgH8NYg/Red-MOD-Esports-Action-Thumbnail.png",
+},
+{
   id: "minecraft-dungeons-ii-mobile",
   title: "MINECRAFT DUNGEONS II MOBILE",
   shortName: "Minecraft Dungeons II",
