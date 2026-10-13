@@ -167,6 +167,30 @@ export const games = [
 //     "https://img.utdstc.com/icon/7e9/b0c/7e9b0c4a6769f08221695e4842cb0f3569501b45e725f582138465a78c3f6bda:600",
 // },
 {
+  id: "noomiclone-mod",
+  title: "NOOMICLONE MOD",
+  shortName: "Noomiclone Mod",
+
+  // developer: "Third-Party Mod",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.5 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Simulation / Adventure / Mod",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/34jdd7",
+  lockerId: "34jdd7",
+
+  // 🖼️ HERO IMAGE
+  heroImage: "https://i.postimg.cc/QCGt5b0g/Polished-Stickman-Mod-Thumbnail.png",
+},
+{
   id: "overpeak-mod",
   title: "OVERPEAK MOD",
   shortName: "Overpeak Mod",
