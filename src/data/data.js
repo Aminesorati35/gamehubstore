@@ -114,58 +114,30 @@ export const games = [
   heroImage:
     "https://topgames.gg/data/image/game/steal-an-egg.png",
 },
-// {
-//   id: "pgsharp",
-//   title: "PGSHARP",
-//   shortName: "PGSharp",
+{
+  id: "delta-executor",
+  title: "DELTA EXECUTOR",
+  shortName: "Delta Executor",
 
-//   // developer: "PGSharp",
+  // developer: "Third-Party Developer",
 
-//   rating: 4.7,
-//   downloads: "5M+",
-//   size: "350 MB",
-//   version: "1.0.0",
-//   age: "+12",
+  rating: 4.8,
+  downloads: "5M+",
+  size: "150 MB",
+  version: "1.0.0",
+  age: "+12",
 
-//   type: "mod",
-//   category: "Tools / GPS / Pokémon GO",
+  category: "Tools / Roblox / Script Executor",
 
-//   // gameplay: "https://www.pgsharp.com/",
+  // gameplay: "—",
 
-//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-//   downloadUrl: "https://gamedrop.store/cl/i/34jdd7",
-//   lockerId: "34jdd7",
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/rn4xjd",
+  lockerId: "rn4xjd",
 
-//   // 🖼️ HERO IMAGE
-//   heroImage:
-//     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBYMH7ScCx8myMfFSaoluxmP8-6gFIFn86ztg6qcg4Q&s=10",
-// },
-// {
-//   id: "baseball-9-mod",
-//   title: "BASEBALL 9 MOD",
-//   shortName: "Baseball 9 Mod",
-
-//   // developer: "playus soft",
-
-//   rating: 4.7,
-//   downloads: "10M+",
-//   size: "250 MB",
-//   version: "3.7.0",
-//   age: "+3",
-
-//   type: "mod",
-//   category: "Sports / Baseball / Mod",
-
-//   // gameplay: "https://play.google.com/store/apps/details?id=us.kr.baseballnine",
-
-//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-//   downloadUrl: "https://gamedrop.store/cl/i/1xjkkx",
-//   lockerId: "1xjkkx",
-
-//   // 🖼️ HERO IMAGE
-//   heroImage:
-//     "https://img.utdstc.com/icon/7e9/b0c/7e9b0c4a6769f08221695e4842cb0f3569501b45e725f582138465a78c3f6bda:600",
-// },
+  // 🖼️ HERO IMAGE
+  heroImage: "https://getblox.online/delta-executor.jpg",
+},
 {
   id: "noomiclone-mod",
   title: "NOOMICLONE MOD",

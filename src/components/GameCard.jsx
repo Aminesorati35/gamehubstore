@@ -11,8 +11,8 @@ const GameCard = ({ game, onDownloadClick }) => {
   const isScript = game.category?.toLowerCase().includes("scripts");
 
   const baseClasses =
-    "font-semibold rounded-xl transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer border backdrop-blur-md active:scale-[0.98] " +
-    "w-full py-2 px-3 text-xs " +
+    "font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer border backdrop-blur-md active:scale-[0.98] " +
+    "w-full py-1.5 px-3 text-[11px] " +
     "sm:py-3 sm:px-4 sm:text-sm sm:rounded-2xl";
 
   const claimClasses =
@@ -23,9 +23,9 @@ const GameCard = ({ game, onDownloadClick }) => {
     : "bg-red-600/90 hover:bg-red-500 border-red-300/20 shadow-[0_8px_25px_rgba(220,38,38,0.28)]";
 
   return (
-    <div className="bg-white/[0.03] backdrop-blur-xl rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_16px_40px_rgba(0,0,0,0.28)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)] hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 cursor-pointer group flex flex-row">
-      {/* Image: always the left-side strip, just gets a bit wider on larger screens */}
-      <div className="relative w-32 sm:w-40 md:w-48 self-stretch flex-shrink-0 overflow-hidden">
+    <div className="bg-white/[0.03] backdrop-blur-xl rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_16px_40px_rgba(0,0,0,0.28)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)] hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 cursor-pointer group flex flex-row items-center sm:items-stretch">
+      {/* Image: 80x80 thumbnail on phones, full-height strip from sm and up */}
+      <div className="relative w-20 h-20 m-2 rounded-xl sm:m-0 sm:rounded-none sm:w-40 sm:h-auto md:w-48 sm:self-stretch flex-shrink-0 overflow-hidden">
         <img
           src={game.heroImage}
           alt={game.title}
@@ -34,19 +34,19 @@ const GameCard = ({ game, onDownloadClick }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
       </div>
 
-      {/* Info: always the right column */}
-      <div className="flex-1 min-w-0 p-3 sm:p-4 flex flex-col justify-center">
-        <h3 className="text-sm sm:text-base md:text-lg font-bold tracking-tight line-clamp-1">
+      {/* Info: compact on phones so card height matches the thumbnail */}
+      <div className="flex-1 min-w-0 py-1.5 pr-2.5 pl-1 sm:p-4 flex flex-col justify-center">
+        <h3 className="text-sm leading-tight sm:text-base md:text-lg font-bold tracking-tight line-clamp-1">
           {game.shortName}
         </h3>
-        <p className="text-white/55 text-[11px] sm:text-xs md:text-sm mb-1.5 sm:mb-2 line-clamp-1">
+        <p className="text-white/55 text-[11px] leading-tight sm:text-xs md:text-sm mt-0.5 mb-1 sm:mt-0 sm:mb-2 line-clamp-1">
           {game.developer || game.category || "Unknown"}
         </p>
 
-        <div className="flex justify-between items-center mb-2 sm:mb-3">
+        <div className="flex justify-between items-center mb-1.5 sm:mb-3">
           <div className="flex items-center text-yellow-400">
-            <span className="mr-1 text-xs sm:text-sm">⭐</span>
-            <span className="font-bold text-xs sm:text-sm">{game.rating}</span>
+            <span className="mr-1 text-[11px] sm:text-sm">⭐</span>
+            <span className="font-bold text-[11px] sm:text-sm">{game.rating}</span>
           </div>
           <p className="text-white/45 text-[10px] sm:text-xs">{game.downloads}</p>
         </div>
@@ -70,7 +70,7 @@ const GameCard = ({ game, onDownloadClick }) => {
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
-              className="sm:w-5 sm:h-5"
+              className="w-3.5 h-3.5 sm:w-5 sm:h-5"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
