@@ -163,6 +163,31 @@ export const games = [
   heroImage: "https://i.postimg.cc/QCGt5b0g/Polished-Stickman-Mod-Thumbnail.png",
 },
 {
+  id: "efootball-2027-offline",
+  title: "EFOOTBALL 2027 OFFLINE",
+  shortName: "eFootball 2027 Offline",
+
+  // developer: "KONAMI",
+
+  rating: 4.8,
+  downloads: "10M+",
+  size: "2.8 GB",
+  version: "1.0.0",
+  age: "+3",
+
+  category: "Mod / Football / Offline",
+
+  // gameplay: "https://www.konami.com/efootball/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/krn44q",
+  lockerId: "krn44q",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://img.utdstc.com/icon/637/8d4/6378d4098d29f695939c3e370dee6dc9c859dd18b33919250982f7e8c5db519d:600",
+},
+{
   id: "overpeak-mod",
   title: "OVERPEAK MOD",
   shortName: "Overpeak Mod",
@@ -236,31 +261,6 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://play-lh.googleusercontent.com/iu_rzagZayMPsPqKfLT6-xmpKAI9-am5wQ_MOIG-_7Ob-Wu-9N35a7QG8cej59JijXPUMERsQbrHh098mU-MPmk=w240-h480-rw",
-},
-{
-  id: "efootball-2027-offline",
-  title: "EFOOTBALL 2027 OFFLINE",
-  shortName: "eFootball 2027 Offline",
-
-  // developer: "KONAMI",
-
-  rating: 4.8,
-  downloads: "10M+",
-  size: "2.8 GB",
-  version: "1.0.0",
-  age: "+3",
-
-  category: "Mod / Football / Offline",
-
-  // gameplay: "https://www.konami.com/efootball/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/krn44q",
-  lockerId: "krn44q",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://img.utdstc.com/icon/637/8d4/6378d4098d29f695939c3e370dee6dc9c859dd18b33919250982f7e8c5db519d:600",
 },
 {
   id: "roblox-lite",
