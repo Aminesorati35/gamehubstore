@@ -115,6 +115,30 @@ export const games = [
     "https://topgames.gg/data/image/game/steal-an-egg.png",
 },
 {
+  id: "speed-stars-mod",
+  title: "SPEED STARS MOD",
+  shortName: "Speed Stars Mod",
+
+  // developer: "Third-Party Mod",
+
+  rating: 4.8,
+  downloads: "5M+",
+  size: "185 MB",
+  version: "1.0.0",
+  age: "+3",
+
+  category: "Sports / Racing / Running / Mod",
+
+  // gameplay: "https://play.google.com/store/search?q=Speed%20Stars&c=apps",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/xplq6v",
+  lockerId: "xplq6v",
+
+  // 🖼️ HERO IMAGE
+  heroImage: "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=314,height=314,fit=cover,f=auto/04f09e51e79fd1b6a5cc974b504d6379/speed-stars-logo.png",
+},
+{
   id: "delta-executor",
   title: "DELTA EXECUTOR",
   shortName: "Delta Executor",
