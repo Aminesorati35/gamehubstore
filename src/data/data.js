@@ -9,111 +9,85 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const games = [
-  {
-  id: "murder-mystery-2-rewards",
-  title: "MURDER MYSTERY 2 REWARDS",
-  shortName: "Murder Mystery 2 Rewards",
+//   {
+//   id: "murder-mystery-2-rewards",
+//   title: "MURDER MYSTERY 2 REWARDS",
+//   shortName: "Murder Mystery 2 Rewards",
 
-  // developer: "Nikilis",
+//   // developer: "Nikilis",
 
-  rating: 4.8,
-  downloads: "1M+",
-  size: "250 MB",
-  version: "1.0.0",
-  age: "+9",
+//   rating: 4.8,
+//   downloads: "1M+",
+//   size: "250 MB",
+//   version: "1.0.0",
+//   age: "+9",
 
-  type: "rewards",
-  category: "Rewards",
+//   type: "rewards",
+//   category: "Rewards",
 
-  // gameplay: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
+//   // gameplay: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
 
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://murder234.blogspot.com/",
-  //downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
-  lockerId: "d2od5o",
+//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+//   downloadUrl: "https://murder234.blogspot.com/",
+//   //downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
+//   lockerId: "d2od5o",
 
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
-},
-  {
-  id: "dress-to-impress-rewards",
-  title: "DRESS TO IMPRESS REWARDS",
-  shortName: "Dress To Impress Rewards",
+//   // 🖼️ HERO IMAGE
+//   heroImage:
+//     "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
+// },
+//    {
+//   id: "speed-keyboard-escape-rewards",
+//   title: "Keyboard Escape Rewards",
+//   shortName: "+1 Speed Keyboard Escape Rewards",
 
-  // developer: "Dress To Impress Group",
+//   // developer: "Speek Studios",
 
-  rating: 4.9,
-  downloads: "10M+",
-  size: "250 MB",
-  version: "1.0.0",
-  age: "+9",
+//   rating: 4.7,
+//   downloads: "500K+",
+//   size: "185 MB",
+//   version: "1.0.0",
+//   age: "+3",
+//   type : "rewards",
+//   category: "Rewards",
 
-  type: "rewards",
-  category: "Rewards",
+//   // gameplay: "https://example.com/",
 
-  // gameplay: "https://www.roblox.com/games/15101393044/Dress-To-Impress",
+//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+//   downloadUrl: "https://key3.site",
+//   lockerId: "d2od5o",
 
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://dresstoimpress35.blogspot.com",
-  lockerId: "d2od5o",
+//   // 🖼️ HERO IMAGE
+//   heroImage:
+//     "https://topgames.gg/data/image/game/1-speed-keyboard-escape.png",
+// },
+// {
+//   id: "steal-an-egg-rewards",
+//   title: "STEAL AN EGG REWARDS",
+//   shortName: "Steal An Egg Rewards",
 
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://static.wikia.nocookie.net/dti-dress-to-impress/images/9/96/Summer_2026_-_10B_Visits_Game_Icon.png/revision/latest?cb=20260904225119",
-},
-   {
-  id: "speed-keyboard-escape-rewards",
-  title: "Keyboard Escape Rewards",
-  shortName: "+1 Speed Keyboard Escape Rewards",
+//   // developer: "Roblox",
 
-  // developer: "Speek Studios",
+//   rating: 4.8,
+//   downloads: "1M+",
+//   size: "250 MB",
+//   version: "1.0.0",
+//   age: "+9",
 
-  rating: 4.7,
-  downloads: "500K+",
-  size: "185 MB",
-  version: "1.0.0",
-  age: "+3",
-  type : "rewards",
-  category: "Rewards",
+//   type: "rewards",
+//   category: "Rewards",
 
-  // gameplay: "https://example.com/",
+//   // gameplay: "https://www.roblox.com/",
 
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://key3.site",
-  lockerId: "d2od5o",
+//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+//   downloadUrl: "https://stealanegg3.blogspot.com/",
+//   // downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
+//   lockerId: "d2od5o",
 
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://topgames.gg/data/image/game/1-speed-keyboard-escape.png",
-},
-{
-  id: "steal-an-egg-rewards",
-  title: "STEAL AN EGG REWARDS",
-  shortName: "Steal An Egg Rewards",
-
-  // developer: "Roblox",
-
-  rating: 4.8,
-  downloads: "1M+",
-  size: "250 MB",
-  version: "1.0.0",
-  age: "+9",
-
-  type: "rewards",
-  category: "Rewards",
-
-  // gameplay: "https://www.roblox.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://stealanegg3.blogspot.com/",
-  // downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
-  lockerId: "d2od5o",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://topgames.gg/data/image/game/steal-an-egg.png",
-},
+//   // 🖼️ HERO IMAGE
+//   heroImage:
+//     "https://topgames.gg/data/image/game/steal-an-egg.png",
+// },
 {
   id: "speed-stars-mod",
   title: "SPEED STARS MOD",
