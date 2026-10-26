@@ -9,6 +9,35 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const games = [
+    
+{
+  id: "fortnite-rewards",
+  title: "FORTNITE REWARDS",
+  shortName: "Fortnite Rewards",
+
+  // developer: "Epic Games",
+
+  rating: 4.9,
+  downloads: "5M+",
+  size: "350 MB",
+  version: "1.0.0",
+  age: "+12",
+
+  type: "rewards",
+  category: "Rewards",
+
+  // gameplay: "https://www.fortnite.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://fortniteitems35.blogspot.com/",
+  //downloadUrl: "https://your-content-locker-url.com/",
+  lockerId: "YOUR_LOCKER_ID",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://play-lh.googleusercontent.com/SW0gBjHobk7naDwy2S33Vwsny_J69SfGYRORFtuJaZH3iY2kY2gWV-KYcet4sRwVzD0eYfugY0VIQR7YL4ehtw=s0-br30",
+},
+
 //   {
 //   id: "murder-mystery-2-rewards",
 //   title: "MURDER MYSTERY 2 REWARDS",
