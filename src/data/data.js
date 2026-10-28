@@ -118,6 +118,30 @@ export const games = [
 //     "https://topgames.gg/data/image/game/steal-an-egg.png",
 // },
 {
+  id: "crack-mobile",
+  title: "CRACK MOBILE",
+  shortName: "Crack Mobile",
+
+  // developer: "Third-Party Developer",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.5 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Action / Adventure / Mobile",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/rn4knk",
+  lockerId: "rn4knk",
+
+  // 🖼️ HERO IMAGE
+  heroImage: "https://assets-prd.ignimgs.com/2026/09/26/crack-button-1790432723530.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80",
+},
+{
   id: "speed-stars-mod",
   title: "SPEED STARS MOD",
   shortName: "Speed Stars Mod",
