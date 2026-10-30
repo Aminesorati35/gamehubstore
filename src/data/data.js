@@ -136,7 +136,13 @@ export const games = [
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
   downloadUrl: "https://gamedrop.store/cl/i/krn44q",
   lockerId: "krn44q",
-  
+  isAdbluemedia: true,
+  adblueConfig: {
+    it: 4639675,
+    key: "6dfbb",
+    variable: "vsKqL_TEd_pTKfjc",
+    script: "https://d18k3i06xdslhs.cloudfront.net/445f05d.js",
+  },
 
 
   // 🖼️ HERO IMAGE
