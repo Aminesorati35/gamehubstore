@@ -132,11 +132,18 @@ export const games = [
 
   category: "Mod / Football / Offline",
 
-  // gameplay: "https://www.konami.com/efootball/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
   downloadUrl: "https://gamedrop.store/cl/i/krn44q",
   lockerId: "krn44q",
+  isAdbluemedia: true,
+  adblueConfig: {
+    it: 4639675,
+    key: "6dfbb",
+    variable: "UWkZZ_apU_ienfxc",
+    script: "https://d18k3i06xdslhs.cloudfront.net/feb0604.js",
+  },
+
 
   // 🖼️ HERO IMAGE
   heroImage:

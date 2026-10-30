@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import LoadingModal from "./LoadingModal";
+import { openAdblueLocker } from "../utils/adblueLocker";
 
 export default function AccessPromptModal({
   isOpen,
@@ -36,18 +37,41 @@ export default function AccessPromptModal({
     item.downloads ? `${item.downloads} users` : null,
   ].filter(Boolean);
 
-  const handleContinueClick = () => {
-    // if (isLoading) return;
-    // onContinueStart?.();
+  // const handleContinueClick = () => {
+  //   // if (isLoading) return;
+  //   // onContinueStart?.();
 
-    // if (hasGameplayVideo) {
-    //   setIsLoading(true);
-    //   return;
-    // }
+  //   // if (hasGameplayVideo) {
+  //   //   setIsLoading(true);
+  //   //   return;
+  //   // }
 
-    // onContinue?.();
+  //   // onContinue?.();
+  //   window.location.href = item.downloadUrl;
+  // };
+  const handleContinueClick = async () => {
+  if (isLoading) return;
+
+  // ADBLUEMEDIA
+  if (item.isAdbluemedia === true) {
+    setIsLoading(true);
+
+    try {
+      await openAdblueLocker(item.adblueConfig);
+    } finally {
+      setIsLoading(false);
+    }
+
+    return;
+  }
+
+  // OGADS (DEFAULT)
+  if (item.downloadUrl) {
     window.location.href = item.downloadUrl;
-  };
+  } else {
+    console.error("OGAds download URL is missing!");
+  }
+};
 
   return (
     <>
