@@ -140,8 +140,8 @@ export const games = [
   adblueConfig: {
     it: 4639675,
     key: "6dfbb",
-    variable: "UtzWv_xrt_mEqVbc",
-    script: "https://d18k3i06xdslhs.cloudfront.net/0c390d2.js",
+    variable: "ztQKg_XYp_CXmYLc",
+    script: "https://d18k3i06xdslhs.cloudfront.net/384fae7.js",
   },
 
 
