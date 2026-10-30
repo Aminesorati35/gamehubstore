@@ -118,28 +118,29 @@ export const games = [
 //     "https://topgames.gg/data/image/game/steal-an-egg.png",
 // },
 {
-  id: "crack-mobile",
-  title: "CRACK MOBILE",
-  shortName: "Crack Mobile",
+  id: "efootball-2027-offline",
+  title: "EFOOTBALL 2027 OFFLINE",
+  shortName: "eFootball 2027 Offline",
 
-  // developer: "Third-Party Developer",
+  // developer: "KONAMI",
 
   rating: 4.8,
-  downloads: "1M+",
-  size: "1.5 GB",
+  downloads: "10M+",
+  size: "2.8 GB",
   version: "1.0.0",
-  age: "+12",
+  age: "+3",
 
-  category: "Action / Adventure / Mobile",
+  category: "Mod / Football / Offline",
 
-  // gameplay: "—",
+  // gameplay: "https://www.konami.com/efootball/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/rn4knk",
-  lockerId: "rn4knk",
+  downloadUrl: "https://gamedrop.store/cl/i/krn44q",
+  lockerId: "krn44q",
 
   // 🖼️ HERO IMAGE
-  heroImage: "https://assets-prd.ignimgs.com/2026/09/26/crack-button-1790432723530.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80",
+  heroImage:
+    "https://img.utdstc.com/icon/637/8d4/6378d4098d29f695939c3e370dee6dc9c859dd18b33919250982f7e8c5db519d:600",
 },
 {
   id: "speed-stars-mod",
@@ -212,31 +213,6 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage: "https://i.postimg.cc/QCGt5b0g/Polished-Stickman-Mod-Thumbnail.png",
-},
-{
-  id: "efootball-2027-offline",
-  title: "EFOOTBALL 2027 OFFLINE",
-  shortName: "eFootball 2027 Offline",
-
-  // developer: "KONAMI",
-
-  rating: 4.8,
-  downloads: "10M+",
-  size: "2.8 GB",
-  version: "1.0.0",
-  age: "+3",
-
-  category: "Mod / Football / Offline",
-
-  // gameplay: "https://www.konami.com/efootball/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/krn44q",
-  lockerId: "krn44q",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://img.utdstc.com/icon/637/8d4/6378d4098d29f695939c3e370dee6dc9c859dd18b33919250982f7e8c5db519d:600",
 },
 {
   id: "overpeak-mod",
