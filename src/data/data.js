@@ -138,10 +138,10 @@ export const games = [
   lockerId: "krn44q",
   isAdbluemedia: true,
   adblueConfig: {
-    it: 4639675,
-    key: "6dfbb",
-    variable: "ztQKg_XYp_CXmYLc",
-    script: "https://d18k3i06xdslhs.cloudfront.net/384fae7.js",
+    it: 4639682,
+    key: "ce418",
+    variable: "aezWv_fCA_ptBZQc",
+    script: "https://d18k3i06xdslhs.cloudfront.net/bfc12f9.js",
   },
 
 
