@@ -10,61 +10,61 @@ import {
 
 export const games = [
     
-{
-  id: "fortnite-rewards",
-  title: "FORTNITE REWARDS",
-  shortName: "Fortnite Rewards",
+// {
+//   id: "fortnite-rewards",
+//   title: "FORTNITE REWARDS",
+//   shortName: "Fortnite Rewards",
 
-  // developer: "Epic Games",
+//   // developer: "Epic Games",
 
-  rating: 4.9,
-  downloads: "5M+",
-  size: "350 MB",
-  version: "1.0.0",
-  age: "+12",
-
-  type: "rewards",
-  category: "Rewards",
-
-  // gameplay: "https://www.fortnite.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://fortniteitems35.blogspot.com/",
-  //downloadUrl: "https://your-content-locker-url.com/",
-  lockerId: "YOUR_LOCKER_ID",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://play-lh.googleusercontent.com/SW0gBjHobk7naDwy2S33Vwsny_J69SfGYRORFtuJaZH3iY2kY2gWV-KYcet4sRwVzD0eYfugY0VIQR7YL4ehtw=s0-br30",
-},
-
-//   {
-//   id: "murder-mystery-2-rewards",
-//   title: "MURDER MYSTERY 2 REWARDS",
-//   shortName: "Murder Mystery 2 Rewards",
-
-//   // developer: "Nikilis",
-
-//   rating: 4.8,
-//   downloads: "1M+",
-//   size: "250 MB",
+//   rating: 4.9,
+//   downloads: "5M+",
+//   size: "350 MB",
 //   version: "1.0.0",
-//   age: "+9",
+//   age: "+12",
 
 //   type: "rewards",
 //   category: "Rewards",
 
-//   // gameplay: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
+//   // gameplay: "https://www.fortnite.com/",
 
 //   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-//   downloadUrl: "https://murder234.blogspot.com/",
-//   //downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
-//   lockerId: "d2od5o",
+//   downloadUrl: "https://fortniteitems35.blogspot.com/",
+//   //downloadUrl: "https://your-content-locker-url.com/",
+//   lockerId: "YOUR_LOCKER_ID",
 
 //   // 🖼️ HERO IMAGE
 //   heroImage:
-//     "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
+//     "https://play-lh.googleusercontent.com/SW0gBjHobk7naDwy2S33Vwsny_J69SfGYRORFtuJaZH3iY2kY2gWV-KYcet4sRwVzD0eYfugY0VIQR7YL4ehtw=s0-br30",
 // },
+
+  {
+  id: "murder-mystery-2-rewards",
+  title: "MURDER MYSTERY 2 REWARDS",
+  shortName: "Murder Mystery 2 Rewards",
+
+  // developer: "Nikilis",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "250 MB",
+  version: "1.0.0",
+  age: "+9",
+
+  type: "rewards",
+  category: "Rewards",
+
+  // gameplay: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://murder234.blogspot.com/",
+  //downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
+  lockerId: "d2od5o",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
+},
 //    {
 //   id: "speed-keyboard-escape-rewards",
 //   title: "Keyboard Escape Rewards",
