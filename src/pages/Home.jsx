@@ -7,6 +7,7 @@ import { robloxScripts } from "../data/data";
 import AccessPromptModal from "../components/AccessPromptModal";
 import PlatformModal from "../components/PlatformModal";
 import LockerModal from "../components/LockerModal";
+import DownloadBackdrop from "../components/DownloadBackdrop";
 
 const LOCKER_BASE_URL = "https://checkmyapp.space/cl/i/";
 
@@ -18,32 +19,38 @@ const Home = () => {
   const [lockerPhase, setLockerPhase] = useState("closed"); // "closed" | "prefetch" | "visible"
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedPlatform, setSelectedPlatform] = useState("");
-
+  const [downloadStep, setDownloadStep] = useState(null);
   const [selectedTab, setSelectedTab] = useState("games");
 
   const handleOpenPlatformPicker = (item) => {
-    setSelectedItem(item);
-    setLockerId(item.lockerId);
-    setLockerUrl(item.downloadUrl || null);
-    setSelectedPlatform("");
-    setLockerPhase("closed");
-    setShowPlatformModal(true);
-  };
+  setSelectedItem(item);
+  setLockerId(item.lockerId);
+  setLockerUrl(item.downloadUrl || null);
+  setSelectedPlatform("");
+  setLockerPhase("closed");
+
+  setShowAccessPrompt(false);
+  setShowPlatformModal(true);
+  setDownloadStep("platform");
+};
 
   const handlePlatformSelect = (platform) => {
-    setSelectedPlatform(platform);
-    setShowPlatformModal(false);
-    setShowAccessPrompt(true);
-  };
+  setSelectedPlatform(platform);
+  setShowPlatformModal(false);
+  setShowAccessPrompt(true);
+  setDownloadStep("access");
+};
 
   const handleClosePlatformModal = () => {
-    setShowPlatformModal(false);
-    setSelectedItem(null);
-    setLockerId(null);
-    setLockerUrl(null);
-    setSelectedPlatform("");
-    setLockerPhase("closed");
-  };
+  setShowPlatformModal(false);
+  setShowAccessPrompt(false);
+  setSelectedItem(null);
+  setLockerId(null);
+  setLockerUrl(null);
+  setSelectedPlatform("");
+  setLockerPhase("closed");
+  setDownloadStep(null);
+};
 
   const displayedItems = useMemo(() => {
     if (selectedTab === "games") return games;
@@ -112,6 +119,7 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <DownloadBackdrop isOpen={downloadStep !== null} />
 
       <PlatformModal
         isOpen={showPlatformModal}
@@ -127,22 +135,26 @@ const Home = () => {
         item={selectedItem}
         contentType={selectedTab === "scripts" ? "script" : "game"}
         platform={selectedPlatform}
-        onClose={() => setShowAccessPrompt(false)}
+        onClose={() => {
+  setShowAccessPrompt(false);
+  setDownloadStep(null);
+}}
         onContinueStart={() => {
           if (!lockerId) return;
           // Start loading the locker iframe in the background (hidden under LoadingModal)
           setLockerPhase("prefetch");
         }}
         onContinue={() => {
-          setShowAccessPrompt(false);
-          if (!lockerId) return;
+  setShowAccessPrompt(false);
 
-          // Reveal after LoadingModal completes
-          setLockerPhase("visible");
+  if (!lockerId) {
+    setDownloadStep(null);
+    return;
+  }
 
-          // If you ever want redirect instead of iframe:
-          // window.location.href = `${LOCKER_BASE_URL}${lockerId}`;
-        }}
+  setLockerPhase("visible");
+  setDownloadStep("locker");
+}}
       /> }
       
 
@@ -152,7 +164,10 @@ const Home = () => {
         lockerUrl={lockerUrl}
         lockerBaseUrl={LOCKER_BASE_URL}
         platform={selectedPlatform}
-        onClose={() => setLockerPhase("closed")}
+        oonClose={() => {
+  setLockerPhase("closed");
+  setDownloadStep(null);
+}}
       />
 
       <Footer />

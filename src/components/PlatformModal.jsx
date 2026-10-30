@@ -22,18 +22,15 @@ const PlatformModal = ({
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-[105] flex items-center justify-center p-4"
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.14, ease: "easeOut" }}
-          onClick={onClose}
-        >
+  className="fixed inset-0 z-[105] flex items-center justify-center p-4"
+  initial={false}
+  animate={{ opacity: 1 }}
+  exit={{ opacity: 0 }}
+  transition={{ duration: 0.14 }}
+  onClick={onClose}
+>
           {/* Full blur immediately on open — avoid fading the whole overlay (blur looked “slow”) */}
-          <div
-            className="absolute inset-0 bg-slate-950/50 backdrop-blur-2xl backdrop-saturate-150 [transform:translateZ(0)]"
-            aria-hidden
-          />
+          
 
           <motion.div
             role="dialog"
