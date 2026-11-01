@@ -54,14 +54,12 @@ export const games = [
   type: "rewards",
   category: "Rewards",
 
-  // gameplay: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
   downloadUrl: "https://murder234.blogspot.com/",
   //downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
   lockerId: "d2od5o",
 
-  // 🖼️ HERO IMAGE
   heroImage:
     "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
 },
@@ -148,6 +146,38 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://img.utdstc.com/icon/637/8d4/6378d4098d29f695939c3e370dee6dc9c859dd18b33919250982f7e8c5db519d:600",
+},
+{
+  id: "free-fire-2018",
+  title: "FREE FIRE 2018",
+  shortName: "FREE FIRE 2018",
+
+  // developer: "Garena",
+
+  rating: 4.4,
+  downloads: "1B+",
+  size: "744 MB",
+  version: "1.88.1",
+  age: "+12",
+
+  // gameplay: "https://ff.garena.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://appsave.store/cl/i/5nlxvv",
+  lockerId: "5nlxvv",
+  isAdbluemedia: true,
+  adblueConfig: {
+    it: 4640200,
+    key: "5a109",
+    variable: "reJar_kyS_IWiAcc",
+    script: "https://d18k3i06xdslhs.cloudfront.net/46e1d60.js",
+  },
+
+  category: "Battle Royale / Action / Shooter",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://i.ibb.co/RkGHrxpD/IMG-5661.png",
 },
 {
   id: "speed-stars-mod",
@@ -546,31 +576,6 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://www.konami.com/products_master/eu_publish/pes2021_mobile/eu/fr/images/pes2021_thumbnail.jpg",
-},
-  {
-  id: "free-fire-2022",
-  title: "FREE FIRE 2022",
-  shortName: "FREE FIRE 2022",
-
-  // developer: "Garena",
-
-  rating: 4.4,
-  downloads: "1B+",
-  size: "744 MB",
-  version: "1.88.1",
-  age: "+12",
-
-  // gameplay: "https://ff.garena.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://appsave.store/cl/i/5nlxvv",
-  lockerId: "5nlxvv",
-
-  category: "Battle Royale / Action / Shooter",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://cdn12.idcgames.com/storage/image/1258/free-new-logo/default.jpg",
 },
 {
   id: "big-walk-mobile",
