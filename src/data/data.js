@@ -116,6 +116,30 @@ export const games = [
 //     "https://topgames.gg/data/image/game/steal-an-egg.png",
 // },
 {
+  id: "minecraft-rust-edition",
+  title: "MINECRAFT RUST EDITION",
+  shortName: "Minecraft Rust Edition",
+
+  // developer: "Third-Party Developer",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.5 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Survival / Sandbox / Adventure / Crafting",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/rn4knk",
+  lockerId: "rn4knk",
+
+  // 🖼️ HERO IMAGE
+  heroImage: "https://h1.nu/1HgF7",
+},
+{
   id: "efootball-2027-offline",
   title: "EFOOTBALL 2027 OFFLINE",
   shortName: "eFootball 2027 Offline",
