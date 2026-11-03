@@ -137,7 +137,7 @@ export const games = [
   lockerId: "rn4knk",
 
   // 🖼️ HERO IMAGE
-  heroImage: "https://h1.nu/1HgF7",
+  heroImage: "https://i.ibb.co/ZzDm1JcL/Minecraft-Rust-Edition-Autumn-Forest-Logo.png",
 },
 {
   id: "efootball-2027-offline",
