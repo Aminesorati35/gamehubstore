@@ -171,6 +171,7 @@ export const games = [
   heroImage:
     "https://img.utdstc.com/icon/637/8d4/6378d4098d29f695939c3e370dee6dc9c859dd18b33919250982f7e8c5db519d:600",
 },
+
 {
   id: "free-fire-2018",
   title: "FREE FIRE 2018",
@@ -299,6 +300,30 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://i.postimg.cc/NjgH8NYg/Red-MOD-Esports-Action-Thumbnail.png",
+},
+{
+  id: "fortnite-2018",
+  title: "FORTNITE 2018",
+  shortName: "Fortnite 2018",
+
+  // developer: "Epic Games",
+
+  rating: 4.8,
+  downloads: "100M+",
+  size: "7.5 GB",
+  version: "6.31",
+  age: "+12",
+
+  category: "Battle Royale / Action / Shooter / Survival",
+
+  // gameplay: "https://www.fortnite.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/qn1npw",
+  lockerId: "qn1npw",
+
+  // 🖼️ HERO IMAGE
+  heroImage: "https://www.chicagogameandgo.com/wp/wp-content/uploads/2018/12/fortnite-logo-square.jpg",
 },
 {
   id: "minecraft-dungeons-ii-mobile",
