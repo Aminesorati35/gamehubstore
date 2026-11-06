@@ -116,30 +116,6 @@ export const games = [
 //     "https://topgames.gg/data/image/game/steal-an-egg.png",
 // },
 {
-  id: "minecraft-rust-edition",
-  title: "MINECRAFT RUST EDITION",
-  shortName: "Minecraft Rust Edition",
-
-  // developer: "Third-Party Developer",
-
-  rating: 4.8,
-  downloads: "1M+",
-  size: "1.5 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  category: "Survival / Sandbox / Adventure / Crafting",
-
-  // gameplay: "—",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/rn4knk",
-  lockerId: "rn4knk",
-
-  // 🖼️ HERO IMAGE
-  heroImage: "https://i.ibb.co/ZzDm1JcL/Minecraft-Rust-Edition-Autumn-Forest-Logo.png",
-},
-{
   id: "efootball-2027-offline",
   title: "EFOOTBALL 2027 OFFLINE",
   shortName: "eFootball 2027 Offline",
@@ -171,7 +147,54 @@ export const games = [
   heroImage:
     "https://img.utdstc.com/icon/637/8d4/6378d4098d29f695939c3e370dee6dc9c859dd18b33919250982f7e8c5db519d:600",
 },
+{
+  id: "poppy-playtime-chapter-5-mobile",
+  title: "POPPY PLAYTIME CHAPTER 5 MOBILE",
+  shortName: "Poppy Playtime 5 Mobile",
 
+  // developer: "Mob Entertainment",
+
+  rating: 4.9,
+  downloads: "5M+",
+  size: "2.8 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Horror / Puzzle / Adventure / Survival",
+
+  // gameplay: "https://www.mobentertainment.com/",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/4o7dpx",
+  lockerId: "4o7dpx",
+
+  // 🖼️ HERO IMAGE
+  heroImage: "https://i.postimg.cc/hty3bSVv/chapter-5-icon.jpg",
+},
+{
+  id: "minecraft-rust-edition",
+  title: "MINECRAFT RUST EDITION",
+  shortName: "Minecraft Rust Edition",
+
+  // developer: "Third-Party Developer",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.5 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Survival / Sandbox / Adventure / Crafting",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/rn4knk",
+  lockerId: "rn4knk",
+
+  // 🖼️ HERO IMAGE
+  heroImage: "https://i.ibb.co/ZzDm1JcL/Minecraft-Rust-Edition-Autumn-Forest-Logo.png",
+},
 {
   id: "free-fire-2018",
   title: "FREE FIRE 2018",
