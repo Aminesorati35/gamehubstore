@@ -134,13 +134,13 @@ export const games = [
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
   downloadUrl: "https://gamedrop.store/cl/i/krn44q",
   lockerId: "krn44q",
-  isAdbluemedia: true,
-  adblueConfig: {
-    it: 4639682,
-    key: "ce418",
-    variable: "iztaq_QRE_lrvWgc",
-    script: "https://d18k3i06xdslhs.cloudfront.net/10e33c3.js",
-  },
+  // isAdbluemedia: true,
+  // adblueConfig: {
+  //   it: 4639682,
+  //   key: "ce418",
+  //   variable: "iztaq_QRE_lrvWgc",
+  //   script: "https://d18k3i06xdslhs.cloudfront.net/10e33c3.js",
+  // },
 
 
   // 🖼️ HERO IMAGE
