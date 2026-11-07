@@ -140,7 +140,7 @@ const Home = () => {
         <div className="mb-5">
           <h3 className="text-2xl font-bold tracking-tight text-white">
             {selectedTab === "games"
-              ? "Featured Games & Apps"
+              ? "Featured Games & Aps"
               : "Featured Scripts"}
           </h3>
 
