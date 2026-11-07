@@ -38,6 +38,30 @@ export const games = [
     "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
 },
 {
+  id: "mobile-wallpaper",
+  title: "MOBILE WALLPAPER",
+  shortName: "Mobile Wallpaper",
+
+  // developer: "Third-Party Developer",
+
+  rating: 4.8,
+  downloads: "5M+",
+  size: "85 MB",
+  version: "1.0.0",
+  age: "+3",
+
+  category: "Personalization / Wallpapers / Themes",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/krngjq",
+  lockerId: "krngjq",
+
+  // 🖼️ HERO IMAGE
+  heroImage: "https://i.postimg.cc/R0dqr50Y/Black-Cat-and-Floating-Crystal-Magic.png",
+},
+{
   id: "efootball-2027-offline",
   title: "EFOOTBALL 2027 OFFLINE",
   shortName: "eFootball 2027 Offline",
