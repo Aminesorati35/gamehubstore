@@ -9,6 +9,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const games = [
+    
+
+
   {
   id: "murder-mystery-2-rewards",
   title: "MURDER MYSTERY 2 REWARDS",
@@ -616,31 +619,6 @@ export const games = [
     "https://cdn2.steamgriddb.com/icon/63e096c5ef79c63feb6023a2f83ce326.ico",
 },
   {
-  id: "splatoon-raiders-mobile",
-  title: "SPLATOON RAIDERS MOBILE",
-  shortName: "SPLATOON RAIDERS MOBILE",
-
-  // developer: "Nintendo",
-
-  rating: 4.9,
-  downloads: "10M+",
-  size: "2.4 GB",
-  version: "1.0.0",
-  age: "+10",
-
-  // gameplay: "https://splatoon.nintendo.com/en/news/splatoon-raiders-the-first-ever-splatoon-spinoff-game-is-coming-to-nintendo-switch-2/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://appsave.store/cl/i/l7m1ej",
-  lockerId: "l7m1ej",
-
-  category: "Action / Shooter / Adventure",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://assets.nintendo.eu/image/private/f_auto,c_limit,w_1200,q_auto:low/f_jpg/fdi3ow47snds5awu7sgf",
-},
-  {
   id: "meccha-chameleon",
   title: "MECCHA CHAMELEON",
   shortName: "MECCHA CHAMELEON MOBILE",
@@ -686,27 +664,10 @@ export const games = [
   heroImage:
     "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9ee27d6a-799a-4c7d-b71a-f84bf64d4992/dm45nzz-6d22b47f-d419-48a1-8ae2-5eefba2d29cf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi85ZWUyN2Q2YS03OTlhLTRjN2QtYjcxYS1mODRiZjY0ZDQ5OTIvZG00NW56ei02ZDIyYjQ3Zi1kNDE5LTQ4YTEtOGFlMi01ZWVmYmEyZDI5Y2YucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hs1-XI-ee1iO4uRC_Cd2zVYepArmaFfXmsOHrubGMYg"
 },
-  {
-    id: "lego-batman-legacy-of-the-dark-knight-mobile",
-    title: "LEGO Batman: Legacy of the Dark Knight Mobile",
-    shortName: "LEGO Batman Mobile",
-
-    // developer: "TT Games / Warner Bros. Games",
-    rating: 4.8,
-    downloads: "500k",
-    size: "5.8 GB",
-    version: "1.0.0",
-    age: "+7",
-    //gameplay: "https://streamable.com/e/9m7x8u?",
-
-    // 🔒 KEEP LOCKER (UNCHANGED)
-    downloadUrl: "https://appsave.store/cl/i/ex29ed",
-    lockerId: "ex29ed",
-
-    category: "Action / Adventure",
-
-    // 🖼️ HERO IMAGE
-    heroImage:
-      "https://images.ctfassets.net/nwksj2ft7iku/4WbVzweG4y1Y7afElrlfPJ/79027a14b48e14a00bdc39182e425833/LEGO_Batman__Legacy_of_the_Dark_Knight_Combat_Key_Art_16x9.png",
-},
+];
+export const apps = [
+  
+];
+export const robloxScripts = [
+  
 ];
