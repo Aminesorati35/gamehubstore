@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { X, Download, CheckCircle2 } from "lucide-react";
+import { X, CheckCircle2 } from "lucide-react";
 
 export default function DownloadLoadingModal({
   isOpen,
@@ -11,98 +11,111 @@ export default function DownloadLoadingModal({
   onClose,
 }) {
   const [progress, setProgress] = useState(0);
-  const [isOpening, setIsOpening] = useState(false);
-  const openingRef = useRef(false);
+  const completedRef = useRef(false);
+  
 
   useEffect(() => {
-    if (!isOpen || !item) return;
+  if (!isOpen || !item) {
+    completedRef.current = false;
+    return;
+  }
 
-    setProgress(0);
-    setIsOpening(false);
-    openingRef.current = false;
+  completedRef.current = false;
+  setProgress(0);
 
-    let value = 0;
+  let value = 0;
 
-    const interval = setInterval(() => {
-      value = Math.min(value + 0.6, 100);
-      setProgress(value);
+  const interval = setInterval(() => {
+    value = Math.min(value + 0.6, 100);
+    setProgress(value);
 
-      if (value >= 100) clearInterval(interval);
-    }, 45);
+    if (value >= 100) {
+      clearInterval(interval);
+    }
+  }, 45);
 
-    return () => clearInterval(interval);
-  }, [isOpen, item]);
+  return () => clearInterval(interval);
+}, [isOpen, item]);
+
+ useEffect(() => {
+  if (!isOpen || progress < 100 || completedRef.current) {
+    return;
+  }
+
+  completedRef.current = true;
+
+  const timeout = setTimeout(() => {
+    onComplete?.();
+  }, 600);
+
+  return () => clearTimeout(timeout);
+}, [isOpen, progress, onComplete]);
 
   const isDone = progress >= 100;
 
   const phaseLabel =
     progress < 15
-      ? "Connecting to download mirror..."
+      ? "Connecting to download service..."
       : progress < 45
-      ? `Preparing ${item?.shortName || item?.title || "game"} data...`
+      ? "Preparing game information..."
       : progress < 75
-      ? `Preparing package (${item?.size || "game files"})...`
+      ? "Preparing download setup..."
       : progress < 90
-      ? "Checking package information..."
+      ? "Checking platform compatibility..."
       : progress < 100
-      ? "Finalizing download setup..."
-      : "Your download is ready!";
+      ? "Finishing setup..."
+      : "Setup complete!";
 
-  const handleDownload = () => {
-    if (!isDone || openingRef.current) return;
+  const gameTitle =
+    item?.shortName || item?.title || item?.name || "Game";
 
-    openingRef.current = true;
-    setIsOpening(true);
-    onComplete?.();
-  };
+  const gameImage =
+    item?.heroImage || item?.image || item?.icon;
 
   return (
     <AnimatePresence>
       {isOpen && item && (
         <motion.div
-          className="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 p-4 backdrop-blur-md"
+          className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 p-4 backdrop-blur-[2px]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
         >
           <motion.div
-            initial={{ opacity: 0, y: 25, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            transition={{ duration: 0.35, ease: "easeOut" }}
-            className="w-full max-w-[360px] overflow-hidden rounded-[20px] border border-red-900/50 bg-[#160707] shadow-[0_25px_80px_rgba(0,0,0,0.7)]"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="loading-title"
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: 15 }}
+            transition={{ duration: 0.25 }}
+            className="w-full max-w-[360px] overflow-hidden rounded-[20px] border border-red-900/40 bg-[#160909] shadow-[0_25px_70px_rgba(0,0,0,0.6)]"
           >
             {/* RED HEADER */}
-            <div className="relative flex min-h-[180px] items-center justify-center bg-gradient-to-b from-[#dc2626] via-[#991b1b] to-[#450a0a]">
+            <div className="relative flex min-h-[180px] items-center justify-center bg-gradient-to-b from-red-700 via-red-800 to-red-950">
               <button
                 type="button"
                 onClick={onClose}
-                disabled={isOpening}
                 aria-label="Close loading"
-                className="absolute left-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-red-300/20 bg-black/35 text-white transition hover:bg-black/60 disabled:opacity-50"
+                className="absolute left-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/30 text-white transition hover:bg-black/50"
               >
                 <X size={18} />
               </button>
 
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-red-400/15 via-transparent to-red-950/30" />
-
               {/* FLOATING PHONE */}
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, y: [0, -4, 0] }}
+                animate={{ y: [0, -5, 0] }}
                 transition={{
-                  opacity: { duration: 0.4 },
-                  y: {
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  },
+                  duration: 2.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
                 }}
-                className="relative z-10 flex h-[140px] w-[110px] flex-col overflow-hidden rounded-[24px] border-[3px] border-red-500/70 bg-[#170808] shadow-[0_10px_35px_rgba(0,0,0,0.5)]"
+                className="relative z-10 flex h-[140px] w-[110px] flex-col overflow-hidden rounded-[23px] border-[3px] border-red-400/50 bg-[#170808] shadow-xl"
               >
-                <div className="flex justify-between bg-[#100404] px-2 py-1 text-[7px] text-white/60">
+                <div className="flex justify-between bg-black/40 px-2 py-1 text-[7px] text-white/50">
                   <span>11:56</span>
-                  <span>●●● WiFi</span>
+                  <span>WiFi</span>
                 </div>
 
                 <div className="grid flex-1 grid-cols-4 content-start gap-[3px] p-[6px]">
@@ -111,14 +124,14 @@ export default function DownloadLoadingModal({
                       key={i}
                       className={`aspect-square overflow-hidden rounded-[6px] ${
                         i === 0
-                          ? "border border-red-400/60 bg-red-600/20"
-                          : "bg-red-900/20"
+                          ? "border border-red-400/50 bg-red-600/20"
+                          : "bg-red-900/25"
                       }`}
                     >
-                      {i === 0 && item.heroImage && (
+                      {i === 0 && gameImage && (
                         <img
-                          src={item.heroImage}
-                          alt={item.title || "Game"}
+                          src={gameImage}
+                          alt={gameTitle}
                           className="h-full w-full object-cover"
                         />
                       )}
@@ -127,51 +140,57 @@ export default function DownloadLoadingModal({
                 </div>
               </motion.div>
 
-              <div className="pointer-events-none absolute bottom-4 text-lg font-black tracking-wider text-white/20 blur-[3px]">
+              <span className="pointer-events-none absolute bottom-3 text-lg font-black tracking-widest text-white/15">
                 GAMEDROP
-              </div>
+              </span>
             </div>
 
-            {/* PROGRESS CARD */}
-            <div className="relative z-10 mx-4 -mt-10 rounded-[20px] border border-red-900/40 bg-[#230b0b] p-4 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+            {/* PROGRESS */}
+            <div className="relative z-10 mx-4 -mt-8 rounded-2xl border border-red-900/40 bg-[#230b0b] p-4 shadow-xl">
               <div className="mb-2 flex items-center justify-center gap-2">
                 {isDone && (
-                  <CheckCircle2 size={19} className="text-red-400" />
+                  <CheckCircle2
+                    size={19}
+                    className="text-red-400"
+                  />
                 )}
 
-                <h3 className="text-center text-base font-black text-white">
-                  {isDone ? "Package Ready!" : "Preparing Package..."}
-                </h3>
+                <h2
+                  id="loading-title"
+                  className="text-center text-base font-bold text-white"
+                >
+                  {isDone
+                    ? "Setup Complete!"
+                    : "Preparing Download..."}
+                </h2>
               </div>
 
               <p className="mb-2 truncate text-center text-xs font-semibold text-red-400">
-                {item.shortName || item.title}
+                {gameTitle}
               </p>
 
-              <p className="mb-4 min-h-[18px] text-center text-xs font-medium text-red-200/60">
+              <p className="mb-4 text-center text-xs text-white/50">
                 {phaseLabel}
               </p>
 
-              {/* RED PROGRESS BAR */}
-              <div className="h-2.5 w-full overflow-hidden rounded-full bg-red-950">
+              <div className="h-2.5 overflow-hidden rounded-full bg-red-950">
                 <div
-                  className="relative h-full overflow-hidden rounded-full bg-gradient-to-r from-[#991b1b] via-[#dc2626] to-[#ef4444] shadow-[0_0_12px_rgba(220,38,38,0.5)] transition-[width] duration-75 ease-linear"
+                  className="relative h-full overflow-hidden rounded-full bg-gradient-to-r from-red-700 to-red-500 transition-[width] duration-75"
                   style={{ width: `${progress}%` }}
                 >
                   {!isDone && (
-                    <div className="absolute inset-0 w-[60%] animate-[shimmer_1.5s_linear_infinite] bg-gradient-to-r from-transparent via-white/35 to-transparent" />
+                    <div className="absolute inset-0 w-[60%] animate-[shimmer_1.5s_linear_infinite] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
                   )}
                 </div>
               </div>
 
               <p className="mt-3 text-center text-[11px] font-semibold text-red-300">
-                {isDone
-                  ? "100% — Ready to download!"
-                  : `${Math.round(progress)}% — Please wait...`}
+                {Math.round(progress)}%
+                {isDone ? " — Complete" : " — Please wait"}
               </p>
 
               {platform && (
-                <p className="mt-2 text-center text-[10px] text-red-200/40">
+                <p className="mt-2 text-center text-[10px] text-white/35">
                   Platform: {platform}
                 </p>
               )}
@@ -179,34 +198,16 @@ export default function DownloadLoadingModal({
 
             {/* FOOTER */}
             <div className="p-4 pt-5">
-              {isDone ? (
-                <motion.button
-                  type="button"
-                  initial={{ opacity: 0, scale: 0.9, y: 10 }}
-                  animate={{ opacity: 1, scale: 1, y: 0 }}
-                  transition={{ duration: 0.35 }}
-                  onClick={handleDownload}
-                  disabled={isOpening}
-                  className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-[14px] bg-gradient-to-r from-[#dc2626] to-[#991b1b] p-3.5 text-sm font-black uppercase tracking-widest text-white shadow-[0_6px_25px_rgba(220,38,38,0.45)] transition-all hover:scale-[1.02] hover:from-[#ef4444] hover:to-[#dc2626] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70"
-                >
-                  {isOpening ? (
-                    <>
-                      <span className="h-4 w-4 animate-spin rounded-full border-2 border-white/80 border-t-transparent" />
-                      Opening...
-                    </>
-                  ) : (
-                    <>
-                      <Download size={18} strokeWidth={2.5} />
-                      DOWNLOAD NOW
-                    </>
-                  )}
-                </motion.button>
-              ) : (
-                <div className="flex w-full items-center justify-center gap-2 rounded-[14px] border border-red-700/30 bg-red-900/20 p-3.5 text-center text-xs font-black uppercase tracking-widest text-red-300/70">
-                  <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-red-400/60 border-t-transparent" />
-                  Preparing Data
-                </div>
-              )}
+              <div className="flex items-center justify-center gap-2 rounded-xl border border-red-800/30 bg-red-900/20 p-3.5 text-xs font-bold uppercase tracking-wider text-red-300">
+                {isDone ? (
+                  "Opening Verification..."
+                ) : (
+                  <>
+                    <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-red-400 border-t-transparent" />
+                    Preparing Data
+                  </>
+                )}
+              </div>
             </div>
           </motion.div>
         </motion.div>

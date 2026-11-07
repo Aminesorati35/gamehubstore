@@ -1,169 +1,209 @@
-import React, { useMemo, useState } from "react";
+
+import React, { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import LoadingModal from "./LoadingModal";
-import { openAdblueLocker } from "../utils/adblueLocker";
+import {
+  ShieldCheck,
+  X,
+  AlertTriangle,
+  ExternalLink,
+  ArrowRight,
+} from "lucide-react";
 
 export default function AccessPromptModal({
   isOpen,
   item,
-  contentType = "game",
-  platform,
+  game,
   onClose,
-  onContinueStart,
   onContinue,
+  onConfirm,
 }) {
-  if (!isOpen || !item) return null;
+  const [opening, setOpening] = useState(false);
 
-  const isScript = contentType === "script";
-  const [isLoading, setIsLoading] = useState(false);
+  const selectedItem = item || game;
 
-  const loadingType = useMemo(() => {
-    // LoadingModal expects "scripts" for script steps/copy.
-    return isScript ? "scripts" : "games";
-  }, [isScript]);
+  const title =
+    selectedItem?.shortName ||
+    selectedItem?.title ||
+    selectedItem?.name ||
+    "Game";
 
-  const hasGameplayVideo = useMemo(() => {
-    return Boolean(item?.gameplay && String(item.gameplay).trim());
-  }, [item?.gameplay]);
+  const image =
+    selectedItem?.heroImage ||
+    selectedItem?.image ||
+    selectedItem?.icon;
 
-  const heading = isScript ? "Unlock Script Access" : "Unlock Game Download";
-  const actionText = isScript ? "get this script" : "download this game";
+  const handleContinue = async () => {
+    if (opening) return;
 
-  const detailBadges = [
-    platform ? `Platform: ${platform}` : null,
-    item.category,
-    item.size ? `Size: ${item.size}` : null,
-    item.version ? `Version: ${item.version}` : null,
-    item.downloads ? `${item.downloads} users` : null,
-  ].filter(Boolean);
+    const callback = onContinue || onConfirm;
+    if (!callback) return;
 
-  // const handleContinueClick = () => {
-  //   // if (isLoading) return;
-  //   // onContinueStart?.();
-
-  //   // if (hasGameplayVideo) {
-  //   //   setIsLoading(true);
-  //   //   return;
-  //   // }
-
-  //   // onContinue?.();
-  //   window.location.href = item.downloadUrl;
-  // };
-  const handleContinueClick = async () => {
-  if (isLoading) return;
-
-  // ADBLUEMEDIA
-  if (item.isAdbluemedia === true) {
-    setIsLoading(true);
+    setOpening(true);
 
     try {
-      await openAdblueLocker(item.adblueConfig);
+      await callback();
+    } catch (error) {
+      console.error("Unable to open download provider:", error);
     } finally {
-      setIsLoading(false);
+      setOpening(false);
     }
-
-    return;
-  }
-
-  // OGADS (DEFAULT)
-  if (item.downloadUrl) {
-    window.location.href = item.downloadUrl;
-  } else {
-    console.error("OGAds download URL is missing!");
-  }
-};
+  };
 
   return (
-    <>
-      <AnimatePresence>
+    <AnimatePresence>
+      {isOpen && (
         <motion.div
-  className="fixed inset-0 z-[120] flex items-center justify-center px-4"
-  initial={false}
-  animate={{ opacity: 1 }}
-  exit={{ opacity: 0 }}
-  onClick={isLoading ? undefined : onClose}
->
+          className="fixed inset-0 z-[210] flex items-center justify-center bg-black/50 p-4 backdrop-blur-[2px]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+          onClick={onClose}
+        >
           <motion.div
-            className="w-full max-w-[560px] rounded-2xl overflow-hidden border border-white/15 bg-[#0f172a] shadow-2xl"
-            initial={{ opacity: 0, y: 22, scale: 0.96 }}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="access-title"
+            initial={{ opacity: 0, y: 20, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 14, scale: 0.97 }}
-            transition={{ duration: 0.22, ease: "easeOut" }}
-            onClick={(e) => e.stopPropagation()}
+            exit={{ opacity: 0, y: 15, scale: 0.96 }}
+            transition={{ duration: 0.25 }}
+            onClick={(event) => event.stopPropagation()}
+            className="w-full max-w-[370px] overflow-hidden rounded-[20px] border border-red-900/40 bg-[#160909] shadow-[0_25px_70px_rgba(0,0,0,0.6)]"
           >
-            <div className="relative h-44 sm:h-52">
-              <img
-                src={item.heroImage}
-                alt={item.title}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-black/20" />
-              <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-white/85 text-xs uppercase tracking-widest font-bold">
-                  {isScript ? "Roblox Script" : "Game Download"}
-                </p>
-                <h3 className="text-white text-xl sm:text-2xl font-bold mt-1">
-                  {item.shortName || item.title}
-                </h3>
-              </div>
-            </div>
+            {/* HEADER */}
+            <div className="flex items-center justify-between bg-gradient-to-r from-red-700 to-red-900 px-5 py-4">
+              <div className="flex items-center gap-2">
+                <ShieldCheck size={21} className="text-white" />
 
-            <div className="p-5 sm:p-6">
-              <p className="text-white/90 text-sm sm:text-base leading-relaxed">
-                To {actionText}, complete one quick verification offer.
-              </p>
-
-              <div className="mt-4 rounded-xl border border-white/15 bg-white/5 p-4">
-                <p className="text-white font-semibold text-sm">{heading}</p>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {detailBadges.map((badge) => (
-                    <span
-                      key={badge}
-                      className="text-xs text-white bg-white/10 border border-white/20 rounded-full px-2.5 py-1"
-                    >
-                      {badge}
-                    </span>
-                  ))}
-                </div>
+                <h2
+                  id="access-title"
+                  className="text-base font-bold text-white"
+                >
+                  Human Verification
+                </h2>
               </div>
 
               <button
-                onClick={handleContinueClick}
-                disabled={isLoading}
-                className={`mt-5 w-full rounded-xl bg-[#b7a507] text-white font-semibold py-3 transition-colors ${
-                  isLoading
-                    ? "opacity-80 cursor-not-allowed"
-                    : "hover:bg-[#c7b50c] cursor-pointer"
-                }`}
+                type="button"
+                onClick={onClose}
+                aria-label="Close verification"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white/80 transition hover:bg-white/20 hover:text-white"
               >
-                <span className="inline-flex items-center justify-center gap-2">
-                  {isLoading && (
-                    <span className="w-4 h-4 border-2 border-white/80 border-t-transparent rounded-full animate-spin" />
-                  )}
-                  <span>
-                    {isLoading ? "Preparing…" : `Continue to ${actionText}`}
-                  </span>
-                </span>
+                <X size={18} />
               </button>
+            </div>
+
+            {/* GAME INFORMATION */}
+            <div className="flex items-center gap-3 border-b border-red-900/30 bg-red-950/20 px-5 py-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-red-500/30 bg-red-900/30">
+                {image ? (
+                  <img
+                    src={image}
+                    alt={title}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <ShieldCheck
+                    size={22}
+                    className="text-red-400"
+                  />
+                )}
+              </div>
+
+              <div className="min-w-0 flex-1">
+                <p className="truncate text-sm font-bold text-white">
+                  {title}
+                </p>
+
+                <p className="mt-1 text-xs text-red-300">
+                  Download setup complete
+                </p>
+              </div>
+
+              <span className="rounded-full border border-red-500/30 bg-red-600/15 px-2.5 py-1 text-[10px] font-bold text-red-400">
+                READY
+              </span>
+            </div>
+
+            {/* BODY */}
+            <div className="p-5">
+              {/* NOTICE */}
+              <div className="mb-5 flex items-start gap-3 rounded-xl border border-red-500/20 bg-red-500/10 p-3.5">
+                <AlertTriangle
+                  size={19}
+                  className="mt-0.5 shrink-0 text-red-400"
+                />
+
+                <p className="text-xs leading-relaxed text-white/75">
+                  Your download setup is ready. Continue to the
+                  external verification provider to see the
+                  required steps. An offer or other action may
+                  be required before download access is granted.
+                </p>
+              </div>
+
+              {/* STEPS */}
+              <div className="mb-5 space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-red-600 text-xs font-bold text-white">
+                    1
+                  </div>
+
+                  <span className="text-[13px] font-medium text-white">
+                    Click Continue
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-red-900/50 bg-red-950/50 text-xs font-bold text-red-300">
+                    2
+                  </div>
+
+                  <span className="text-[13px] text-white/60">
+                    Complete one Simple Offer
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-red-900/50 bg-red-950/50 text-xs font-bold text-red-300">
+                    3
+                  </div>
+
+                  <span className="text-[13px] text-white/60">
+                    Access the download when available
+                  </span>
+                </div>
+              </div>
+
+              {/* ACTION BUTTON */}
+              <button
+                type="button"
+                onClick={handleContinue}
+                disabled={opening}
+                className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-red-600 to-red-700 px-4 py-4 text-[13px] font-black uppercase tracking-wide text-white shadow-[0_6px_24px_rgba(220,38,38,0.35)] transition-all hover:from-red-500 hover:to-red-600 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {opening ? (
+                  <>
+                    <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                    Opening...
+                  </>
+                ) : (
+                  <>
+                    <ExternalLink size={17} />
+                    Continue
+                    <ArrowRight size={17} />
+                  </>
+                )}
+              </button>
+
+              <p className="mt-3 text-center text-[11px] text-white/35">
+                External verification may be required
+              </p>
             </div>
           </motion.div>
         </motion.div>
-      </AnimatePresence>
-
-      {hasGameplayVideo ? (
-        <LoadingModal
-          isOpen={isLoading}
-          platform={platform}
-          type={loadingType}
-          gameplayUrl={item.gameplay}
-          compact
-          requireAcknowledge
-          onComplete={() => {
-            setIsLoading(false);
-            onContinue?.();
-          }}
-        />
-      ) : null}
-    </>
+      )}
+    </AnimatePresence>
   );
 }
