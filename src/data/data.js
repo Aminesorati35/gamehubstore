@@ -59,7 +59,7 @@ export const games = [
   lockerId: "krngjq",
 
   // 🖼️ HERO IMAGE
-  heroImage: "https://i.postimg.cc/R0dqr50Y/Black-Cat-and-Floating-Crystal-Magic.png",
+  heroImage: "https://i.ibb.co/Y7fgqFCj/Black-Cat-and-Floating-Crystal-Magic.png",
 },
 {
   id: "efootball-2027-offline",
