@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const GameCard = ({ game, onDownloadClick }) => {
@@ -7,8 +8,11 @@ const GameCard = ({ game, onDownloadClick }) => {
   };
 
   const isRewards = game.type === "rewards";
-  const hasFeatures = Array.isArray(game.features) && game.features.length > 0;
-  const isScript = game.category?.toLowerCase().includes("scripts");
+  const isApp = game.type === "app";
+  const hasFeatures =
+    Array.isArray(game.features) && game.features.length > 0;
+  const isScript =
+    game.category?.toLowerCase().includes("scripts");
 
   const baseClasses =
     "font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer border backdrop-blur-md active:scale-[0.98] " +
@@ -18,13 +22,16 @@ const GameCard = ({ game, onDownloadClick }) => {
   const claimClasses =
     "bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 border-yellow-300/30 shadow-[0_8px_10px_rgba(245,158,11,0.4)] text-black";
 
-  const downloadClasses = isScript
+  // BUTTON COLORS BASED ON TYPE
+  const downloadClasses = isApp
+    ? "bg-blue-600/90 hover:bg-blue-500 border-blue-300/20 shadow-[0_8px_25px_rgba(37,99,235,0.28)]"
+    : isScript
     ? "bg-purple-600/90 hover:bg-purple-500 border-purple-300/20 shadow-[0_8px_25px_rgba(147,51,234,0.28)]"
     : "bg-red-600/90 hover:bg-red-500 border-red-300/20 shadow-[0_8px_25px_rgba(220,38,38,0.28)]";
 
   return (
     <div className="bg-white/[0.03] backdrop-blur-xl rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_16px_40px_rgba(0,0,0,0.28)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)] hover:bg-white/[0.05] hover:border-white/20 transition-all duration-300 cursor-pointer group flex flex-row items-center sm:items-stretch">
-      {/* Image: 80x80 thumbnail on phones, full-height strip from sm and up */}
+      {/* IMAGE */}
       <div className="relative w-20 h-20 m-2 rounded-xl sm:m-0 sm:rounded-none sm:w-40 sm:h-auto md:w-48 sm:self-stretch flex-shrink-0 overflow-hidden">
         <img
           src={game.heroImage}
@@ -34,23 +41,32 @@ const GameCard = ({ game, onDownloadClick }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
       </div>
 
-      {/* Info: compact on phones so card height matches the thumbnail */}
+      {/* GAME INFORMATION */}
       <div className="flex-1 min-w-0 py-1.5 pr-2.5 pl-1 sm:p-4 flex flex-col justify-center">
         <h3 className="text-sm leading-tight sm:text-base md:text-lg font-bold tracking-tight line-clamp-1">
           {game.shortName}
         </h3>
+
         <p className="text-white/55 text-[11px] leading-tight sm:text-xs md:text-sm mt-0.5 mb-1 sm:mt-0 sm:mb-2 line-clamp-1">
           {game.developer || game.category || "Unknown"}
         </p>
 
         <div className="flex justify-between items-center mb-1.5 sm:mb-3">
           <div className="flex items-center text-yellow-400">
-            <span className="mr-1 text-[11px] sm:text-sm">⭐</span>
-            <span className="font-bold text-[11px] sm:text-sm">{game.rating}</span>
+            <span className="mr-1 text-[11px] sm:text-sm">
+              ⭐
+            </span>
+            <span className="font-bold text-[11px] sm:text-sm">
+              {game.rating}
+            </span>
           </div>
-          <p className="text-white/45 text-[10px] sm:text-xs">{game.downloads}</p>
+
+          <p className="text-white/45 text-[10px] sm:text-xs">
+            {game.downloads}
+          </p>
         </div>
 
+        {/* FEATURES */}
         {hasFeatures && (
           <div className="mb-2 sm:mb-3 hidden sm:flex flex-wrap gap-2">
             {game.features.slice(0, 4).map((feature, index) => (
@@ -64,8 +80,12 @@ const GameCard = ({ game, onDownloadClick }) => {
           </div>
         )}
 
+        {/* DOWNLOAD / CLAIM BUTTON */}
         {isRewards ? (
-          <a href={game.downloadUrl} className={`${baseClasses} ${claimClasses}`}>
+          <a
+            href={game.downloadUrl}
+            className={`${baseClasses} ${claimClasses}`}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -84,10 +104,15 @@ const GameCard = ({ game, onDownloadClick }) => {
               <path d="M7.5 8A2.5 2.5 0 1 1 10 5.5V8" />
               <path d="M16.5 8A2.5 2.5 0 1 0 14 5.5V8" />
             </svg>
+
             Claim Rewards
           </a>
         ) : (
-          <button onClick={handleDownload} className={`${baseClasses} ${downloadClasses}`}>
+          <button
+            type="button"
+            onClick={handleDownload}
+            className={`${baseClasses} ${downloadClasses}`}
+          >
             <svg
               className="w-3.5 h-3.5 sm:w-4 sm:h-4"
               fill="none"
@@ -101,7 +126,12 @@ const GameCard = ({ game, onDownloadClick }) => {
                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
               />
             </svg>
-            {isScript ? "Download Script" : "Download"}
+
+            {isApp
+              ? "Download App"
+              : isScript
+              ? "Download Script"
+              : "Download Game"}
           </button>
         )}
       </div>

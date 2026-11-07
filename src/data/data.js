@@ -41,7 +41,7 @@ export const games = [
   id: "mobile-wallpaper",
   title: "MOBILE WALLPAPER",
   shortName: "Mobile Wallpaper",
-
+  type : "app",
   // developer: "Third-Party Developer",
 
   rating: 4.8,
