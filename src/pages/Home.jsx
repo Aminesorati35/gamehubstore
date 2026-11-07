@@ -1,56 +1,62 @@
-import React, { useMemo, useState } from "react";
+
+import React, { useMemo, useState, useCallback } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GameCard from "../components/GameCard";
-import { games } from "../data/data";
-import { robloxScripts } from "../data/data";
-import AccessPromptModal from "../components/AccessPromptModal";
+import { games, robloxScripts } from "../data/data";
 import PlatformModal from "../components/PlatformModal";
-import LockerModal from "../components/LockerModal";
+import DownloadLoadingModal from "../components/DownloadLoadingModal";
 import DownloadBackdrop from "../components/DownloadBackdrop";
-
-const LOCKER_BASE_URL = "https://checkmyapp.space/cl/i/";
+import { openAdblueLocker } from "../utils/adblueLocker";
 
 const Home = () => {
   const [showPlatformModal, setShowPlatformModal] = useState(false);
-  const [showAccessPrompt, setShowAccessPrompt] = useState(false);
-  const [lockerId, setLockerId] = useState(null);
-  const [lockerUrl, setLockerUrl] = useState(null);
-  const [lockerPhase, setLockerPhase] = useState("closed"); // "closed" | "prefetch" | "visible"
+  const [showLoading, setShowLoading] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedPlatform, setSelectedPlatform] = useState("");
-  const [downloadStep, setDownloadStep] = useState(null);
   const [selectedTab, setSelectedTab] = useState("games");
 
   const handleOpenPlatformPicker = (item) => {
-  setSelectedItem(item);
-  setLockerId(item.lockerId);
-  setLockerUrl(item.downloadUrl || null);
-  setSelectedPlatform("");
-  setLockerPhase("closed");
-
-  setShowAccessPrompt(false);
-  setShowPlatformModal(true);
-  setDownloadStep("platform");
-};
+    setSelectedItem(item);
+    setSelectedPlatform("");
+    setShowLoading(false);
+    setShowPlatformModal(true);
+  };
 
   const handlePlatformSelect = (platform) => {
-  setSelectedPlatform(platform);
-  setShowPlatformModal(false);
-  setShowAccessPrompt(true);
-  setDownloadStep("access");
-};
+    setSelectedPlatform(platform);
+    setShowPlatformModal(false);
+    setShowLoading(true);
+  };
 
-  const handleClosePlatformModal = () => {
-  setShowPlatformModal(false);
-  setShowAccessPrompt(false);
-  setSelectedItem(null);
-  setLockerId(null);
-  setLockerUrl(null);
-  setSelectedPlatform("");
-  setLockerPhase("closed");
-  setDownloadStep(null);
-};
+  const handleClose = () => {
+    setShowPlatformModal(false);
+    setShowLoading(false);
+    setSelectedItem(null);
+    setSelectedPlatform("");
+  };
+
+  const handleLoadingComplete = useCallback(async () => {
+    if (!selectedItem) return;
+
+    setShowLoading(false);
+
+    if (selectedItem.isAdbluemedia === true) {
+      try {
+        await openAdblueLocker(selectedItem.adblueConfig);
+      } catch (error) {
+        console.error("AdBlueMedia error:", error);
+      }
+      return;
+    }
+
+    if (selectedItem.downloadUrl) {
+      window.location.href = selectedItem.downloadUrl;
+      return;
+    }
+
+    console.error("Download URL is missing!");
+  }, [selectedItem]);
 
   const displayedItems = useMemo(() => {
     if (selectedTab === "games") return games;
@@ -62,54 +68,22 @@ const Home = () => {
     <div className="min-h-screen">
       <Navbar />
 
-      <section className="container mx-auto px-4 sm:px-6 lg:px-10 py-8 min-h-screen">
-        {/* <div className="mb-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl px-5 py-6 sm:px-7">
-          <h2 className="text-3xl sm:text-4xl font-black mb-2 tracking-tight bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
-            Featured Content
-          </h2>
-          <p className="text-white/50 leading-relaxed">
-            {selectedTab === "games"
-              ? "Discover the best mobile games and apps"
-              : "Access high-performance scripts for your favorite games. Updated daily with new features."}
-          </p>
-        </div>
-
-        <div className="mb-8 flex justify-center">
-          <div className="inline-flex p-1.5 rounded-2xl bg-white/[0.04] border border-white/[0.08] backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.35)] gap-2">
-            <button
-              onClick={() => setSelectedTab("games")}
-              className={`px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 cursor-pointer ${
-                selectedTab === "games"
-                  ? "bg-white text-[#0b1020] shadow-lg"
-                  : "text-white/70 hover:bg-white/10 hover:text-white"
-              }`}
-            >
-              Games
-            </button>
-          </div>
-        </div> */}
-
+      <section className="container mx-auto min-h-screen px-4 py-8 sm:px-6 lg:px-10">
         <div className="mb-5">
-          <h3 className="text-white text-2xl font-bold tracking-tight">
+          <h3 className="text-2xl font-bold tracking-tight text-white">
             {selectedTab === "games"
               ? "Featured Games"
-              : selectedTab === "apps"
-                ? "Featured Apps"
-                : "Featured Scripts"}
+              : "Featured Scripts"}
           </h3>
-          <p className="text-white/45 text-sm mt-1">
+
+          <p className="mt-1 text-sm text-white/45">
             {selectedTab === "games"
               ? "Choose your favorite game"
-              : selectedTab === "apps"
-                ? "Choose your favorite app"
-                : "Choose your favorite script"}
+              : "Choose your favorite script"}
           </p>
         </div>
 
-        <div
-  key={selectedTab}
-  className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 gap-3 sm:gap-6"
->
+        <div className="grid grid-cols-1 gap-3 sm:gap-6 lg:grid-cols-2 xl:grid-cols-3">
           {displayedItems.map((item) => (
             <GameCard
               key={`${selectedTab}-${item.id}`}
@@ -119,55 +93,26 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <DownloadBackdrop isOpen={downloadStep !== null} />
+
+      <DownloadBackdrop
+        isOpen={showPlatformModal || showLoading}
+      />
 
       <PlatformModal
         isOpen={showPlatformModal}
-        onClose={handleClosePlatformModal}
+        onClose={handleClose}
         onSelect={handlePlatformSelect}
         gameTitle={selectedItem?.shortName || selectedItem?.title}
         showPcOption={selectedTab === "scripts"}
         flowType={selectedTab === "scripts" ? "script" : "game"}
       />
 
-      { <AccessPromptModal
-        isOpen={showAccessPrompt}
+      <DownloadLoadingModal
+        isOpen={showLoading}
         item={selectedItem}
-        contentType={selectedTab === "scripts" ? "script" : "game"}
         platform={selectedPlatform}
-        onClose={() => {
-  setShowAccessPrompt(false);
-  setDownloadStep(null);
-}}
-        onContinueStart={() => {
-          if (!lockerId) return;
-          // Start loading the locker iframe in the background (hidden under LoadingModal)
-          setLockerPhase("prefetch");
-        }}
-        onContinue={() => {
-  setShowAccessPrompt(false);
-
-  if (!lockerId) {
-    setDownloadStep(null);
-    return;
-  }
-
-  setLockerPhase("visible");
-  setDownloadStep("locker");
-}}
-      /> }
-      
-
-      <LockerModal
-        phase={lockerPhase}
-        lockerId={lockerId}
-        lockerUrl={lockerUrl}
-        lockerBaseUrl={LOCKER_BASE_URL}
-        platform={selectedPlatform}
-        oonClose={() => {
-  setLockerPhase("closed");
-  setDownloadStep(null);
-}}
+        onClose={handleClose}
+        onComplete={handleLoadingComplete}
       />
 
       <Footer />
