@@ -140,13 +140,13 @@ const Home = () => {
         <div className="mb-5">
           <h3 className="text-2xl font-bold tracking-tight text-white">
             {selectedTab === "games"
-              ? "Featured Games"
+              ? "Featured Games & Apps"
               : "Featured Scripts"}
           </h3>
 
           <p className="mt-1 text-sm text-white/45">
             {selectedTab === "games"
-              ? "Choose your favorite game"
+              ? "Choose your favorite Game or App"
               : "Choose your favorite script"}
           </p>
         </div>

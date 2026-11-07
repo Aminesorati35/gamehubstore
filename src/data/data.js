@@ -9,35 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const games = [
-    
-// {
-//   id: "fortnite-rewards",
-//   title: "FORTNITE REWARDS",
-//   shortName: "Fortnite Rewards",
-
-//   // developer: "Epic Games",
-
-//   rating: 4.9,
-//   downloads: "5M+",
-//   size: "350 MB",
-//   version: "1.0.0",
-//   age: "+12",
-
-//   type: "rewards",
-//   category: "Rewards",
-
-//   // gameplay: "https://www.fortnite.com/",
-
-//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-//   downloadUrl: "https://fortniteitems35.blogspot.com/",
-//   //downloadUrl: "https://your-content-locker-url.com/",
-//   lockerId: "YOUR_LOCKER_ID",
-
-//   // 🖼️ HERO IMAGE
-//   heroImage:
-//     "https://play-lh.googleusercontent.com/SW0gBjHobk7naDwy2S33Vwsny_J69SfGYRORFtuJaZH3iY2kY2gWV-KYcet4sRwVzD0eYfugY0VIQR7YL4ehtw=s0-br30",
-// },
-
   {
   id: "murder-mystery-2-rewards",
   title: "MURDER MYSTERY 2 REWARDS",
@@ -63,58 +34,6 @@ export const games = [
   heroImage:
     "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
 },
-//    {
-//   id: "speed-keyboard-escape-rewards",
-//   title: "Keyboard Escape Rewards",
-//   shortName: "+1 Speed Keyboard Escape Rewards",
-
-//   // developer: "Speek Studios",
-
-//   rating: 4.7,
-//   downloads: "500K+",
-//   size: "185 MB",
-//   version: "1.0.0",
-//   age: "+3",
-//   type : "rewards",
-//   category: "Rewards",
-
-//   // gameplay: "https://example.com/",
-
-//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-//   downloadUrl: "https://key3.site",
-//   lockerId: "d2od5o",
-
-//   // 🖼️ HERO IMAGE
-//   heroImage:
-//     "https://topgames.gg/data/image/game/1-speed-keyboard-escape.png",
-// },
-// {
-//   id: "steal-an-egg-rewards",
-//   title: "STEAL AN EGG REWARDS",
-//   shortName: "Steal An Egg Rewards",
-
-//   // developer: "Roblox",
-
-//   rating: 4.8,
-//   downloads: "1M+",
-//   size: "250 MB",
-//   version: "1.0.0",
-//   age: "+9",
-
-//   type: "rewards",
-//   category: "Rewards",
-
-//   // gameplay: "https://www.roblox.com/",
-
-//   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-//   downloadUrl: "https://stealanegg3.blogspot.com/",
-//   // downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
-//   lockerId: "d2od5o",
-
-//   // 🖼️ HERO IMAGE
-//   heroImage:
-//     "https://topgames.gg/data/image/game/steal-an-egg.png",
-// },
 {
   id: "efootball-2027-offline",
   title: "EFOOTBALL 2027 OFFLINE",
@@ -424,31 +343,6 @@ export const games = [
     "https://i.postimg.cc/9FMkt88N/roblox-lite-apk.webp",
 },
 {
-  id: "aniimo-mobile",
-  title: "ANIIMO MOBILE",
-  shortName: "Aniimo Mobile",
-
-  // developer: "Pawprint Studio",
-
-  rating: 4.8,
-  downloads: "1M+",
-  size: "2.5 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  category: "RPG / Adventure / Open World",
-
-  // gameplay: "https://www.aniimo.com/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/9v2ejv",
-  lockerId: "9v2ejv",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://i.postimg.cc/FRhbqQtH/aniimo-kevr-1200.jpg",
-},
-{
   id: "naruto-ultimate-ninja-storm-4-mobile",
   title: "NARUTO ULTIMATE NINJA STORM 4 MOBILE",
   shortName: "Naruto Storm 4 Mobile",
@@ -649,31 +543,6 @@ export const games = [
   heroImage:
     "https://www.konami.com/products_master/eu_publish/pes2021_mobile/eu/fr/images/pes2021_thumbnail.jpg",
 },
-{
-  id: "big-walk-mobile",
-  title: "Big Walk Mobile",
-  shortName: "Big Walk Mobile",
-
-  // developer: "House House",
-
-  rating: 4.9,
-  downloads: "5M+",
-  size: "2.1 GB",
-  version: "1.0.0",
-  age: "+7",
-
-  // gameplay: "https://store.steampowered.com/app/3153830/Big_Walk/",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://appsave.store/cl/i/1xj5l1",
-  lockerId: "1xj5l1",
-
-  category: "Adventure / Co-op / Exploration",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://pbs.twimg.com/media/HPcYGPfXgAAqgCs.jpg",
-},
   {
   id: "shift-at-midnight-mobile",
   title: "SHIFT AT MIDNIGHT MOBILE",
@@ -840,10 +709,4 @@ export const games = [
     heroImage:
       "https://images.ctfassets.net/nwksj2ft7iku/4WbVzweG4y1Y7afElrlfPJ/79027a14b48e14a00bdc39182e425833/LEGO_Batman__Legacy_of_the_Dark_Knight_Combat_Key_Art_16x9.png",
 },
-];
-export const apps = [
-  
-];
-export const robloxScripts = [
-  
 ];
