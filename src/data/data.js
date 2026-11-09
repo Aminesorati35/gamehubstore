@@ -38,28 +38,38 @@ export const games = [
     "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
 },
 {
-  id: "mobile-wallpaper",
-  title: "MOBILE WALLPAPER",
-  shortName: "Mobile Wallpaper",
-  type : "app",
-  // developer: "Third-Party Developer",
+  id: "pes-2013-mobile",
+  title: "PES 2013 MOBILE",
+  shortName: "PES 2013",
+
+  // developer: "Konami",
 
   rating: 4.8,
-  downloads: "5M+",
-  size: "85 MB",
+  downloads: "10M+",
+  size: "1.2 GB",
   version: "1.0.0",
   age: "+3",
 
-  category: "Personalization / Wallpapers / Themes",
+  category: "Sports / Football / Simulation / Offline",
 
-  // gameplay: "—",
+  // gameplay: "https://www.konami.com/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/krngjq",
-  lockerId: "krngjq",
+  downloadUrl: "https://gamedrop.store/cl/i/5n7jew",
+  lockerId: "5n7jew",
+
+  isAdbluemedia: true,
+  adblueConfig: {
+    it: 4641360,
+    key: "37085",
+    variable: "nSAlK_brN_tSnJbc",
+    script: "https://d18k3i06xdslhs.cloudfront.net/1f8629d.js",
+  },
+
 
   // 🖼️ HERO IMAGE
-  heroImage: "https://cdn.myimgs.org/images/79846/NeonFantasyWallpaperCollage.png",
+  heroImage:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQKPu5gpo8Khism7uy7cJK_fEzHiq1_Fqss2Ghgz0ahm5-OgzDtCsyWRlv&s=10",
 },
 {
   id: "efootball-2027-offline",
