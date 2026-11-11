@@ -28,7 +28,7 @@ export const games = [
   // gameplay: "https://www.roblox.com/",
 
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "hhttps://stealanegg3.blogspot.com",
+  downloadUrl: "https://stealanegg3.blogspot.com",
   // downloadUrl: "https://gamedrop.store/cl/i/rn4dlg",
   lockerId: "d2od5o",
 
