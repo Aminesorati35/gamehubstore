@@ -34,7 +34,7 @@ export const games = [
 
   // 🖼️ HERO IMAGE
   heroImage:
-    "https://tr.rbxcdn.com/180DAY-3123a31f1f65bea7005fc2ff75da0989/768/432/Image/Webp/noFilter",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuxPQ6gV9opjfygoatS6GUmIxGM93d1WYvekRPOGlb_XPXNmHG_tlh9tB7&s=10",
 },
   {
   id: "murder-mystery-2-rewards",
