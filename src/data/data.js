@@ -104,7 +104,7 @@ export const games = [
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
   downloadUrl: "https://gamedrop.store/cl/i/krn44q",
   lockerId: "krn44q",
-  isAdbluemedia: false,
+  isAdbluemedia: true,
   adblueConfig: {
     it: 4639682,
     key: "ce418",
