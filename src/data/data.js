@@ -62,28 +62,22 @@ export const games = [
     "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
 },
 {
-  id: "hajime-no-ippo-mobile",
-  title: "HAJIME NO IPPO MOBILE",
-  shortName: "Hajime no Ippo",
-
-  // developer: "Third-Party Developer",
-
-  rating: 4.8,
-  downloads: "1M+",
-  size: "1.5 GB",
-  version: "1.0.0",
-  age: "+12",
-
-  category: "Sports / Boxing / Fighting / Anime",
-
-  // gameplay: "—",
-
+  id: "just-volleyball-mobile",
+  title: "JUST VOLLEYBALL MOBILE",
+  shortName: "Just Volleyball Mobile",
+  // developer: "",
+  rating: 4.8, // placeholder
+  downloads: "1M+", // placeholder
+  size: "850 MB", // placeholder
+  version: "1.0.0", // placeholder
+  age: "+3", // placeholder
+  category: "Sports / Volleyball",
+  // gameplay: "",
   // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  downloadUrl: "https://gamedrop.store/cl/i/7jw9mn",
-  lockerId: "7jw9mn",
-
+  downloadUrl: "https://gamedrop.store/cl/i/5n7jew",
+  lockerId: "5n7jew",
   // 🖼️ HERO IMAGE
-  heroImage: "https://i.postimg.cc/hGjB4k2b/ippo.jpg",
+  heroImage: "/images/games/Just_Volleyball_cover.jpg",
 },
 {
   id: "efootball-2027-offline",
@@ -116,6 +110,30 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://img.utdstc.com/icon/637/8d4/6378d4098d29f695939c3e370dee6dc9c859dd18b33919250982f7e8c5db519d:600",
+},
+{
+  id: "hajime-no-ippo-mobile",
+  title: "HAJIME NO IPPO MOBILE",
+  shortName: "Hajime no Ippo",
+
+  // developer: "Third-Party Developer",
+
+  rating: 4.8,
+  downloads: "1M+",
+  size: "1.5 GB",
+  version: "1.0.0",
+  age: "+12",
+
+  category: "Sports / Boxing / Fighting / Anime",
+
+  // gameplay: "—",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  downloadUrl: "https://gamedrop.store/cl/i/7jw9mn",
+  lockerId: "7jw9mn",
+
+  // 🖼️ HERO IMAGE
+  heroImage: "https://i.postimg.cc/hGjB4k2b/ippo.jpg",
 },
 {
   id: "pes-2013-mobile",
