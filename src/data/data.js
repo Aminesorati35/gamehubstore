@@ -62,6 +62,32 @@ export const games = [
     "https://static.wikia.nocookie.net/murdermystery/images/3/30/MM2logo.png/revision/latest?cb=20141230012338",
 },
 {
+  id: "gta-vi-beta",
+  title: "GTA VI BETA",
+  shortName: "GTA VI BETA Mobile",
+
+  // developer: "Rockstar Games",
+
+  rating: 4.9,
+  downloads: "5M+",
+  size: "3.5 GB",
+  version: "1.0.0",
+  age: "+18",
+
+  
+
+  // gameplay: "https://www.rockstargames.com/VI",
+
+  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
+  //downloadUrl: "https://murder234.blogspot.com/",
+  downloadUrl: "https://gamedrop.store/cl/i/ex11xd",
+  lockerId: "d2od5o",
+
+  // 🖼️ HERO IMAGE
+  heroImage:
+    "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&imdensity=1&imwidth=3840",
+},
+{
   id: "just-volleyball-mobile",
   title: "JUST VOLLEYBALL MOBILE",
   shortName: "Just Volleyball Mobile",
@@ -569,32 +595,6 @@ export const games = [
   // 🖼️ HERO IMAGE
   heroImage:
     "https://i.ibb.co/nqX1zMqY/IMG-8041.png",
-},
-{
-  id: "gta-vi-beta",
-  title: "GTA VI BETA",
-  shortName: "GTA VI BETA Mobile",
-
-  // developer: "Rockstar Games",
-
-  rating: 4.9,
-  downloads: "5M+",
-  size: "3.5 GB",
-  version: "1.0.0",
-  age: "+18",
-
-  
-
-  // gameplay: "https://www.rockstargames.com/VI",
-
-  // 🔒 KEEP LOCKER (EDIT IF NEEDED)
-  //downloadUrl: "https://murder234.blogspot.com/",
-  downloadUrl: "https://gamedrop.store/cl/i/ex11xd",
-  lockerId: "d2od5o",
-
-  // 🖼️ HERO IMAGE
-  heroImage:
-    "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?akim=1&imdensity=1&imwidth=3840",
 },
 {
   id: "wobbly-life-mobile",
